@@ -1,8 +1,16 @@
 {
-  "name": "zenless-zone",
+  "name": "zenless-optimizer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Vofforila/zenless-zone/",
+  "homepage": "https://github.com/Vofforila/zenless-optimizer/",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -17,14 +25,6 @@
     "react-scripts": "5.0.1",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
