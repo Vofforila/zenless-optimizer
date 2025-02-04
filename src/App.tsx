@@ -1,18 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import './Theme/Global.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save o reload.
-        </p>
-      </header>
-    </div>
-  );
+export default function App()
+{
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Navbar></Navbar>
+                <Routes>
+                    <Route path="/" element={<Home></Home>}></Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
-
-export default App;
