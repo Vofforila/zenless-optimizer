@@ -7,11 +7,11 @@ interface CustomImageProps
     imgName: ImageName;
 }
 
-export default function CustomImage({
+const  Image:React.FC<CustomImageProps> =({
     width = 3,
     height = 3,
     imgName
-}: CustomImageProps)
+}: CustomImageProps) =>
 {
     const getSize = (size: number) =>
     {
@@ -26,3 +26,5 @@ export default function CustomImage({
         />
     );
 }
+
+export default Image;

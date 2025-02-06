@@ -1,11 +1,13 @@
 interface CustomButtonProps {
 	onPress: () => void;
-	content: string;
 	className: string;
+	children: string;
 }
-export default function CustomButton({ onPress, content, className}:CustomButtonProps)
+const Button: React.FC<CustomButtonProps> = ({ onPress,className, children }:CustomButtonProps) =>
 {
 	return (
-		<button className={className} onClick={onPress} name={content}>{content}</button>
+		<button className={className} onClick={onPress} name={children}>{children}</button>
 	)
 }
+
+export default Button

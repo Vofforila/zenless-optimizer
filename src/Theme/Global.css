@@ -114,7 +114,7 @@ input[type="input"] {
         background: var(--primary-color);
     }
 
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
     .mobile {
         display: none;
     }
@@ -124,7 +124,7 @@ input[type="input"] {
     .desktop {
         display: none;
     }
-}
+}*/
 
 .main {
     display: flex;

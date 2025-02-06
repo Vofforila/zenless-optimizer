@@ -1,10 +1,10 @@
 interface TextProps
 {
-    content: string
     size?: "small" | "medium" | "big" | "header" | "title"
+    children: React.ReactNode
 }
 
-export default function TextTag({content, size}:TextProps)
+const TextTag: React.FC<TextProps> = ({size,children}:TextProps) =>
 {
     //String fontsize;
 
@@ -24,6 +24,8 @@ export default function TextTag({content, size}:TextProps)
     //}
 
     return (
-        <p className={size }>{content}</p>
+        <p className={size}>{children}</p>
     )
 }
+
+export default TextTag; 

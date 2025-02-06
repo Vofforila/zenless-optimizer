@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 interface LinkButtonProps
 {
     target: string;
-    name: string;
     fontsize?: string;
+    children: string;
 }
-export default function LinkButton({ target, name, fontsize }: LinkButtonProps)
+const LinkButton: React.FC<LinkButtonProps> = ({ target, fontsize, children }: LinkButtonProps) =>
 {
     return (
-        <Link to={target} className="button" style={{ fontSize: fontsize }}>{name}</Link>
+        <Link to={target} className="button" style={{ fontSize: fontsize }}>{children}</Link>
     )
 }
+
+export default LinkButton;

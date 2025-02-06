@@ -1,8 +1,8 @@
-import TextTag from "../Components/Text";
+import TextTag from "../Components/Texttag";
 
 export default function Home()
 {
     return (
-        <TextTag content="ceva" size={big } ></TextTag>
+        <TextTag size={"big"} >ceva</TextTag>
     )
 }
