@@ -16,16 +16,13 @@ body {
     margin: 0px;
     padding: 0px;
     border: 0px;
+    place-items:start;
     background-color: var(--primary-color);
     scroll-behavior: smooth;
 }
 
-a {
-    margin: 0px;
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    color: var(--contrast-color);
+a{
+    text-decoration:none;
 }
 
 p,
@@ -97,7 +94,7 @@ input[type="input"] {
 }
 
 .button {
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     color: var(--contrast-color);
     padding: 8px;
@@ -129,7 +126,7 @@ input[type="input"] {
     }
 }
 
-.main-container {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
