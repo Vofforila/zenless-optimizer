@@ -94,7 +94,7 @@ input[type="input"] {
 }
 
 .button {
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
     color: var(--contrast-color);
     padding: 8px;
