@@ -1,10 +1,9 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
 import './Theme/Global.css'
 
-export default function App()
-{
+export default function App() {
     return (
         <div className="App">
             <BrowserRouter>
@@ -16,3 +15,4 @@ export default function App()
         </div>
     );
 }
+
