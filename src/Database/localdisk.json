@@ -1,0 +1,14 @@
+[
+  {
+    "D1": "hp_ + critDMG_ + critRate_ + atk_ + atk + hp_ + hp + enerRech_",
+    "D2": "atk_ + critDMG_ + critRate_ + atk_ + atk + hp_ + hp + enerRech_",
+    "D3": "atk_ + critDMG_ + critRate_ + atk_ + atk + hp_ + hp + enerRech_",
+    "D4": "hydro_dmg_ + critDMG_ + critRate_ + atk_ + atk + hp_ + hp + enerRech_",
+    "D5": "critDMG_/critRate_ + critDMG_ + critRate_ + atk_ + atk + hp_ + hp + enerRech_",
+    "D6": "ceva",
+    "critUser": true,
+    "character": "KamisatoAyato",
+    "description": "CHOOSE THIS ONE IF ITS GOOD FOR COMP",
+    "setKey": "GladiatorsFinale"
+  }
+]

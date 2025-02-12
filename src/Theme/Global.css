@@ -140,7 +140,7 @@ input[type="input"] {
 .list-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:;
     align-items: normal;
     flex-wrap: nowrap;
     align-content: normal;

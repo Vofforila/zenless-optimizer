@@ -1,0 +1,134 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    top: 0;
+    width: 100%;
+    position: sticky;
+    background-color: var(--primary-color);
+    z-index: 1000;
+    margin-top:8px;
+}
+
+.top-left-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: normal;
+    gap: 8px;
+    flex: 0.4;
+    margin-left:8px;
+}
+
+
+.top-right-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: normal;
+    gap: 0px;
+    flex: 1;
+    margin-right: 8px;
+}
+
+.link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: normal;
+    gap: 8px;
+}
+
+.menu-btn {
+    font-size: 24px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--contrast-color);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+    .menu-btn:hover {
+        background: var(--primary-color-transparent);
+    }
+
+.navbar-side-panel {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-color: var(--primary-color-transparent);
+    overflow-x: hidden;
+    transition: 0.5s ease;
+    z-index: 1001;
+}
+
+    .navbar-side-panel.open {
+        right: 0;
+    }
+
+.side-panel-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.side-panel-header-text {
+    flex: 1;
+}
+
+.side-panel-close-button {
+    font-size: 40px;
+}
+
+.navbar-side-panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.side-panel-item {
+    transition: 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+    .side-panel-item:hover {
+        background-color: var(--primary-color);
+    }
+
+.side-panel-item-image {
+    width: 40px;
+    height: 40px;
+}
+
+.side-panel-item-link {
+    color: var(--contrast-color);
+}
