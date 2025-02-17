@@ -1,0 +1,134 @@
+[
+  {
+    "character": "Astra Yao",
+    "description": "If you have 3430 ATK opt for a [6] with Energy Regen%",
+    "4-piece": "Astral Voice",
+    "2-piece": "Branch & Blade Song",
+    "critUser": false,
+    "[4]": "atk_",
+    "[5]": "atk_",
+    "[6]": "atk_/er",
+    "substat": "atk_ + atk"
+  },
+  {
+    "character": "Caesar",
+    "description": "It is an organization that increases shield endurance and break performance, while also improving continuous buff performance with four sets of proto.[ 6] can be used to automatically recover energy if there is a shortage of energy according to the convex situation and organization.",
+    "4-piece": "Proto Punk",
+    "2-piece": "Shockstar Disco",
+    "critUser": false,
+    "[4]": "atk_",
+    "[5]": "physical_dmg",
+    "[6]": "impact",
+    "substat": "anomaly_ma + atk_ + atk"
+  },
+  {
+    "character": "Miyabi",
+    "description": "Increases the accumulation efficiency according to the crit rate, so let's aim for the upper limit of the conversion limit of the battle-dominated mind rate of 80%.",
+    "4-piece": "Branch & Blade Song",
+    "2-piece": "Woodpecker Electro",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate",
+    "[5]": "ice_dmg + atk_",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + anomaly_ma"
+  },
+  {
+    "character": "Lighter",
+    "description": "Best for DMG/DPS",
+    "4-piece": "Inferno Metal",
+    "2-piece": "Shockstar Disco",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate",
+    "[5]": "atk_",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Lighter",
+    "description": "Best for DAZE",
+    "4-piece": "Swing Jazz",
+    "2-piece": "Shockstar Disco",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate",
+    "[5]": "atk_",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Yanagi",
+    "description": "The four sets of Chaos benefit greatly from the electric attribute damage buff, and the special reinforcement skills used for the opening are greatly enhanced.",
+    "4-piece": "Chaos Jazz",
+    "2-piece": "Thunder Metal",
+    "critUser": false,
+    "[4]": "abnormal_ma",
+    "[5]": "electric_dmg + pen",
+    "[6]": "atk_ + er",
+    "substat": "abnormal_ma + atk_ + atk"
+  },
+  {
+    "character": "Burnice",
+    "description": "None",
+    "4-piece": "Chaos Jazz",
+    "2-piece": "Freedom Blues",
+    "critUser": false,
+    "[4]": "abnormal_ma",
+    "[5]": "fire_dmg",
+    "[6]": "abnormal_ma + atk_ + atk",
+    "substat": "abnormal_ma + atk_ + atk"
+  },
+  {
+    "character": "Jane Doe",
+    "description": "None",
+    "4-piece": "Freedom Blues",
+    "2-piece": "Fanged Metal",
+    "critUser": false,
+    "[4]": "abnormal_ma",
+    "[5]": "physical_dmg + pen",
+    "[6]": "abnormal_ma + atk_ + atk",
+    "substat": "abnormal_ma + atk_ + atk"
+  },
+  {
+    "character": "Qingyi",
+    "description": "None",
+    "4-piece": "Shockstar Disco",
+    "2-piece": "Thunder Metal",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate + atk_",
+    "[5]": "electric_dmg",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + anomaly_ma"
+  },
+  {
+    "character": "Harumasa",
+    "description": "None",
+    "4-piece": "Woodpecker Electro",
+    "2-piece": "Branch & Blade Song",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate",
+    "[5]": "electric_dmg + pen",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Zhu Yuan",
+    "description": "None",
+    "4-piece": "Chaotic Metal",
+    "2-piece": "Hormone Punk",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate",
+    "[5]": "ether_dmg + pen",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Ellen",
+    "description": "None",
+    "4-piece": "Polar Metal",
+    "2-piece": "Woodpecker Electro",
+    "critUser": true,
+    "[4]": "crit_dmg + crit_rate",
+    "[5]": "ice_dmg + atk_",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  }
+]

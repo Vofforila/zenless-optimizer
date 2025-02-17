@@ -1,16 +1,17 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {Navbar} from './Components';
 import {Archive, Docs, Home} from "./Pages";
-import './Theme/Global.css'
+import {Server} from "./Server";
+import './Theme/Global.css';
 import {useEffect} from "react";
-
 
 export default function App()
 {
+    useEffect(() =>
+    {
+        Server();
+    }, []);
 
-    useEffect() =>{
-        Server()
-},[]);
     return (
         <div className="main">
             <BrowserRouter basename={"/zenless-optimizer/"}>
@@ -24,4 +25,3 @@ export default function App()
         </div>
     );
 }
-

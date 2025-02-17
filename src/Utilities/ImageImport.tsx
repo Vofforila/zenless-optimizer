@@ -1,3 +1,5 @@
+export type ImageName = keyof typeof ImageImport;
+
 const images: Record<string, { default: string }> = import.meta.glob(
     '../Database/Img/*.{png,jpg,jpeg,svg}',
     {
