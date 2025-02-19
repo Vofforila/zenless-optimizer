@@ -1,5 +1,3 @@
-export type ImageName = keyof typeof ImageImport;
-
 const images: Record<string, { default: string }> = import.meta.glob(
     '../Database/Img/*.{png,jpg,jpeg,svg}',
     {
@@ -7,6 +5,7 @@ const images: Record<string, { default: string }> = import.meta.glob(
         import: 'default'
     }
 );
+export type ImageName = keyof typeof ImageImport;
 
 // Then adjust your reduce slightly to handle the new structure
 const ImageImport = Object.entries(images).reduce((

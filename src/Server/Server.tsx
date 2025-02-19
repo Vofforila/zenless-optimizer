@@ -1,32 +1,18 @@
-import Database from "../Classes/Database";
-import {DiskProps} from "../Classes/Disks.tsx";
+import perfectDisks from "../Database/perfectdisks.json";
+import {PerfectCharacter} from "../Classes/PerfectCharacter.tsx";
+import {db} from "../Classes/Database.tsx";
 
-const db = new Database();
-db.id = 1;
 
 export default function Server()
 {
-
-    console.log("Main");
-
-    AddDisk({
-        setKey: "GladiatorsFinale",
-        level: 0,
-        slotKey: 1,
-        mainStatKey: "atk",
-        substats: [
-            {key: "HP", value: 16},
-            {key: "ATK", value: 16},
-            {key: "DEF", value: 5.1},
-            {key: "", value: 0}
-        ],
-        location: "",
-        lock: false,
-        id: 1
-    });
-    db.GetLocalDatabase();
-    console.log(db);
+    while (perfectDisks.length > 0)
+    {
+        const perfectCharacter: PerfectCharacter = perfectDisks.pop() as unknown as PerfectCharacter
+        db.perfectCharacter.push(perfectCharacter)
+    }
+    console.log(db.perfectCharacter)
 }
+/*
 
 function AddDisk(disk: DiskProps)
 {
@@ -37,4 +23,4 @@ function AddDisk(disk: DiskProps)
 function RemoveDisk(id: number)
 {
     db.disks.remove(id);
-}
+}*/

@@ -4,4 +4,5 @@ export {default as Div} from "./Div.tsx";
 export {default as Img} from "./Img.tsx";
 export {default as LinkButton} from "./LinkButton.tsx"
 export {default as TextTag} from "./TextTag.tsx"
+export {default as PerfectCharacterCard} from "./PerfectCharacterCard.tsx"
 

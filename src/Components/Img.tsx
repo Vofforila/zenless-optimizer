@@ -1,5 +1,5 @@
 import {ImageImport} from '../Utilities';
-import {ImageName} from "../Types";
+import {ImageName} from "../Utilities/ImageImport.ts";
 import React from "react";
 
 interface CustomImageProps

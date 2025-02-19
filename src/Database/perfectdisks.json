@@ -27,8 +27,8 @@
     "4-piece": "Branch & Blade Song",
     "2-piece": "Woodpecker Electro",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate",
-    "[5]": "ice_dmg + atk_",
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "ice_dmg/atk_",
     "[6]": "atk_",
     "substat": "crit_dmg + crit_rate + atk_ + atk + anomaly_ma"
   },
@@ -38,7 +38,7 @@
     "4-piece": "Inferno Metal",
     "2-piece": "Shockstar Disco",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate",
+    "[4]": "crit_dmg/crit_rate",
     "[5]": "atk_",
     "[6]": "impact",
     "substat": "crit_dmg + crit_rate + atk_ + atk"
@@ -49,7 +49,7 @@
     "4-piece": "Swing Jazz",
     "2-piece": "Shockstar Disco",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate",
+    "[4]": "crit_dmg/crit_rate",
     "[5]": "atk_",
     "[6]": "impact",
     "substat": "crit_dmg + crit_rate + atk_ + atk"
@@ -61,8 +61,8 @@
     "2-piece": "Thunder Metal",
     "critUser": false,
     "[4]": "abnormal_ma",
-    "[5]": "electric_dmg + pen",
-    "[6]": "atk_ + er",
+    "[5]": "electric_dmg/pen",
+    "[6]": "atk_/er",
     "substat": "abnormal_ma + atk_ + atk"
   },
   {
@@ -73,7 +73,7 @@
     "critUser": false,
     "[4]": "abnormal_ma",
     "[5]": "fire_dmg",
-    "[6]": "abnormal_ma + atk_ + atk",
+    "[6]": "abnormal_ma/atk_",
     "substat": "abnormal_ma + atk_ + atk"
   },
   {
@@ -83,8 +83,8 @@
     "2-piece": "Fanged Metal",
     "critUser": false,
     "[4]": "abnormal_ma",
-    "[5]": "physical_dmg + pen",
-    "[6]": "abnormal_ma + atk_ + atk",
+    "[5]": "physical_dmg/pen",
+    "[6]": "abnormal_ma/atk_",
     "substat": "abnormal_ma + atk_ + atk"
   },
   {
@@ -93,7 +93,7 @@
     "4-piece": "Shockstar Disco",
     "2-piece": "Thunder Metal",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate + atk_",
+    "[4]": "crit_dmg/crit_rate",
     "[5]": "electric_dmg",
     "[6]": "impact",
     "substat": "crit_dmg + crit_rate + atk_ + atk + anomaly_ma"
@@ -104,8 +104,8 @@
     "4-piece": "Woodpecker Electro",
     "2-piece": "Branch & Blade Song",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate",
-    "[5]": "electric_dmg + pen",
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "electric_dmg/pen",
     "[6]": "atk_",
     "substat": "crit_dmg + crit_rate + atk_ + atk"
   },
@@ -115,8 +115,8 @@
     "4-piece": "Chaotic Metal",
     "2-piece": "Hormone Punk",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate",
-    "[5]": "ether_dmg + pen",
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "ether_dmg/pen",
     "[6]": "atk_",
     "substat": "crit_dmg + crit_rate + atk_ + atk"
   },
@@ -126,9 +126,207 @@
     "4-piece": "Polar Metal",
     "2-piece": "Woodpecker Electro",
     "critUser": true,
-    "[4]": "crit_dmg + crit_rate",
-    "[5]": "ice_dmg + atk_",
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "ice_dmg/atk_",
     "[6]": "atk_",
     "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Lycaon",
+    "description": "None",
+    "4-piece": "Shockstar Disco",
+    "2-piece": "Swizz Jazz",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "ice_dmg",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Soldier 11",
+    "description": "None",
+    "4-piece": "Inferno Metal",
+    "2-piece": "Woodpecker Electro",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "fire_dmg/pen",
+    "[6]": "atk/er",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + pen"
+  },
+  {
+    "character": "Seth",
+    "description": "None",
+    "4-piece": "Proto Punk",
+    "2-piece": "Hormone Punk",
+    "critUser": false,
+    "[4]": "abnormal_ma/atk_",
+    "[5]": "electric_dmg",
+    "[6]": "atk_/abnormal_ma",
+    "substat": "abnormal_ma + atk_ + atk"
+  },
+  {
+    "character": "Lucy",
+    "description": "None",
+    "4-piece": "Swing Jazz",
+    "2-piece": "Hormone Punk",
+    "critUser": false,
+    "[4]": "atk_",
+    "[5]": "atk_",
+    "[6]": "abnormal_ma/er",
+    "substat": "atk_ + atk + abnormal_ma"
+  },
+  {
+    "character": "Soukaku",
+    "description": "None",
+    "4-piece": "Freedom Blues",
+    "2-piece": "Swing Jazz",
+    "critUser": false,
+    "[4]": "atk_/abonormal_ma",
+    "[5]": "atk_",
+    "[6]": "er/atk_",
+    "substat": "atk_ + atk + abnormal_ma"
+  },
+  {
+    "character": "Nicole",
+    "description": "None",
+    "4-piece": "Swing Jazz",
+    "2-piece": "Chaotic Metal",
+    "critUser": false,
+    "[4]": "atk_",
+    "[5]": "ether_dmg",
+    "[6]": "er",
+    "substat": "atk_ + atk + abnormal_ma"
+  },
+  {
+    "character": "Grace",
+    "description": "Build for Disorder Teams",
+    "4-piece": "Freedom Blues",
+    "2-piece": "Chaos Jazz",
+    "critUser": false,
+    "[4]": "abnormal_ma",
+    "[5]": "ether_dmg/pen",
+    "[6]": "abnormal_ma/atk_",
+    "substat": "atk_ + atk + abnormal_ma"
+  },
+  {
+    "character": "Grace",
+    "description": "Build for Mono-Electric Teams",
+    "4-piece": "Thunder Metal",
+    "2-piece": "Freedom Blues",
+    "critUser": false,
+    "[4]": "abnormal_ma",
+    "[5]": "ether_dmg/pen",
+    "[6]": "abnormal_ma/atk_",
+    "substat": "atk_ + atk + abnormal_ma"
+  },
+  {
+    "character": "Koleda",
+    "description": "None",
+    "4-piece": "Shockstar Disco",
+    "2-piece": "Swing Jazz",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "fire_dmg/pen",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + pen + atk_ + atk"
+  },
+  {
+    "character": "Nekomata",
+    "description": "Competitive option for direct and Anomaly-based Physical damage dealers granting 10% permanent Physical DMG% from the 2-PC and 35% increased DMG against enemies inflicted by Assault by any party member for 12 seconds. DMG% bonus against enemies will be up the majority of most fights against boss-type enemies thanks to its long duration and ability to trigger from any team member allowing a Physical based Bangboo/teammate to assist with uptime via their own Assaults.",
+    "4-piece": "Fanged Metal",
+    "2-piece": "Woodpecker Electro",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "pyshical_dmg",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Nekomata",
+    "description": "Great option for all direct damage dealers that make use of some form of Basic ATK and EX frequently. The set grants 8% permanent CRIT RATE% from the 2-PC and a 9% increased combat ATK% buff for 6 seconds when triggering a CRIT with each a Basic Attack, Dodge Counter or EX Special Attack from the 4P. Each buff belongs to an attack type so you'll need to CRIT with each type every 6 seconds to maintain 3 stacks. You can expect 2 stacks of this set most of the time one from basics and one from either EX's during a burst window or Dodge Counters during downtime granting 18% combat ATK% that multiplies all ATK stats like FLAT ATK and ATK% ((Base ATK * (1 + ATK%)) + Flat ATK) * (1 + Combat ATK%).",
+    "4-piece": "Woodpacker Electro",
+    "2-piece": "Fanged Metal",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "pyshical_dmg",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk"
+  },
+  {
+    "character": "Piper",
+    "description": "More energery recharge",
+    "4-piece": "Freedom Blues",
+    "2-piece": "Swing Jazz",
+    "critUser": false,
+    "[4]": "abnormal_ma",
+    "[5]": "pyshical_dmg/pen",
+    "[6]": "abnormal_ma",
+    "substat": "abnormal_ma + atk_ + atk"
+  },
+  {
+    "character": "Ben",
+    "description": "None",
+    "4-piece": "Proto Punk",
+    "2-piece": "Soul Rock",
+    "critUser": false,
+    "[4]": "def_",
+    "[5]": "def_",
+    "[6]": "er/def_",
+    "substat": "def_ + def"
+  },
+  {
+    "character": "Corin",
+    "description": "None",
+    "4-piece": "Woodpecker Electro",
+    "2-piece": "Fanged Metal  ",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "physical_dmg/pen",
+    "[6]": "atk_",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + pen"
+  },
+  {
+    "character": "Anton",
+    "description": "None",
+    "4-piece": "Thunder Metal",
+    "2-piece": "Woodpecker Electro",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "electric_dmg/pen",
+    "[6]": "atk_/er",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + pen"
+  },
+  {
+    "character": "Billy",
+    "description": "Great option for all direct damage dealers that make use of some form of Basic ATK and EX frequently. The set grants 8% permanent CRIT RATE% from the 2-PC and a 9% increased combat ATK% buff for 6 seconds when triggering a CRIT with each a Basic Attack, Dodge Counter or EX Special Attack from the 4P. Each buff belongs to an attack type so you'll need to CRIT with each type every 6 seconds to maintain 3 stacks. You can expect 2 stacks of this set most of the time one from basics and one from either EX's during a burst window or Dodge Counters during downtime granting 18% combat ATK% that multiplies all ATK stats like FLAT ATK and ATK% ((Base ATK * (1 + ATK%)) + Flat ATK) * (1 + Combat ATK%).",
+    "4-piece": "Woodpecker Electro",
+    "2-piece": "Fanged Metal",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "physical_dmg/pen",
+    "[6]": "atk_/er",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + pen"
+  },
+  {
+    "character": "Anby",
+    "description": "Dmg Build",
+    "4-piece": "Shockstar Disco",
+    "2-piece": "Swing Jazz",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_ra  te",
+    "[5]": "electric_dmg/pen",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + pen"
+  },
+  {
+    "character": "Anby",
+    "description": "Stunner Build",
+    "4-piece": "Shockstar Disco",
+    "2-piece": "Freedom Blues",
+    "critUser": true,
+    "[4]": "crit_dmg/crit_rate",
+    "[5]": "electric_dmg/pen",
+    "[6]": "impact",
+    "substat": "crit_dmg + crit_rate + atk_ + atk + pen"
   }
 ]

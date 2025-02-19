@@ -1,6 +1,7 @@
 import Div from "../Components/Div.tsx";
-import Img from "../Components/Img.tsx";
-import TextTag from "../Components/TextTag.tsx";
+import {db} from "../Classes/Database.tsx";
+import {PerfectCharacterCard} from "../Components";
+import {PerfectCharacter} from "../Classes/PerfectCharacter.tsx";
 
 
 export default function Archive()
@@ -14,29 +15,19 @@ export default function Archive()
                 <Div id={"CharacterList"} flex_direction={"row"} justify_content={"inherit"} align_items={"center"}
                      flex_wrap={"nowrap"}
                      padding={[0, 0, 0, 0]}>
-                    <Div flex_direction={"column"} justify_content={"inherit"}
-                         align_items={"center"}
-                         flex_wrap={"nowrap"}>
-                        <Div flex_direction={"row"} justify_content={"normal"}
-                             align_items={"normal"}
-                             flex_wrap={"nowrap"} gap={8}>
-                            <p>Character Name</p>
-                            <p>Crit/Not</p>
-                        </Div>
-                        <Div flex_direction={"row"} justify_content={"inherit"} align_items={"center"}
-                             flex_wrap={"nowrap"}>
-                            <Img width={4} height={4} imgName={"rect"}></Img>
-                            <Div flex_direction={"column"} justify_content={"inherit"} align_items={"center"}
-                                 flex_wrap={"nowrap"}>
-                                <TextTag>Disk Name</TextTag>
-                                <TextTag>Description</TextTag>
-                            </Div>
-                        </Div>
-                        <Div flex_direction={"column"} justify_content={"inherit"} align_items={"center"}
-                             flex_wrap={"nowrap"}>
-                            <p>Add Artefacts here</p>
-                        </Div>
-                    </Div>
+                    {db.perfectCharacter.map((
+                        character: PerfectCharacter,
+                        index
+                    ) => (
+                        <PerfectCharacterCard key={index} characterName={character.characterName}
+                                              diskDescription={character.diskDescription}
+                                              critLabel={character.critLabel} piece_4={character.piece_4}
+                                              piece_2={character.piece_2} slot_4={character.slot_4}
+                                              slot_5={character.slot_5}
+                                              slot_6={character.slot_6}
+                                              substat={character.substat}></PerfectCharacterCard>
+                    ))
+                    }
                 </Div>
             </Div>
         </Div>

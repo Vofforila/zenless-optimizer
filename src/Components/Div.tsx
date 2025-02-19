@@ -1,5 +1,5 @@
 import React, {CSSProperties} from 'react';
-import {ImageName} from "../Types";
+import {ImageName} from "../Utilities/ImageImport.ts";
 import {ImageImport} from "../Utilities";
 
 interface DivProps

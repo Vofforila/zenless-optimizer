@@ -3,15 +3,12 @@ import {Navbar} from './Components';
 import {Archive, Docs, Home} from "./Pages";
 import {Server} from "./Server";
 import './Theme/Global.css';
-import {useEffect} from "react";
+import ImageImport from "./Utilities/ImageImport.ts";
 
 export default function App()
 {
-    useEffect(() =>
-    {
-        Server();
-    }, []);
-
+    console.log(ImageImport["logo"]);
+    Server();
     return (
         <div className="main">
             <BrowserRouter basename={"/zenless-optimizer/"}>
