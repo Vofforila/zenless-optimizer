@@ -3,11 +3,9 @@ import {Navbar} from './Components';
 import {Archive, Docs, Home} from "./Pages";
 import {Server} from "./Server";
 import './Theme/Global.css';
-import ImageImport from "./Utilities/ImageImport.ts";
 
 export default function App()
 {
-    console.log(ImageImport["logo"]);
     Server();
     return (
         <div className="main">

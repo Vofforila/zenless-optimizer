@@ -1,8 +1,8 @@
 export interface PerfectCharacterProps
 {
     characterName: string;
-    diskDescription: string;
-    critLabel: boolean;
+    description: string;
+    critUser: boolean;
     piece_4: string;
     piece_2: string;
     slot_4: string;
@@ -14,8 +14,8 @@ export interface PerfectCharacterProps
 export class PerfectCharacter implements PerfectCharacterProps
 {
     characterName: string;
-    diskDescription: string;
-    critLabel: boolean;
+    description: string;
+    critUser: boolean;
     piece_4: string;
     piece_2: string;
     slot_4: string;
@@ -25,8 +25,8 @@ export class PerfectCharacter implements PerfectCharacterProps
 
     constructor(
         characterName: string,
-        diskDescription: string,
-        critLabel: boolean,
+        description: string,
+        critUser: boolean,
         piece_4: string,
         piece_2: string,
         slot_4: string,
@@ -36,8 +36,8 @@ export class PerfectCharacter implements PerfectCharacterProps
     )
     {
         this.characterName = characterName;
-        this.diskDescription = diskDescription;
-        this.critLabel = critLabel;
+        this.description = description;
+        this.critUser = critUser;
         this.piece_4 = piece_4;
         this.piece_2 = piece_2;
         this.slot_4 = slot_4;

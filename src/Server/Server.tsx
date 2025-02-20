@@ -1,4 +1,4 @@
-import perfectDisks from "../Database/perfectdisks.json";
+import perfectDisks from "../Pages/perfectdisks.json";
 import {PerfectCharacter} from "../Classes/PerfectCharacter.tsx";
 import {db} from "../Classes/Database.tsx";
 
