@@ -7,13 +7,13 @@ import {PerfectCharacter} from "../Classes/PerfectCharacter.tsx";
 export default function Archive()
 {
     return (
-        <Div id={"Archive"} flex_direction={"column"} justify_content={"center"} align_items={"center"}
-             flex_wrap={"wrap"} padding={[8, 8, 8, 8]}>
-            <Div id={"ListBox"} flex_direction={"column"} justify_content={"center"} align_items={"center"}
-                 flex_wrap={"wrap"}>
+        <Div id={"Archive"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}
+             flexWrap={"wrap"} padding={[8, 8, 8, 8]} alignContent={"normal"}>
+            <Div id={"ListBox"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}
+                 flexWrap={"wrap"} alignContent={"normal"}>
                 <TextTag size={"header"}>Character Filter</TextTag>
-                <Div id={"CharacterList"} flex_direction={"row"} justify_content={"inherit"} align_items={"center"}
-                     flex_wrap={"wrap"} width={"100%"}>
+                <Div id={"CharacterList"} flexDirection={"row"} justifyContent={"center"} alignItems={"center"}
+                     flexWrap={"wrap"} width={"100%"} gap={4} alignContent={"normal"}>
                     {
                         db.perfectCharacter.map((
                                 character: PerfectCharacter,
@@ -27,7 +27,7 @@ export default function Archive()
                                         piece_2={character.piece_2} slot_4={character.slot_4}
                                         slot_5={character.slot_5}
                                         slot_6={character.slot_6}
-                                        substat={character.substat}>
+                                        substats={character.substats}>
                                     </PerfectCharacterCard>
                                 )
                         )

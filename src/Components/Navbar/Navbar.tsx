@@ -17,7 +17,7 @@ function TopLeftNavbar()
 {
     return (
         <div className="top-left-navbar">
-            <Img width={5} height={5} imgName="logo"></Img>
+            <Img width={50} height={50} imgName="logo"></Img>
             <p className="big smallweight">Zenless Optimizer {import.meta.env.DEV ? "Dev" : ""} </p>
         </div>
     )

@@ -8,7 +8,7 @@ export interface PerfectCharacterProps
     slot_4: string;
     slot_5: string;
     slot_6: string;
-    substat: string;
+    substats: string;
 }
 
 export class PerfectCharacter implements PerfectCharacterProps
@@ -21,7 +21,7 @@ export class PerfectCharacter implements PerfectCharacterProps
     slot_4: string;
     slot_5: string;
     slot_6: string;
-    substat: string;
+    substats: string;
 
     constructor(
         characterName: string,
@@ -32,7 +32,7 @@ export class PerfectCharacter implements PerfectCharacterProps
         slot_4: string,
         slot_5: string,
         slot_6: string,
-        substat: string
+        substats: string
     )
     {
         this.characterName = characterName;
@@ -43,7 +43,7 @@ export class PerfectCharacter implements PerfectCharacterProps
         this.slot_4 = slot_4;
         this.slot_5 = slot_5;
         this.slot_6 = slot_6;
-        this.substat = substat;
+        this.substats = substats;
     }
 }
 

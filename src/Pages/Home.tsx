@@ -4,20 +4,20 @@ export default function Home()
 {
     return (
 
-        <Div id={"Home"} flex_direction={"column"} width="100%" height="80vh" justify_content={"center"}
-             align_items={"center"}
-             flex_wrap={"nowrap"}
-             gap={16}>
-            <Div id={"About-me"} flex_direction={"column"} justify_content={"flex-start"}
-                 align_items={"flex-start"}
-                 flex_wrap={"nowrap"}
+        <Div id={"Home"} flexDirection={"column"} width="100%" height="80vh" justifyContent={"center"}
+             alignItems={"center"}
+             flexWrap={"nowrap"}
+             gap={16} alignContent={"normal"}>
+            <Div id={"About-me"} flexDirection={"column"} justifyContent={"flex-start"}
+                 alignItems={"flex-start"}
+                 flexWrap={"nowrap"}
                  gap={2}
-                 padding={[0, 0, 0, 0]} width="70%">
-                <Div id={"about-me-wrapper"} flex_direction={"row"} justify_content={"flex-start"}
-                     align_items={"center"}
-                     flex_wrap={"nowrap"}
+                 padding={[0, 0, 0, 0]} width="70%" alignContent={"normal"}>
+                <Div id={"about-me-wrapper"} flexDirection={"row"} justifyContent={"flex-start"}
+                     alignItems={"center"}
+                     flexWrap={"nowrap"}
                      gap={2}
-                     padding={[0, 0, 0, 0]}>
+                     padding={[0, 0, 0, 0]} alignContent={"normal"}>
                     <Img width={5} height={5} imgName="logo"></Img>
                     <TextTag size="title" weight="bigweight">Zenless Optimizer</TextTag>
                 </Div>
@@ -27,10 +27,10 @@ export default function Home()
                     you are using. This is not a guide website for the game it is only for team building and making disc
                     presets for each character.
                 </TextTag>
-                <Div id={"about-me-button-wrapper"} flex_direction={"row"} justify_content={"flex-start"}
-                     align_items={"center"} flex_wrap={"nowrap"}
+                <Div id={"about-me-button-wrapper"} flexDirection={"row"} justifyContent={"flex-start"}
+                     alignItems={"center"} flexWrap={"nowrap"}
                      gap={3}
-                     padding={[0, 0, 0, 0]}>
+                     padding={[0, 0, 0, 0]} alignContent={"normal"}>
                     <LinkButton target={"/Docs"}>Start Loading Discs</LinkButton>
                     <LinkButton target={"/Achive"}>View Character Wiki</LinkButton>
                 </Div>

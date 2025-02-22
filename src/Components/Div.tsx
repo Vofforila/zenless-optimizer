@@ -5,23 +5,24 @@ import {ImageImport} from "../Utilities";
 interface DivProps
 {
     id?: string
-    flex_direction: React.CSSProperties["flexDirection"];
-    justify_content: React.CSSProperties["justifyContent"];
-    align_items: React.CSSProperties["alignItems"];
-    flex_wrap: React.CSSProperties["flexWrap"];
+    flexDirection: React.CSSProperties["flexDirection"];
+    justifyContent: React.CSSProperties["justifyContent"];
+    alignItems: React.CSSProperties["alignItems"];
+    flexWrap: React.CSSProperties["flexWrap"];
     flex?: [React.CSSProperties["flexGrow"], React.CSSProperties["flexShrink"], React.CSSProperties["flexBasis"]];
-    align_content?: React.CSSProperties["alignItems"];
-    align_self?: React.CSSProperties["alignSelf"];
-    background_color?: React.CSSProperties["backgroundColor"];
-    background_image?: ImageName
+    alignContent: React.CSSProperties["alignItems"];
+    alignSelf?: React.CSSProperties["alignSelf"];
+    backgroundColor?: React.CSSProperties["backgroundColor"];
+    backgroundImage?: ImageName
     border?: [number, React.CSSProperties["borderStyle"], React.CSSProperties["color"]];
-    border_radius?: number;
+    borderRadius?: number;
+    box_shadow?: [number, number, number, React.CSSProperties["color"]]
     gap?: number;
-    min_width?: React.CSSProperties["minWidth"];
-    max_width?: React.CSSProperties["maxWidth"];
+    minWidth?: React.CSSProperties["minWidth"];
+    maxWidth?: React.CSSProperties["maxWidth"];
     width?: React.CSSProperties["width"];
-    min_height?: React.CSSProperties["minHeight"];
-    max_height?: React.CSSProperties["maxHeight"]
+    minHeight?: React.CSSProperties["minHeight"];
+    maxHeight?: React.CSSProperties["maxHeight"]
     height?: React.CSSProperties["height"];
     padding?: [number, number, number, number]
     children: React.ReactNode
@@ -30,23 +31,24 @@ interface DivProps
 const Div: React.FC<DivProps> =
     ({
          id,
-         flex_direction,
-         justify_content,
-         align_items,
-         flex_wrap,
-         flex = [1, 1, "auto"],
-         align_content,
-         align_self,
-         background_image = "",
+         flexDirection,
+         justifyContent,
+         alignItems,
+         flexWrap,
+         flex = [1, 1, 0],
+         alignContent,
+         alignSelf,
+         backgroundImage = "",
          border = ["0px", "solid", ""],
-         border_radius = 0,
-         background_color,
+         borderRadius = 0,
+         box_shadow = [0, 0, 0, "white"],
+         backgroundColor,
          gap = 0,
-         min_width,
-         max_width,
+         minWidth,
+         maxWidth,
          width,
-         min_height,
-         max_height,
+         minHeight,
+         maxHeight,
          height,
          padding = [0, 0, 0, 0],
          children,
@@ -55,23 +57,24 @@ const Div: React.FC<DivProps> =
         const style: CSSProperties =
             {
                 display: 'flex',
-                flexDirection: flex_direction,
-                justifyContent: justify_content,
-                alignItems: align_items,
-                flexWrap: flex_wrap,
-                flex: flex,
-                alignContent: align_content,
-                alignSelf: align_self,
-                background: ImageImport[background_image],
-                backgroundColor: background_color,
+                flexDirection: flexDirection,
+                justifyContent: justifyContent,
+                alignItems: alignItems,
+                flexWrap: flexWrap,
+                flex: `${flex[0]} ${flex[1]} ${flex[2]}`,
+                alignContent: alignContent,
+                alignSelf: alignSelf,
+                background: ImageImport[backgroundImage],
+                backgroundColor: backgroundColor,
                 border: `${border[0]}px ${border[1]} ${border[2]}`,
-                borderRadius: `${border_radius}px`,
+                borderRadius: `${borderRadius}px`,
+                boxShadow: `${box_shadow[0]}px ${box_shadow[1]}px ${box_shadow[2]}px ${box_shadow[3]}`,
                 gap: `${gap * 8}px`,
-                maxWidth: max_width,
-                minWidth: min_width,
+                maxWidth: maxWidth,
+                minWidth: minWidth,
                 width: width,
-                maxHeight: max_height,
-                minHeight: min_height,
+                maxHeight: maxHeight,
+                minHeight: minHeight,
                 height: height,
                 padding: `${padding[0]}px ${padding[1]}px ${padding[2]}px ${padding[3]}px`
             };
