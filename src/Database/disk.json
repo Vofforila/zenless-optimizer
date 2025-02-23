@@ -1,96 +1,96 @@
 [
   {
     "setKey": "Astral Voice",
-    "setImage": "astral_voice",
+    "id": "astral_voice",
     "2-piece": "ATK +10%",
     "4-piece": "Whenever any squad member enters the field using a Quick Assist, all squad members gain 1 stack of Astral, up to a maximum of 3 stacks, and lasting 15s. Repeated triggers reset the duration. Each stack of Astral increases the DMG dealt by the character entering the field using a Quick Assist by 8%. Only one instance of this effect can exist in the same squad."
   },
   {
     "setKey": "Branch & Blade Song",
-    "setImage": "branch_blade_song",
+    "id": "branch_blade_song",
     "2-piece": "CRIT DMG +16% ",
     "4-piece": "When Anomaly Mastery exceeds or equals 115 points, the equipper's CRIT damage increases by 30%. When any squad member applies Freeze or triggers the Shatter effect on an enemy, the equipper's CRIT Rate increases by 12%, lasting 15s"
   },
   {
     "setKey": "Chaos Jazz",
-    "setImage": "chaos_jazz",
+    "id": "chaos_jazz",
     "2-piece": "Anomaly Proficiency +30",
     "4-piece": "Fire DMG and Electric DMG are increased by 15%. When off-field, DMG dealt by EX Special Attacks and Assist Attacks is increased by 20%. When the character switches back onto the field, this buff continues for 5s. The lasting effect can be triggered once every 7.55"
   },
   {
     "setKey": "Chaotic Metal",
-    "setImage": "chaotic_metal",
+    "id": "chaotic_metal",
     "2-piece": "Increases Ether DMG by 10%",
     "4-piece": "Whenever a squad member inflicts Corruption on an enemy, that enemy takes 18% more DMG for 12s. Passive effects of the same name do not stack"
   },
   {
     "setKey": "Fanged Metal",
-    "setImage": "fanged_metal",
+    "id": "fanged_metal",
     "2-piece": "Increases Physical DMG by 10%",
     "4-piece": "Whenever a squad member inflicts Assault on an enemy, the equipper deals 35% additional DMG to the target for 12s"
   },
   {
     "setKey": "Freedom Blues",
-    "setImage": "freedom_blue",
+    "id": "freedom_blue",
     "2-piece": "Increases Anomaly Proficiency by 30",
     "4-piece": "When an EX Special Attack hits an enemy, reduce the target's Anomaly Buildup RES to the equipper's Attribute by 35% for 8s. This effect does not stack with others of the same attribute"
   },
   {
     "setKey": "Hormone Punk",
-    "setImage": "hormone_punk",
+    "id": "hormone_punk",
     "2-piece": "Increases ATK by 10%",
     "4-piece": "Upon entering or switching into combat, the equipper has their ATK increased by 25% for 8s. This effect can be triggered once every 20s"
   },
   {
     "setKey": "Inferno Metal",
-    "setImage": "hormone_punk",
+    "id": "hormone_punk",
     "2-piece": "Increases Fire DMG by 10%",
     "4-piece": "Upon hitting a Burning enemy, the equipper's CRIT Rate is increased by 28% for 8s"
   },
   {
     "setKey": "Polar Metal",
-    "setImage": "polar_metal",
+    "id": "polar_metal",
     "2-piece": "Increases Ice DMG by 10%",
     "4-piece": "Basic Attack and Dash Attack DMG increases by 28%. Whenever a squad member Freezes or Shatters an enemy, the buff further increases by 28% for 12s"
   },
   {
     "setKey": "Proto Punk",
-    "setImage": "polar_metal",
+    "id": "polar_metal",
     "2-piece": "Shield effect +15%",
     "4-piece": "When any squad member triggers a Defensive Assist or Evasive Assist, all squad members deal 15% increased DMG, lasting 10s. Passive effects of the same name do not stack"
   },
   {
     "setKey": "Puffer Electro",
-    "setImage": "puffer_electro",
+    "id": "puffer_electro",
     "2-piece": "Increases PEN Ratio by 8%",
     "4-piece": "Ultimate DMG increases by 20%. Launching an Ultimate increases the equipper's ATK by 15% for 12s"
   },
   {
     "setKey": "Shockstar Disco",
-    "setImage": "shockstar_disco",
+    "id": "shockstar_disco",
     "2-piece": "Increases Impact by 6%",
     "4-piece": "Basic Attacks, Dash Attacks, Dodge Counter, Special Attacks, and EX Special Attacks inflict 15% more Daze upon the main target"
   },
   {
     "setKey": "Swing Jazz",
-    "setImage": "swing_jazz",
+    "id": "swing_jazz",
     "2-piece": "Energy Regen increases by 20%",
     "4-piece": "Launching a Chain Attack or Ultimate increases all squad members' DMG by 15% for 12s. Passive effects of the same name do not stack"
   {
     "setKey": "Soul Rock",
-    "setImage": "soul_rock",
+    "id": "soul_rock",
     "2-piece": "Increases DEF by 16%",
     "4-piece": "Upon receiving an enemy attack and losing HP, the equipper takes 40% less DMG for 2.5s. This effect can trigger once every 15s"
   },
   {
     "setKey": "Thunder Metal",
-    "setImage": "thunder_metal",
+    "id": "thunder_metal",
     "2-piece": "Increases Electric DMG by 10%",
     "4-piece": "As long as an enemy in combat is Shocked, the equipper's ATK is increased by 27%"
   },
   {
     "setKey": "Woodpecker Electro",
-    "setImage": "woodpecker_electro",
+    "id": "woodpecker_electro",
     "2-piece": "Increases CRIT Rate by 8%",
     "4-piece": "Triggering a critical hit with a Basic Attack, Dodge Counter, or EX Special Attack increases the equipper's ATK by 9% for 6s. The buff duration for different skills are calculated seperately"
   }

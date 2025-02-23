@@ -32,7 +32,7 @@ export class Disk
         this.disk = disk;
     }
 
-    // Get all disk
+
     getDisks()
     {
         return this.disk;

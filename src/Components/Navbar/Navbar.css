@@ -1,4 +1,4 @@
-.navbar-container {
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -14,7 +14,7 @@
     margin-top:8px;
 }
 
-.top-left-navbar {
+.navbar-left-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -26,8 +26,7 @@
     margin-left:8px;
 }
 
-
-.top-right-navbar {
+.navbar-right-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -39,7 +38,7 @@
     margin-right: 8px;
 }
 
-.link-wrapper {
+.navbar-right-link-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

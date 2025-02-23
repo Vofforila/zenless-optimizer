@@ -1,0 +1,29 @@
+.archive{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.archive-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: normal;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.archive-character-list{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content:normal;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:4px;
+
+}
+

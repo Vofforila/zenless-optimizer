@@ -3,19 +3,16 @@
     --primary-color-transparent: #4e3c57;
     --secondary-color: #ffffff;
     --contrast-color: #b0d7ff;
-    --basic-skill-color: #ffedab;
-    --advanced-skill-color: green;
-    --pro-skill-color: red;
-    --specialbutton-color: black;
+    --ui-background-color:rgba(255, 255, 255, 0.1);
 }
 
 html,
 body {
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+    margin: 0;
+    padding: 0;
+    border: 0;
     place-items:start;
     background-color: var(--primary-color);
     scroll-behavior: smooth;
@@ -30,7 +27,7 @@ del,
 ol,
 li {
     color: var(--secondary-color);
-    margin: 0px;
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
 }
@@ -55,15 +52,15 @@ li {
     font-size: 40px;
 }
 
-.smallweight {
+.smallWeight {
     font-weight: 400;
 }
 
-.mediumweight {
+.mediumWeight {
     font-weight: 600;
 }
 
-.bigweight {
+.bigWeight {
     font-weight: 800;
 }
 
@@ -86,9 +83,9 @@ input[type="input"] {
     color: var(--secondary-color);
     border-radius: 8px;
     background-color: var(--primary-color);
-    padding-left: 8px;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     background: linear-gradient(0deg, rgba(42, 33, 48, 1) 0%, #2a2130 100%);
+    padding-left: 8px;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     border: none;
     outline: none;
 }
@@ -105,7 +102,7 @@ input[type="input"] {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     min-width: 40px;
     border: none;
 }
@@ -140,7 +137,7 @@ input[type="input"] {
 .list-container {
     display: flex;
     flex-direction: column;
-    justify-content:;
+    justify-content:normal;
     align-items: normal;
     flex-wrap: nowrap;
     align-content: normal;

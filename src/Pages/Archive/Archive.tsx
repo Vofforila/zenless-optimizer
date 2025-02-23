@@ -1,19 +1,17 @@
-import Div from "../Components/Div.tsx";
-import {db} from "../Classes/Database.tsx";
-import {PerfectCharacterCard, TextTag} from "../Components";
-import {PerfectCharacter} from "../Classes/PerfectCharacter.tsx";
+import {db} from "../../Classes/Database.tsx";
+import {PerfectCharacterCard, TextTag} from "../../Components";
+import {PerfectCharacter} from "../../Classes/PerfectCharacter.tsx";
+import "./Archive.css"
 
 
 export default function Archive()
 {
     return (
-        <Div id={"Archive"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}
-             flexWrap={"wrap"} padding={[8, 8, 8, 8]} alignContent={"normal"}>
-            <Div id={"ListBox"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}
-                 flexWrap={"wrap"} alignContent={"normal"}>
+
+        <div id={"Archive"} className={"archive"}>
+            <div className={"archive-wrapper"}>
                 <TextTag size={"header"}>Character Filter</TextTag>
-                <Div id={"CharacterList"} flexDirection={"row"} justifyContent={"center"} alignItems={"center"}
-                     flexWrap={"wrap"} width={"100%"} gap={4} alignContent={"normal"}>
+                <div id={"CharacterList"} className={"archive-character-list"}>
                     {
                         db.perfectCharacter.map((
                                 character: PerfectCharacter,
@@ -32,8 +30,8 @@ export default function Archive()
                                 )
                         )
                     }
-                </Div>
-            </Div>
-        </Div>
+                </div>
+            </div>
+        </div>
     )
 }

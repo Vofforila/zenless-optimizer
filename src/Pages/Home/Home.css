@@ -1,0 +1,48 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 80vh;
+    gap:16px;
+}
+
+.home-about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: 70%;
+    gap:8px;
+}
+
+.home-about-me-icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap:8px;
+}
+
+
+.home-about-me-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.home-about-me-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap:16px;
+}

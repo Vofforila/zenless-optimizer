@@ -19,7 +19,7 @@
     "slot_4": "atk_",
     "slot_5": "physical_dmg",
     "slot_6": "impact",
-    "substats": "anomaly_ma + atk_ + atk"
+    "substats": "anomaly_pro + atk_ + atk"
   },
   {
     "characterName": "Miyabi",
@@ -30,7 +30,7 @@
     "slot_4": "crit_dmg/crit_rate",
     "slot_5": "ice_dmg/atk_",
     "slot_6": "atk_",
-    "substats": "crit_dmg + crit_rate + atk_ + atk + anomaly_ma"
+    "substats": "crit_dmg + crit_rate + atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Lighter",
@@ -60,10 +60,10 @@
     "piece_4": "Chaos Jazz",
     "piece_2": "Thunder Metal",
     "critUser": false,
-    "slot_4": "abnormal_ma",
+    "slot_4": "anomaly_pro",
     "slot_5": "electric_dmg/pen",
     "slot_6": "atk_/er",
-    "substats": "abnormal_ma + atk_ + atk"
+    "substats": "anomaly_pro + atk_ + atk"
   },
   {
     "characterName": "Burnice",
@@ -71,10 +71,10 @@
     "piece_4": "Chaos Jazz",
     "piece_2": "Freedom Blues",
     "critUser": false,
-    "slot_4": "abnormal_ma",
+    "slot_4": "anomaly_pro",
     "slot_5": "fire_dmg",
-    "slot_6": "abnormal_ma/atk_",
-    "substats": "abnormal_ma + atk_ + atk"
+    "slot_6": "anomaly_ma/atk_",
+    "substats": "anomaly_pro + atk_ + atk"
   },
   {
     "characterName": "Jane Doe",
@@ -82,10 +82,10 @@
     "piece_4": "Freedom Blues",
     "piece_2": "Fanged Metal",
     "critUser": false,
-    "slot_4": "abnormal_ma",
+    "slot_4": "anomaly_pro",
     "slot_5": "physical_dmg/pen",
-    "slot_6": "abnormal_ma/atk_",
-    "substats": "abnormal_ma + atk_ + atk"
+    "slot_6": "anomaly_ma/atk_",
+    "substats": "anomaly_pro + atk_ + atk"
   },
   {
     "characterName": "Qingyi",
@@ -96,7 +96,7 @@
     "slot_4": "crit_dmg/crit_rate",
     "slot_5": "electric_dmg",
     "slot_6": "impact",
-    "substats": "crit_dmg + crit_rate + atk_ + atk + anomaly_ma"
+    "substats": "crit_dmg + crit_rate + atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Harumasa",
@@ -135,7 +135,7 @@
     "characterName": "Lycaon",
     "description": "None",
     "piece_4": "Shockstar Disco",
-    "piece_2": "Swizz Jazz",
+    "piece_2": "Swing Jazz",
     "critUser": true,
     "slot_4": "crit_dmg/crit_rate",
     "slot_5": "ice_dmg",
@@ -159,10 +159,10 @@
     "piece_4": "Proto Punk",
     "piece_2": "Hormone Punk",
     "critUser": false,
-    "slot_4": "abnormal_ma/atk_",
+    "slot_4": "anomaly_pro/atk_",
     "slot_5": "electric_dmg",
-    "slot_6": "atk_/abnormal_ma",
-    "substats": "abnormal_ma + atk_ + atk"
+    "slot_6": "atk_/anomaly_ma",
+    "substats": "anomaly_pro + atk_ + atk"
   },
   {
     "characterName": "Lucy",
@@ -172,8 +172,8 @@
     "critUser": false,
     "slot_4": "atk_",
     "slot_5": "atk_",
-    "slot_6": "abnormal_ma/er",
-    "substats": "atk_ + atk + abnormal_ma"
+    "slot_6": "anomaly_ma/er",
+    "substats": "atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Soukaku",
@@ -184,7 +184,7 @@
     "slot_4": "atk_/abonormal_ma",
     "slot_5": "atk_",
     "slot_6": "er/atk_",
-    "substats": "atk_ + atk + abnormal_ma"
+    "substats": "atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Nicole",
@@ -195,7 +195,7 @@
     "slot_4": "atk_",
     "slot_5": "ether_dmg",
     "slot_6": "er",
-    "substats": "atk_ + atk + abnormal_ma"
+    "substats": "atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Grace",
@@ -203,10 +203,10 @@
     "piece_4": "Freedom Blues",
     "piece_2": "Chaos Jazz",
     "critUser": false,
-    "slot_4": "abnormal_ma",
+    "slot_4": "anomaly_pro",
     "slot_5": "ether_dmg/pen",
-    "slot_6": "abnormal_ma/atk_",
-    "substats": "atk_ + atk + abnormal_ma"
+    "slot_6": "anomaly_ma/atk_",
+    "substats": "atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Grace",
@@ -214,10 +214,10 @@
     "piece_4": "Thunder Metal",
     "piece_2": "Freedom Blues",
     "critUser": false,
-    "slot_4": "abnormal_ma",
+    "slot_4": "anomaly_pro",
     "slot_5": "ether_dmg/pen",
-    "slot_6": "abnormal_ma/atk_",
-    "substats": "atk_ + atk + abnormal_ma"
+    "slot_6": "anomaly_ma/atk_",
+    "substats": "atk_ + atk + anomaly_pro"
   },
   {
     "characterName": "Koleda",
@@ -244,7 +244,7 @@
   {
     "characterName": "Nekomata",
     "description": "Full DPS Build",
-    "piece_4": "Woodpacker Electro",
+    "piece_4": "Woodpecker Electro",
     "piece_2": "Fanged Metal",
     "critUser": true,
     "slot_4": "crit_dmg/crit_rate",
@@ -258,10 +258,10 @@
     "piece_4": "Freedom Blues",
     "piece_2": "Swing Jazz",
     "critUser": false,
-    "slot_4": "abnormal_ma",
+    "slot_4": "anomaly_pro",
     "slot_5": "pyshical_dmg/pen",
-    "slot_6": "abnormal_ma",
-    "substats": "abnormal_ma + atk_ + atk"
+    "slot_6": "anomaly_ma",
+    "substats": "anomaly_pro + atk_ + atk"
   },
   {
     "characterName": "Ben",
@@ -278,7 +278,7 @@
     "characterName": "Corin",
     "description": "None",
     "piece_4": "Woodpecker Electro",
-    "piece_2": "Fanged Metal  ",
+    "piece_2": "Fanged Metal",
     "critUser": true,
     "slot_4": "crit_dmg/crit_rate",
     "slot_5": "physical_dmg/pen",
@@ -313,7 +313,7 @@
     "piece_4": "Shockstar Disco",
     "piece_2": "Swing Jazz",
     "critUser": true,
-    "slot_4": "crit_dmg/crit_ra  te",
+    "slot_4": "crit_dmg/crit_rate",
     "slot_5": "electric_dmg/pen",
     "slot_6": "impact",
     "substats": "crit_dmg + crit_rate + atk_ + atk + pen"

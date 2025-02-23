@@ -4,35 +4,25 @@ import React, {CSSProperties} from "react";
 
 interface CustomImageProps
 {
-    width: number;
-    height: number;
+    width?:CSSProperties["width"];
+    height?:CSSProperties["height"];
     imgName: ImageName;
-    borderRadius?: number;
-    boxShadow?: [number, number, number, React.CSSProperties["color"]]
+    className?: string;
 }
 
 const Img: React.FC<CustomImageProps> =
     ({
-         width = 100,
-         height = 100,
-         imgName,
-         borderRadius = 0,
-         boxShadow = [0, 0, 0, "white"]
-     }: CustomImageProps) =>
+        width,height, imgName, className
+    }: CustomImageProps) =>
     {
-        const style: CSSProperties =
-            {
-                width: `${width}`,
-                height: `${height}`,
-                borderRadius: `${borderRadius}`,
-                boxShadow: `${boxShadow[0]}px ${boxShadow[1]}px ${boxShadow[2]}px ${boxShadow[3]}`,
-            };
-
+        const style: CSSProperties={
+            width: width,
+            height: height,
+        }
         return (
             <img
+                className={className}
                 style={style}
-                width={`${width}`}
-                height={`${height}`}
                 src={ImageImport[imgName]}
                 alt={imgName}
             />

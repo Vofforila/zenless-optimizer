@@ -1,43 +1,42 @@
 ﻿import {OpenPanel} from './SidePanel.tsx';
-import {Button, Img, LinkButton} from "../index.tsx";
+import {Button, Img, LinkButton, TextTag} from "../index.tsx";
 import {GetDeviceType} from "../../Utilities"
 import './Navbar.css';
 
 export default function Navbar()
 {
     return (
-        <div className="navbar-container" id="navbar">
-            <TopLeftNavbar></TopLeftNavbar>
-            <TopRightNavbar></TopRightNavbar>
+        <div className="navbar" id="navbar">
+            <LeftNavbar></LeftNavbar>
+            <RightNavbar></RightNavbar>
         </div>
     )
 }
 
-function TopLeftNavbar()
+function LeftNavbar()
 {
     return (
-        <div className="top-left-navbar">
+        <div className="navbar-left-wrapper">
             <Img width={50} height={50} imgName="logo"></Img>
-            <p className="big smallweight">Zenless Optimizer {import.meta.env.DEV ? "Dev" : ""} </p>
+            <TextTag size={"big"} weight={"smallWeight"}>Zenless Optimizer {import.meta.env.DEV ? "Dev" : ""} </TextTag>
         </div>
     )
 }
 
-function TopRightNavbar()
+function RightNavbar()
 {
-
     return (
-        <div className="top-right-navbar">
-            {GetDeviceType() === "desktop" ? <TopDesktopNavbar></TopDesktopNavbar> :
-                <TopMobileNavbar></TopMobileNavbar>}
+        <div className="navbar-right-wrapper">
+            {GetDeviceType() === "desktop" ? <RightDesktopNavbar></RightDesktopNavbar> :
+                <RightMobileNavbar></RightMobileNavbar>}
         </div>
     )
 }
 
-function TopDesktopNavbar()
+function RightDesktopNavbar()
 {
     return (
-        <div className="link-wrapper">
+        <div className="navbar-right-link-wrapper">
             <LinkButton target="/">Home</LinkButton>
             <LinkButton target="/Archive">Archive</LinkButton>
             <LinkButton target="/Disks">Disks</LinkButton>
@@ -50,7 +49,7 @@ function TopDesktopNavbar()
     )
 }
 
-function TopMobileNavbar()
+function RightMobileNavbar()
 {
     return (
         <Button onPress={OpenPanel} className="menu-btn mobile">☰</Button>

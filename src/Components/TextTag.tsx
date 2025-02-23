@@ -2,41 +2,40 @@ import React, {CSSProperties} from "react";
 
 interface TextProps
 {
-    size?: "small" | "medium" | "big" | "header" | "title"
-    weight?: "smallweight" | "mediumweight" | "bigweight"
-    width?: number
-    height?: number
+    size?: "small" | "medium" | "big" | "header" | "title";
+    weight?: "smallWeight" | "mediumWeight" | "bigWeight";
+    width?: CSSProperties["width"];
+    height?: CSSProperties["height"];
     textAlign?: React.CSSProperties["textAlign"];
-    padding?: [number, number, number, number]
-    borderRadius?: number
-    boxShadow?: [number | string, number, number, React.CSSProperties["color"]]
-    children: React.ReactNode
+    borderRadius?: number;
+    whiteSpace?: CSSProperties["whiteSpace"];
+    className?: string;
+    children: React.ReactNode;
 }
 
 const TextTag: React.FC<TextProps> =
     ({
          size = "medium",
-         weight = "mediumweight",
+         weight = "mediumWeight",
          width,
          height,
          textAlign,
-         padding = [0, 0, 0, 0],
          borderRadius,
-         boxShadow = [0, 0, 0, "white"],
+         whiteSpace,
+         className,
          children
      }: TextProps) =>
     {
-        const className = size + " " + weight;
+        const textClassName = size + " " + weight + " " + className;
         const style: CSSProperties = {
             width: width,
             height: height,
             textAlign: textAlign,
-            padding: `${padding[0]}px ${padding[1]}px ${padding[2]}px ${padding[3]}px`,
-            boxShadow: `${boxShadow[0]}px ${boxShadow[1]}px ${boxShadow[2]}px ${boxShadow[3]}`,
+            whiteSpace: whiteSpace,
             borderRadius: borderRadius
         }
         return (
-            <p className={className} style={style}>{children}</p>
+            <p className={textClassName} style={style}>{children}</p>
         )
     }
 
