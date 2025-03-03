@@ -1,45 +1,137 @@
-import DiskProps from "./Disk.tsx";
-import PerfectCharacterProps from "./PerfectCharacter.tsx";
+import {Disk, PerfectCharacter} from "./index.tsx";
 
-export default class Database
+
+interface IDatabaseProps
 {
-    public disks: DiskProps[];
-    public perfectCharacter: PerfectCharacterProps[]
+    database1: Database;
+    database2: Database;
+    database3: Database;
+    database4: Database;
+    disks: Disk[]
+    perfectCharacter: PerfectCharacter[]
+}
 
-    constructor()
+export class Database implements IDatabaseProps
+{
+    private _database1: Database;
+    private _database2: Database;
+    private _database3: Database;
+    private _database4: Database;
+    private _currentDatabase: number = 1;
+    private _disks: Disk[];
+    private _perfectCharacter: PerfectCharacter[];
+
+
+    public Instanciate()
     {
-        this.disks = [];
-        this.perfectCharacter = [];
+        const localData = localStorage.getItem("database" + 1);
+
+        if (localData)
+        {
+            const parsedData = JSON.parse(localData);
+            this._disks = parsedData._disks;
+        }
+    }
+
+    UpdateLocalDatabase(id: number,)
+    {
+        localStorage.setItem("database" + id, JSON.stringify(this));
     }
 
 
-}
-
-export const db = new Database()
-
-/*GetLocalDatabase()
-{
-    const localData = localStorage.getItem("database" + this.id);
-
-    if (localData)
+    UpdateDatabase(
+        database: number,
+        toUpdate: string
+    )
     {
-        const parsedData = JSON.parse(localData);
-        this.disks = parsedData.disks;
+        localStorage.setItem((database.toString()), JSON.stringify(toUpdate));
+    }
+
+
+    constructor(database?: Database)
+    {
+        this._database1 = new Database();
+        this._database2 = new Database();
+        this._database3 = new Database();
+        this._database4 = new Database();
+        this._currentDatabase = 1;
+        this._disks = [];
+        this._perfectCharacter = [];
+    }
+
+
+    get disks(): Disk[]
+    {
+        return this._disks;
+    }
+
+    set disks(value: Disk[])
+    {
+        this._disks = value;
+    }
+
+
+    get perfectCharacter(): PerfectCharacter[]
+    {
+        return this._perfectCharacter;
+    }
+
+    set perfectCharacter(value: PerfectCharacter[])
+    {
+        this._perfectCharacter = value;
+    }
+
+
+    get database1(): Database
+    {
+        return this._database1;
+    }
+
+    set database1(value: Database)
+    {
+        this._database1 = value;
+    }
+
+    get database2(): Database
+    {
+        return this._database2;
+    }
+
+    set database2(value: Database)
+    {
+        this._database2 = value;
+    }
+
+    get database3(): Database
+    {
+        return this._database3;
+    }
+
+    set database3(value: Database)
+    {
+        this._database3 = value;
+    }
+
+    get database4(): Database
+    {
+        return this._database4;
+    }
+
+    set database4(value: Database)
+    {
+        this._database4 = value;
+    }
+
+    get currentDatabase(): number
+    {
+        return this._currentDatabase;
+    }
+
+    set currentDatabase(value: number)
+    {
+        this._currentDatabase = value;
     }
 }
 
-UpdateLocalDatabase()
-{
-    localStorage.setItem("database" + this.id, JSON.stringify(this));
-}*/
+export const db = new Database();
 
-
-// Add localstorage
-/*
-export function UpdateDatabase(
-    database: number,
-    toUpdate: string
-)
-{
-    localStorage.setItem((database.toString()), JSON.stringify(toUpdate));
-}*/

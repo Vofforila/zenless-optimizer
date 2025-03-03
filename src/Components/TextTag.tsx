@@ -1,6 +1,6 @@
 import React, {CSSProperties} from "react";
 
-interface TextProps
+interface ITextProps
 {
     size?: "small" | "medium" | "big" | "header" | "title";
     weight?: "smallWeight" | "mediumWeight" | "bigWeight";
@@ -13,7 +13,7 @@ interface TextProps
     children: React.ReactNode;
 }
 
-const TextTag: React.FC<TextProps> =
+const TextTag: React.FC<ITextProps> =
     ({
          size = "medium",
          weight = "mediumWeight",
@@ -24,7 +24,7 @@ const TextTag: React.FC<TextProps> =
          whiteSpace,
          className,
          children
-     }: TextProps) =>
+     }: ITextProps) =>
     {
         const textClassName = size + " " + weight + " " + className;
         const style: CSSProperties = {

@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React, {CSSProperties} from "react";
 
-interface LinkButtonProps
+interface ILinkButtonProps
 {
     target: string;
     size?: number;
@@ -9,19 +9,20 @@ interface LinkButtonProps
     children: string;
 }
 
-const LinkButton: React.FC<LinkButtonProps> =
+const LinkButton: React.FC<ILinkButtonProps> =
     ({
          target,
          size = 3,
          classname = "",
-         children}: LinkButtonProps) =>
-{
-    const style:CSSProperties={
-        fontSize:`${size*8}px`,
+         children
+     }: ILinkButtonProps) =>
+    {
+        const style: CSSProperties = {
+            fontSize: `${size * 8}px`,
+        }
+        return (
+            <Link to={target} className={"button".concat(classname)} style={style}>{children}</Link>
+        )
     }
-    return (
-        <Link to={target} className={"button".concat(classname)} style={style}>{children}</Link>
-    )
-}
 
 export default LinkButton;

@@ -1,0 +1,24 @@
+{
+  "Disks": [
+    {
+      "SetKey": "Branch & Blade Song",
+      "SlotKey": 4,
+      "Level": 15,
+      "MainStatKey": 6,
+      "Substats": [
+        {
+          "Key": 3,
+          "Value": 234.0
+        },
+        {
+          "Key": 7,
+          "Value": 23.0
+        },
+        {
+          "Key": 8,
+          "Value": 40.0
+        }
+      ]
+    }
+  ]
+}

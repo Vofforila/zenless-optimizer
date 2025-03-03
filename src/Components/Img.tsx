@@ -2,20 +2,20 @@ import {ImageImport} from '../Utilities';
 import {ImageName} from "../Utilities/ImageImport.ts";
 import React, {CSSProperties} from "react";
 
-interface CustomImageProps
+interface ICustomImageProps
 {
-    width?:CSSProperties["width"];
-    height?:CSSProperties["height"];
+    width?: CSSProperties["width"];
+    height?: CSSProperties["height"];
     imgName: ImageName;
     className?: string;
 }
 
-const Img: React.FC<CustomImageProps> =
+const Img: React.FC<ICustomImageProps> =
     ({
-        width,height, imgName, className
-    }: CustomImageProps) =>
+         width, height, imgName, className
+     }: ICustomImageProps) =>
     {
-        const style: CSSProperties={
+        const style: CSSProperties = {
             width: width,
             height: height,
         }

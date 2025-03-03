@@ -1,18 +1,19 @@
 import perfectDisks from "../Database/perfectdisks.json";
-import {PerfectCharacter} from "../Classes/PerfectCharacter.tsx";
 import {db} from "../Classes/Database.tsx";
+import {PerfectCharacter} from "../Classes";
 
 
 export default function Server()
 {
     while (perfectDisks.length > 0)
     {
-       const perfectCharacter: PerfectCharacter = perfectDisks.pop() as unknown as PerfectCharacter
+        const perfectCharacter: PerfectCharacter = perfectDisks.pop() as unknown as PerfectCharacter
         db.perfectCharacter.push(perfectCharacter)
+
     }
+    db.
 
 
-    console.log(db.perfectCharacter)
 }
 /*
 

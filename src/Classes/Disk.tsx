@@ -5,39 +5,127 @@ export type MainStatType = "HP%" | "ATK%" | "DEF%" | "CRIT Rate" | "CRIT DMG" |
 export type SubstatKey = "HP" | "ATK" | "DEF" | "DEF%" | "HP%" | "ATK%" |
     "PEN" | "Crit Rate" | "Crit Dmg" | "Anomaly Proficiency" | "";
 
-export interface Substat
+export type SetKey =
+    "Astral Voice"
+    | "Branch & Blade Song"
+    | "Chaos Jazz"
+    | "Chaotic Metal"
+    | "Fanged Metal"
+    | "Freedom Blues"
+    | "Hormone Punk"
+    | "Inferno Metal"
+    | "Polar Metal"
+    | "Proto Punk"
+    | "Puffer Electro"
+    | "Shockstar Disco"
+    | "Soul Rock"
+    | "Swing Jazz"
+    | "Thunder Metal"
+    | "Woodpecker Electro"
+
+export interface ISubstat
 {
     key: SubstatKey;
     value: number;
 }
 
-export interface DiskProps
+export interface IDiskProps
 {
-    setKey: string;
+    setKey: SetKey;
     level: number;
     slotKey: number;
-    mainStatKey: string;
-    substats: Substat[];
-    location: string;
-    lock: boolean;
+    mainStatKey: MainStatType;
+    substats: ISubstat[];
     id: number;
 }
 
-export class Disk
+export class Disk implements IDiskProps
 {
-    private disk: DiskProps
+    private _setKey: SetKey;
+    private _level: number;
+    private _slotKey: number;
+    private _mainStatKey: MainStatType;
+    private _substats: ISubstat[];
+    private _id: number;
 
-    constructor(disk: DiskProps)
+    constructor(
+        setKey: SetKey,
+        level: number,
+        slotKey: number,
+        mainStatKey: MainStatType,
+        substats: ISubstat[],
+        id: number
+    )
     {
-        this.disk = disk;
+        this._setKey = setKey;
+        this._level = level;
+        this._slotKey = slotKey;
+        this._mainStatKey = mainStatKey;
+        this._substats = substats;
+        this._id = id;
+    }
+
+    get id(): number
+    {
+        return this._id;
+    }
+
+    set id(value: number)
+    {
+        this._id = value;
+    }
+
+    get substats(): ISubstat[]
+    {
+        return this._substats;
+    }
+
+    set substats(value: ISubstat[])
+    {
+        this._substats = value;
+    }
+
+    get mainStatKey(): MainStatType
+    {
+        return this._mainStatKey;
+    }
+
+    set mainStatKey(value: MainStatType)
+    {
+        this._mainStatKey = value;
+    }
+
+    get slotKey(): number
+    {
+        return this._slotKey;
+    }
+
+    set slotKey(value: number)
+    {
+        this._slotKey = value;
+    }
+
+    get level(): number
+    {
+        return this._level;
+    }
+
+    set level(value: number)
+    {
+        this._level = value;
+    }
+
+    get setKey(): SetKey
+    {
+        return this._setKey;
+    }
+
+    set setKey(value: SetKey)
+    {
+        this._setKey = value;
     }
 
 
-    getDisks()
-    {
-        return this.disk;
-    }
-    
 }
 
 export default Disk;

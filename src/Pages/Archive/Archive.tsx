@@ -1,7 +1,7 @@
 import {db} from "../../Classes/Database.tsx";
 import {PerfectCharacterCard, TextTag} from "../../Components";
-import {PerfectCharacter} from "../../Classes/PerfectCharacter.tsx";
 import "./Archive.css"
+import PerfectCharacter from "../../Classes/PerfectCharacter.tsx";
 
 
 export default function Archive()

@@ -1,16 +1,16 @@
 import React from "react";
 
-interface CustomButtonProps
+interface ICustomButtonProps
 {
     onPress: () => void;
-    className: string;
+    className?: string;
     children: string;
 }
 
-const Button: React.FC<CustomButtonProps> = ({onPress, className, children}: CustomButtonProps) =>
+const Button: React.FC<ICustomButtonProps> = ({onPress, className = "", children}: ICustomButtonProps) =>
 {
     return (
-        <button className={className} onClick={onPress} name={children}>{children}</button>
+        <button className={className} onClick={onPress}>{children}</button>
     )
 }
 
