@@ -1,4 +1,4 @@
-/*
+
 export default function SidePanel()
 {
     return (
@@ -8,13 +8,13 @@ export default function SidePanel()
                 <button className="side-panel-close-button" onClick={ClosePanel}>�</button>
             </div>
             <div className="navbar-side-panel-container">
-                {/!*<div className="side-panel-item" className="side-panel-item" onClick={ClosePanel}>*!/}
-                {/!*    <img className="side-panel-item-image" src="/Images/Skills.png" alt="error">*!/}
-                {/!*        <p className="side-panel-item-link medium smallweight" href="#skills">Skills</p>*!/}
-                {/!*</div>*!/}
-            </div>  
+                {/*{/!*<div className="side-panel-item" className="side-panel-item" onClick={ClosePanel}>*!/}*/}
+                {/*{/!*    <img className="side-panel-item-image" src="/Images/Skills.png" alt="error">*!/}*/}
+                {/*{/!*        <p className="side-panel-item-link medium smallweight" href="#skills">Skills</p>*!/}*/}
+                {/*{/!*</div>*!/}*/}
+            </div>
         </div>
-    )   
+    )
 }
 
 export function OpenPanel()
@@ -23,4 +23,4 @@ export function OpenPanel()
 
 export function ClosePanel()
 {
-}*/
+}

@@ -15,7 +15,7 @@ export default function App()
                     <Route path="/" element={<Home></Home>}></Route>
                     <Route path="/Archive" element={<Archive></Archive>}></Route>
                     <Route path="/Docs" element={<Docs></Docs>}></Route>
-                    <Route path="/Docs" element={<Settings></Settings>}></Route>
+                    <Route path="/Settings" element={<Settings></Settings>}></Route>
                 </Routes>
             </BrowserRouter>
         </div>

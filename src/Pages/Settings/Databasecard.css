@@ -1,0 +1,85 @@
+.database-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    padding: 16px 8px 16px 8px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+.database-card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.database-card-swap-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 16px;
+}
+
+.database-card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    align-content:flex-start;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.database-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    align-content:flex-start;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.database-info-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+    align-content:center;
+    gap: 8px;
+}
+
+.database-card-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-wrap: nowrap;
+    align-content:center;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.database-buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+    align-content:center;
+    gap: 8px;
+}

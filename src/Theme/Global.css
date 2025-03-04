@@ -90,11 +90,11 @@ input[type="input"] {
     outline: none;
 }
 
-.button {
+.scalable-button {
     font-size: 24px;
     text-align: center;
     color: var(--contrast-color);
-    padding: 8px;
+    padding: 8px 16px 8px 16px;
     font-weight: 600;
     border-radius: 24px;
     background: var(--primary-color-transparent);
@@ -103,7 +103,23 @@ input[type="input"] {
     position: relative;
     display: inline-block;
     box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-    min-width: 40px;
+    border: none;
+}
+
+.fixed-button {
+    font-size: 24px;
+    text-align: center;
+    color: var(--contrast-color);
+    min-width: 168px;
+    min-height: 40px;
+    font-weight: 600;
+    border-radius: 24px;
+    background: var(--primary-color-transparent);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    align-content: center;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     border: none;
 }
 

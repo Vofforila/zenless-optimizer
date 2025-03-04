@@ -19,14 +19,17 @@ outline: none;
 padding: 16px 8px 16px 8px;
 
 
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: normal;
-flex-wrap: nowrap;
-align-content: normal;
-gap: 8px;
-padding: 16px 8px 16px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--primary-color-transparent);
 
 flex: 1/2/3;
 1 - grow,

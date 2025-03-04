@@ -5,7 +5,8 @@ interface ILinkButtonProps
 {
     target: string;
     size?: number;
-    classname?: string;
+    scalable?: boolean;
+    className?: string;
     children: string;
 }
 
@@ -13,15 +14,17 @@ const LinkButton: React.FC<ILinkButtonProps> =
     ({
          target,
          size = 3,
-         classname = "",
+        scalable = true,
+        className = "",
          children
      }: ILinkButtonProps) =>
     {
         const style: CSSProperties = {
             fontSize: `${size * 8}px`,
         }
+
         return (
-            <Link to={target} className={"button".concat(classname)} style={style}>{children}</Link>
+            <Link to={target}  className={ (scalable ? "scalable-button" : "fixed-button")+ className} style={style}>{children}</Link>
         )
     }
 

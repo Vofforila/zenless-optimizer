@@ -1,5 +1,5 @@
-﻿import {OpenPanel} from './SidePanel.tsx';
-import {Button, Img, LinkButton, TextTag} from "../index.tsx";
+﻿import {Button, Img, LinkButton, TextTag} from "../index.tsx";
+import {OpenPanel} from './SidePanel.tsx';
 import {GetDeviceType} from "../../Utilities"
 import './Navbar.css';
 

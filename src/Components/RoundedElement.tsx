@@ -6,6 +6,7 @@ interface IRoundedElementProps
     borderRadius: number;
     width?: CSSProperties["width"];
     height?: CSSProperties["height"];
+    flex?: CSSProperties["flex"];
     children: React.ReactNode;
 }
 
@@ -21,12 +22,12 @@ export default function RoundedElement(RoundedElementProps: IRoundedElementProps
         textAlign: "center",
         cursor: "default",
         userSelect: "none",
-        transition: "background-color 0.3s"
-
+        transition: "background-color 0.3s",
+        flex: RoundedElementProps.flex,
     }
 
     return (
-        <span style={style}></span>
+        <span style={style}>{RoundedElementProps.children}</span>
     )
 }
 
