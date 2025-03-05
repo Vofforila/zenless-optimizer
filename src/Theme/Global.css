@@ -3,7 +3,7 @@
     --primary-color-transparent: #4e3c57;
     --secondary-color: #ffffff;
     --contrast-color: #b0d7ff;
-    --ui-background-color:rgba(255, 255, 255, 0.1);
+    --ui-background-color: rgba(255, 255, 255, 0.1);
 }
 
 html,
@@ -13,13 +13,13 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    place-items:start;
+    place-items: start;
     background-color: var(--primary-color);
     scroll-behavior: smooth;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
 p,
@@ -73,21 +73,9 @@ input[type="checkbox"] {
 
 input::placeholder {
     color: var(--contrast-color);
-    font-size: 24px;
     font-style: italic;
     outline: none;
-}
-
-input[type="input"] {
-    font-size: 24px;
-    color: var(--secondary-color);
-    border-radius: 8px;
-    background-color: var(--primary-color);
-    background: linear-gradient(0deg, rgba(42, 33, 48, 1) 0%, #2a2130 100%);
-    padding-left: 8px;
-    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-    border: none;
-    outline: none;
+    align-self: start;
 }
 
 .scalable-button {
@@ -100,7 +88,6 @@ input[type="input"] {
     background: var(--primary-color-transparent);
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     display: inline-block;
     box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     border: none;
@@ -117,15 +104,33 @@ input[type="input"] {
     background: var(--primary-color-transparent);
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
     align-content: center;
     box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
     border: none;
 }
 
-    .button:hover {
-        background: var(--primary-color);
-    }
+.button:hover {
+    background: var(--primary-color);
+}
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none-text-button {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+}
 
 /*@media screen and (min-width: 800px) {
     .mobile {
@@ -138,7 +143,6 @@ input[type="input"] {
         display: none;
     }
 }*/
-
 .main {
     display: flex;
     flex-direction: column;
@@ -153,7 +157,7 @@ input[type="input"] {
 .list-container {
     display: flex;
     flex-direction: column;
-    justify-content:normal;
+    justify-content: normal;
     align-items: normal;
     flex-wrap: nowrap;
     align-content: normal;

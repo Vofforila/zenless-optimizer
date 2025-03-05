@@ -1,7 +1,7 @@
 import {PerfectCharacterCard, TextTag} from "../../Components";
 import "./Archive.css"
 import PerfectCharacter from "../../Classes/PerfectCharacter.tsx";
-import {db} from "../../Classes/Database.tsx";
+import {archive} from "../../Classes/Database.tsx";
 
 
 export default function Archive()
@@ -13,7 +13,7 @@ export default function Archive()
                 <TextTag size={"header"}>Character Filter</TextTag>
                 <div id={"CharacterList"} className={"archive-character-list"}>
                     {
-                        db.perfectCharacters.map((
+                        archive.perfectCharacters.map((
                                 character: PerfectCharacter,
                                 index: number,
                             ) =>

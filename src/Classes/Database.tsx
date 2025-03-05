@@ -1,11 +1,13 @@
 import {PerfectCharacter} from "./index.tsx";
 
-interface IDatabase {
+interface IDatabase
+{
     perfectCharacters: PerfectCharacter[]
 
 }
 
-export default class Database implements IDatabase{
+export default class Database implements IDatabase
+{
     private _perfectCharacters: PerfectCharacter[];
 
     constructor()
@@ -23,4 +25,4 @@ export default class Database implements IDatabase{
         this._perfectCharacters = value;
     }
 }
-export const db = new Database();
+export const archive = new Database();

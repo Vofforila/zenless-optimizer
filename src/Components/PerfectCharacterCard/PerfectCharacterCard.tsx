@@ -1,13 +1,10 @@
 import {Img, TextTag} from "../index.tsx";
 import {IPerfectCharacterProps} from "../../Classes/PerfectCharacter.tsx";
-import React from "react";
 import {DiskNameConverter} from "../../Utilities";
 import "./PerfectCharacterCard.css"
 import StatUIConverter from "../../Utilities/StatUIConverter.tsx";
 
-const PerfectCharacterCard: React.FC<IPerfectCharacterProps> = (
-    perfectCharacter
-    : IPerfectCharacterProps) =>
+export default function PerfectCharacterCard(perfectCharacter: IPerfectCharacterProps)
 {
     return (
         <div className="perfectCharacterCard">
@@ -67,4 +64,3 @@ const PerfectCharacterCard: React.FC<IPerfectCharacterProps> = (
     )
 }
 
-export default PerfectCharacterCard;

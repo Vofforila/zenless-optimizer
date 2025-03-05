@@ -21,7 +21,7 @@ padding: 16px 8px 16px 8px;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: normal;
     align-items: normal;
     flex-wrap: nowrap;
     align-content: normal;

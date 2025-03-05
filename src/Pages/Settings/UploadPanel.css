@@ -1,0 +1,37 @@
+.upload-panel {
+    width: 65%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+.upload-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.load-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    padding: 16px 8px 16px 8px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+
+
+

@@ -1,6 +1,6 @@
 import React, {CSSProperties} from "react";
 
-interface IRoundedElementProps
+interface RoundedElementProps
 {
     backgroundColor: CSSProperties["color"];
     borderRadius: number;
@@ -10,10 +10,8 @@ interface IRoundedElementProps
     children: React.ReactNode;
 }
 
-
-export default function RoundedElement(RoundedElementProps: IRoundedElementProps)
+export default function RoundedElement(RoundedElementProps: RoundedElementProps)
 {
-
     const style: CSSProperties = {
         display: "inline-block",
         padding: "10px 20px",
@@ -23,9 +21,8 @@ export default function RoundedElement(RoundedElementProps: IRoundedElementProps
         cursor: "default",
         userSelect: "none",
         transition: "background-color 0.3s",
-        flex: RoundedElementProps.flex,
+        flex: RoundedElementProps.flex
     }
-
     return (
         <span style={style}>{RoundedElementProps.children}</span>
     )

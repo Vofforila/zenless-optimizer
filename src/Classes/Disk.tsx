@@ -1,10 +1,3 @@
-export type MainStatType = "HP%" | "ATK%" | "DEF%" | "CRIT Rate" | "CRIT DMG" |
-    "Anomaly Proficiency" | "PEN Ratio" | "Electric DMG" |
-    "Fire DMG" | "Ice DMG" | "Wind DMG" | "Physical DMG";
-
-export type SubstatKey = "HP" | "ATK" | "DEF" | "DEF%" | "HP%" | "ATK%" |
-    "PEN" | "Crit Rate" | "Crit Dmg" | "Anomaly Proficiency" | "";
-
 export type SetKey =
     "Astral Voice"
     | "Branch & Blade Song"
@@ -22,6 +15,11 @@ export type SetKey =
     | "Swing Jazz"
     | "Thunder Metal"
     | "Woodpecker Electro"
+export type MainStatType = "HP%" | "ATK%" | "DEF%" | "CRIT Rate" | "CRIT DMG" |
+    "Anomaly Proficiency" | "PEN Ratio" | "Electric DMG" |
+    "Fire DMG" | "Ice DMG" | "Wind DMG" | "Physical DMG";
+export type SubstatKey = "HP" | "ATK" | "DEF" | "DEF%" | "HP%" | "ATK%" |
+    "PEN" | "Crit Rate" | "Crit Dmg" | "Anomaly Proficiency" | "";
 
 export interface ISubstat
 {
@@ -32,14 +30,14 @@ export interface ISubstat
 export interface IDiskProps
 {
     setKey: SetKey;
-    level: number;
     slotKey: number;
+    level: number;
     mainStatKey: MainStatType;
     substats: ISubstat[];
     id: number;
 }
 
-export class Disk implements IDiskProps
+export default class Disk implements IDiskProps
 {
     private _setKey: SetKey;
     private _level: number;
@@ -124,8 +122,5 @@ export class Disk implements IDiskProps
     {
         this._setKey = value;
     }
-
-
 }
 
-export default Disk;
