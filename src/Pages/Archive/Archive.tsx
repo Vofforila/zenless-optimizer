@@ -1,4 +1,4 @@
-import {PerfectCharacterCard, TextTag} from "../../Components";
+import {DetailedPerfectCharacterCard, TextTag} from "../../Components";
 import "./Archive.css"
 import PerfectCharacter from "../../Classes/PerfectCharacter.tsx";
 import {archive} from "../../Classes/Database.tsx";
@@ -18,7 +18,7 @@ export default function Archive()
                                 index: number,
                             ) =>
                                 (
-                                    <PerfectCharacterCard
+                                    <DetailedPerfectCharacterCard
                                         key={index} characterName={character.characterName}
                                         description={character.description}
                                         critUser={character.critUser} piece_4={character.piece_4}
@@ -26,7 +26,7 @@ export default function Archive()
                                         slot_5={character.slot_5}
                                         slot_6={character.slot_6}
                                         substats={character.substats}>
-                                    </PerfectCharacterCard>
+                                    </DetailedPerfectCharacterCard>
                                 )
                         )
                     }

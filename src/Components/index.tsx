@@ -3,7 +3,7 @@ export {default as Navbar} from "./Navbar/Navbar.tsx";
 export {default as Img} from "./Img.tsx";
 export {default as LinkButton} from "./LinkButton.tsx"
 export {default as TextTag} from "./TextTag.tsx"
-export {default as PerfectCharacterCard} from "./PerfectCharacterCard/PerfectCharacterCard.tsx"
+export {default as DetailedPerfectCharacterCard} from "./DetailedPerfectCharacterCard/DetailedPerfectCharacterCard.tsx"
 export {default as RoundedElement} from "./RoundedElement.tsx"
 export {default as TextInput} from "./TextInput.tsx"
 export {default as TextArea} from "./TextArea.tsx"

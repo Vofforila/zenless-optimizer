@@ -15,11 +15,12 @@ export type SetKey =
     | "Swing Jazz"
     | "Thunder Metal"
     | "Woodpecker Electro"
-export type MainStatType = "HP%" | "ATK%" | "DEF%" | "CRIT Rate" | "CRIT DMG" |
-    "Anomaly Proficiency" | "PEN Ratio" | "Electric DMG" |
-    "Fire DMG" | "Ice DMG" | "Wind DMG" | "Physical DMG";
+    | ""
+export type MainStat = "hp_" | "atk_" | "def_" | "crit_rate" | "crit_dmg" |
+    "anomaly_mastery" | "anomaly_pro" | "pen" | "electric_dmg" | "ether_dmg" |
+    "fire_dmg" | "ice_dmg" | "physical_dmg" | "er" | "";
 export type SubstatKey = "HP" | "ATK" | "DEF" | "DEF%" | "HP%" | "ATK%" |
-    "PEN" | "Crit Rate" | "Crit Dmg" | "Anomaly Proficiency" | "";
+    "PEN" | "CRIT Rate" | "CRIT DMG" | "Anomaly Proficiency" | "";
 
 export interface ISubstat
 {
@@ -27,32 +28,34 @@ export interface ISubstat
     value: number;
 }
 
-export interface IDiskProps
+export interface IDisk
 {
     setKey: SetKey;
     slotKey: number;
     level: number;
-    mainStatKey: MainStatType;
+    mainStatKey: MainStat;
     substats: ISubstat[];
     id: number;
 }
 
-export default class Disk implements IDiskProps
+
+export default class Disk implements IDisk
 {
-    private _setKey: SetKey;
+    // new Disk("Swing Jazz", 15, 4, "ATK%", [], 1);
+    public _setKey: SetKey;
     private _level: number;
     private _slotKey: number;
-    private _mainStatKey: MainStatType;
+    private _mainStatKey: MainStat;
     private _substats: ISubstat[];
     private _id: number;
 
     constructor(
-        setKey: SetKey,
-        level: number,
-        slotKey: number,
-        mainStatKey: MainStatType,
-        substats: ISubstat[],
-        id: number
+        setKey: SetKey = "",
+        level: number = 0,
+        slotKey: number = 0,
+        mainStatKey: MainStat = "",
+        substats: ISubstat[] = [],
+        id: number = 0,
     )
     {
         this._setKey = setKey;
@@ -83,12 +86,12 @@ export default class Disk implements IDiskProps
         this._substats = value;
     }
 
-    get mainStatKey(): MainStatType
+    get mainStatKey(): MainStat
     {
         return this._mainStatKey;
     }
 
-    set mainStatKey(value: MainStatType)
+    set mainStatKey(value: MainStat)
     {
         this._mainStatKey = value;
     }

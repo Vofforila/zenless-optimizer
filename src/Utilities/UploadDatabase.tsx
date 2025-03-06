@@ -1,16 +1,10 @@
-import {dbManager} from "../Classes/DatabaseManager.tsx";
-import {Disk} from "../Classes";
 import {LocalDatabase} from "../Classes/LocalDatabase.tsx";
+import {dbManager} from "../Classes/DatabaseManager.tsx";
 
-export default function UploadDatabase(
-    jsonObject:
-    {
-        Disks: Disk[];
-    }): void
-{
-    console.log(jsonObject);
-    const db: LocalDatabase = dbManager.GetCurrentDb()
-    db.disks = jsonObject.Disks;
-    console.log(db.disks);
-    dbManager.UpdateCurrentDb()
+export default function UploadDatabase(jsonObject: unknown):void {
+    const newLocalDatabase:LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+    const localDatabase: LocalDatabase = dbManager.GetCurrentDb();
+    localDatabase.disks = newLocalDatabase.disks;
+    localDatabase.characters = newLocalDatabase.characters;
+    dbManager.UpdateLocalDb();
 }

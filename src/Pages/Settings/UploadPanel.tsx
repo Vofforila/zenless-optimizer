@@ -27,7 +27,7 @@ export default function UploadPanel(props: IUploadPanel)
                 {
                     try
                     {
-                        const jsonObject = JSON.parse(fileContent);
+                        const jsonObject:unknown = JSON.parse(fileContent);
                         UploadDatabase(jsonObject);
                     } catch (error)
                     {
@@ -43,14 +43,16 @@ export default function UploadPanel(props: IUploadPanel)
     };
     const handleJsonString = (): void =>
     {
-        try
-        {
+        // try
+        // {
+
             const jsonObject = JSON.parse(inputValue);
             UploadDatabase(jsonObject);
-        } catch (error)
-        {
-            alert('Error! Please enter a valid JSON: ' + error);
-        }
+        // } catch (error)
+        // {
+        //     console.log('Error parsing JSON: ' + error);
+        //     // alert('Error! Please enter a valid JSON: ' + error);
+        // }
     }
     if (!props.isOpen) return null;
     return (

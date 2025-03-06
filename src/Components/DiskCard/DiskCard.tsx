@@ -1,9 +1,9 @@
-import {IDiskProps} from "../../Classes/Disk.tsx";
+import {IDisk} from "../../Classes/Disk.tsx";
 import './DiskCard.css'
 import {RoundedElement, TextTag} from "../index.tsx";
 import {Theme} from "../../Theme/Theme.tsx";
 
-export default function DiskCard(disk: IDiskProps)
+export default function DiskCard(disk: IDisk)
 {
     return (
         <div className={"disk-card"}>

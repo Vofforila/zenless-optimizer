@@ -1,66 +1,64 @@
-import {Img, TextTag} from "../index.tsx";
-import {IPerfectCharacterProps} from "../../Classes/PerfectCharacter.tsx";
+import {Button, Img, RoundedElement, TextTag} from "../index.tsx";
+import {useState} from "react";
+import {IMatch} from "../../Utilities/GetPerfectMatches.tsx";
+import {Theme} from "../../Theme/Theme.tsx";
 import {DiskNameConverter} from "../../Utilities";
-import "./PerfectCharacterCard.css"
 import StatUIConverter from "../../Utilities/StatUIConverter.tsx";
 
-export default function PerfectCharacterCard(perfectCharacter: IPerfectCharacterProps)
-{
-    return (
-        <div className="perfectCharacterCard">
-            <div className="perfectCharacterCard-header">
-                <div className="character-info">
-                    <TextTag size="big" weight="bigWeight">{perfectCharacter.characterName}</TextTag>
-                    <Img width={100} height={100} className="character-avatar"
-                         imgName={perfectCharacter.characterName}/>
+export default function PerfectCharacterCard(match:IMatch) {
+    const perfectCharacters = match.perfectCharacters;
+    const [currentPerfectCharacter, setCurrentPerfectCharacter] = useState<number>(0);
+
+    const handleNextCharacter = () => {
+        setCurrentPerfectCharacter((prevIndex) => (prevIndex + 1) % perfectCharacters.length);
+    };
+
+    return(
+        <div className={"perfectCharacterCard"}>
+            <div className={"perfectCharacterCard-header"}>
+                <TextTag>{perfectCharacters[currentPerfectCharacter].characterName}</TextTag>
+                <Button onPress={handleNextCharacter}>{`Other Users" + " ( " +  ${currentPerfectCharacter.toString()} + " / " + ${perfectCharacters.length.toString()}  + " )`}</Button>
+                <RoundedElement backgroundColor={Theme.primary_color_transparent} borderRadius={3}>{`Matches: ${match.matches} / 4`}</RoundedElement>
+                <RoundedElement backgroundColor={perfectCharacters[currentPerfectCharacter].critUser ? Theme.selected_color : Theme.error_color} borderRadius={3}>
+                    <TextTag>CRIT</TextTag>
+                </RoundedElement>
+            </div>
+            <div className={"perfectCharacterCard-disks"}>
+                <div className={"disk-wrapper"}>
+                        <TextTag weight="bigWeight">{perfectCharacters[currentPerfectCharacter].piece_4} × 2</TextTag>
+                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacters[currentPerfectCharacter].piece_4)}/>
                 </div>
-                <div className="description-container">
-                    <TextTag size="big" weight="bigWeight">Description</TextTag>
-                    <TextTag size="medium" className="description-text">{perfectCharacter.description}</TextTag>
+                <div className={"disk-wrapper"}>
+                        <TextTag weight="bigWeight">{perfectCharacters[currentPerfectCharacter].piece_2} × 2</TextTag>
+                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacters[currentPerfectCharacter].piece_2)}/>
                 </div>
             </div>
-            <div className="perfectCharacterCard-content">
-                <div className="disk-section">
-                    <div className="disk-item">
-                        <TextTag weight="bigWeight">{perfectCharacter.piece_4} × 4</TextTag>
-                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacter.piece_4)}/>
+            <div className={"perfectCharacterCard-stats"}>
+                <div className={"perfectCharacterCard-mainStats"}>
+                    <div className={"perfectCharacterCard-mainStat-wrapper"}>
+                        <TextTag weight="bigWeight">[4]</TextTag>
+                        <TextTag whiteSpace="nowrap"
+                             weight="bigWeight">{StatUIConverter(perfectCharacters[currentPerfectCharacter].slot_4)}</TextTag>
                     </div>
-                    <div className="disk-item">
-                        <TextTag weight="bigWeight">{perfectCharacter.piece_2} × 2</TextTag>
-                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacter.piece_2)}/>
+                    <div className={"perfectCharacterCard-mainStat-wrapper"}>
+                        <TextTag weight="bigWeight">[4]</TextTag>
+                        <TextTag whiteSpace="nowrap"
+                                 weight="bigWeight">{StatUIConverter(perfectCharacters[currentPerfectCharacter].slot_4)}</TextTag>
+                    </div>
+                    <div className={"perfectCharacterCard-mainStat-wrapper"}>
+                        <TextTag weight="bigWeight">[4]</TextTag>
+                        <TextTag whiteSpace="nowrap"
+                                 weight="bigWeight">{StatUIConverter(perfectCharacters[currentPerfectCharacter].slot_4)}</TextTag>
+                    </div>
+
+                </div>
+                <div className={"perfectCharacterCard-substats"}>
+                    <TextTag className="stats-title" weight="bigWeight">{`Recommended Substats : ${StatUIConverter(perfectCharacters[currentPerfectCharacter].substats)} `}</TextTag>
+                    <div className="substats-content">
                     </div>
                 </div>
-                <div className="stats-section">
-                    <div className="main-stats">
-                        <TextTag className="stats-title" size="big" weight="bigWeight">Recommended Main Effect</TextTag>
-                        <div className="stats-grid">
-                            <div className="stat-item">
-                                <TextTag weight="bigWeight">[4]</TextTag>
-                                <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{StatUIConverter(perfectCharacter.slot_4)}</TextTag>
-                            </div>
-                            <div className="stat-item">
-                                <TextTag weight="bigWeight">[5]</TextTag>
-                                <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{StatUIConverter(perfectCharacter.slot_5)}</TextTag>
-                            </div>
-                            <div className="stat-item">
-                                <TextTag weight="bigWeight">[6]</TextTag>
-                                <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{StatUIConverter(perfectCharacter.slot_6)}</TextTag>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="sub-stats">
-                        <TextTag className="stats-title" weight="bigWeight">Recommended Substats</TextTag>
-                        <div className="substats-content">
-                            <TextTag weight="bigWeight"
-                                     className="substats-text">{StatUIConverter(perfectCharacter.substats)}</TextTag>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     )
 }
-

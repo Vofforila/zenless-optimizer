@@ -1,24 +1,57 @@
 {
-  "Disks": [
+  "characters" : [
     {
-      "SetKey": "Branch & Blade Song",
-      "SlotKey": 4,
-      "Level": 15,
-      "MainStatKey": 6,
-      "Substats": [
+      "name" :"Jane",
+      "faction": "Criminal Investigation Special Response Team"
+    },
+    {
+      "name" :"Soldier 11",
+      "faction": "Obol Squad"
+    }
+  ],
+  "disks": [
+    {
+      "setKey": "Swing Jazz",
+      "slotKey": 4,
+      "level": 15,
+      "mainStatKey": "atk_",
+      "id": 1,
+      "substats": [
         {
-          "Key": 3,
-          "Value": 234.0
+          "key": "atk_",
+          "value": 234.0
         },
         {
-          "Key": 7,
-          "Value": 23.0
+          "key": "atk_",
+          "value": 23.0
         },
         {
-          "Key": 8,
-          "Value": 40.0
+          "key": "anomaly_pro",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "setKey": "Astral Voice",
+      "slotKey": 4,
+      "level": 15,
+      "mainStatKey": "hp_",
+      "id": 2,
+      "substats": [
+        {
+          "key": "atk_",
+          "value": 234.0
+        },
+        {
+          "key": "atk_",
+          "value": 23.0
+        },
+        {
+          "key": "anomaly_pro",
+          "value": 40.0
         }
       ]
     }
   ]
 }
+
