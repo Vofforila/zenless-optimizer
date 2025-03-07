@@ -7,4 +7,9 @@ export const Theme = {
     error_color: "#8A0000",
     deselected_color: "#3E4347",
     ui_background_color: "rgba(255, 255, 255, 0.1)",
+    substat_1: "#020202",
+    substat_2: "#023618",
+    substat_3: "#014A53",
+    substat_4: "#2B4162",
+    substat_5: "#874D01"
 }

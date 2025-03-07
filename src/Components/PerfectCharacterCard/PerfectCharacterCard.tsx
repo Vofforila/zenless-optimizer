@@ -1,61 +1,76 @@
 import {Button, Img, RoundedElement, TextTag} from "../index.tsx";
 import {useState} from "react";
-import {IMatch} from "../../Utilities/GetPerfectMatches.tsx";
+import {IMatch, IPerfectMatch} from "../../Utilities/GetPerfectMatches.tsx";
 import {Theme} from "../../Theme/Theme.tsx";
 import {DiskNameConverter} from "../../Utilities";
 import StatUIConverter from "../../Utilities/StatUIConverter.tsx";
+import "./PerfectCharacterCard.css"
 
-export default function PerfectCharacterCard(match:IMatch) {
-    const perfectCharacters = match.perfectCharacters;
+export default function PerfectCharacterCard(match: IMatch)
+{
+    const perfectMatches: IPerfectMatch[] = match.matches;
     const [currentPerfectCharacter, setCurrentPerfectCharacter] = useState<number>(0);
-
-    const handleNextCharacter = () => {
-        setCurrentPerfectCharacter((prevIndex) => (prevIndex + 1) % perfectCharacters.length);
+    const handleNextCharacter = () =>
+    {
+        setCurrentPerfectCharacter((prevIndex) => (prevIndex + 1) % perfectMatches.length);
     };
-
-    return(
+    return (
         <div className={"perfectCharacterCard"}>
             <div className={"perfectCharacterCard-header"}>
-                <TextTag>{perfectCharacters[currentPerfectCharacter].characterName}</TextTag>
-                <Button onPress={handleNextCharacter}>{`Other Users" + " ( " +  ${currentPerfectCharacter.toString()} + " / " + ${perfectCharacters.length.toString()}  + " )`}</Button>
-                <RoundedElement backgroundColor={Theme.primary_color_transparent} borderRadius={3}>{`Matches: ${match.matches} / 4`}</RoundedElement>
-                <RoundedElement backgroundColor={perfectCharacters[currentPerfectCharacter].critUser ? Theme.selected_color : Theme.error_color} borderRadius={3}>
+                <TextTag size={"big"}>{perfectMatches[currentPerfectCharacter].perfectCharacter.characterName}</TextTag>
+                <Button size={2}
+                        onPress={handleNextCharacter}>{`Other Users ( ${(currentPerfectCharacter + 1).toString()} / ${perfectMatches.length.toString()} )`}</Button>
+                <RoundedElement backgroundColor={Theme.primary_color}
+                                borderRadius={40}>
+                    <TextTag
+                        size={"medium"}
+                        whiteSpace={"nowrap"}>{`Matches: ${perfectMatches[currentPerfectCharacter].matches} / 4`}</TextTag>
+                </RoundedElement>
+                <RoundedElement
+                    backgroundColor={perfectMatches[currentPerfectCharacter].perfectCharacter.critUser ? Theme.selected_color : Theme.error_color}
+                    borderRadius={3}>
                     <TextTag>CRIT</TextTag>
                 </RoundedElement>
             </div>
             <div className={"perfectCharacterCard-disks"}>
                 <div className={"disk-wrapper"}>
-                        <TextTag weight="bigWeight">{perfectCharacters[currentPerfectCharacter].piece_4} × 2</TextTag>
-                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacters[currentPerfectCharacter].piece_4)}/>
+                    <TextTag weight="bigWeight">{perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4} ×
+                        2</TextTag>
+                    <Img className="disk-icon"
+                         imgName={DiskNameConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4)}/>
                 </div>
                 <div className={"disk-wrapper"}>
-                        <TextTag weight="bigWeight">{perfectCharacters[currentPerfectCharacter].piece_2} × 2</TextTag>
-                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacters[currentPerfectCharacter].piece_2)}/>
+                    <TextTag weight="bigWeight">{perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2} ×
+                        2</TextTag>
+                    <Img className="disk-icon"
+                         imgName={DiskNameConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2)}/>
                 </div>
             </div>
             <div className={"perfectCharacterCard-stats"}>
                 <div className={"perfectCharacterCard-mainStats"}>
                     <div className={"perfectCharacterCard-mainStat-wrapper"}>
-                        <TextTag weight="bigWeight">[4]</TextTag>
+                        <TextTag weight="bigWeight">[4] - </TextTag>
                         <TextTag whiteSpace="nowrap"
-                             weight="bigWeight">{StatUIConverter(perfectCharacters[currentPerfectCharacter].slot_4)}</TextTag>
+                                 weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_4)}</TextTag>
                     </div>
                     <div className={"perfectCharacterCard-mainStat-wrapper"}>
-                        <TextTag weight="bigWeight">[4]</TextTag>
+                        <TextTag weight="bigWeight">[5] - </TextTag>
                         <TextTag whiteSpace="nowrap"
-                                 weight="bigWeight">{StatUIConverter(perfectCharacters[currentPerfectCharacter].slot_4)}</TextTag>
+                                 weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_5)}</TextTag>
                     </div>
                     <div className={"perfectCharacterCard-mainStat-wrapper"}>
-                        <TextTag weight="bigWeight">[4]</TextTag>
+                        <TextTag weight="bigWeight">[6] - </TextTag>
                         <TextTag whiteSpace="nowrap"
-                                 weight="bigWeight">{StatUIConverter(perfectCharacters[currentPerfectCharacter].slot_4)}</TextTag>
+                                 weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_6)}</TextTag>
                     </div>
-
                 </div>
                 <div className={"perfectCharacterCard-substats"}>
-                    <TextTag className="stats-title" weight="bigWeight">{`Recommended Substats : ${StatUIConverter(perfectCharacters[currentPerfectCharacter].substats)} `}</TextTag>
-                    <div className="substats-content">
-                    </div>
+                    <TextTag className="stats-title"
+                             weight="bigWeight">Recommended Substats</TextTag>
+                    <RoundedElement backgroundColor={Theme.primary_color} borderRadius={3}>
+                        <TextTag
+                            weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.substats)}</TextTag>
+                    </RoundedElement>
                 </div>
 
             </div>

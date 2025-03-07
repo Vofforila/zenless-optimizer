@@ -19,8 +19,8 @@ export type SetKey =
 export type MainStat = "hp_" | "atk_" | "def_" | "crit_rate" | "crit_dmg" |
     "anomaly_mastery" | "anomaly_pro" | "pen" | "electric_dmg" | "ether_dmg" |
     "fire_dmg" | "ice_dmg" | "physical_dmg" | "er" | "";
-export type SubstatKey = "HP" | "ATK" | "DEF" | "DEF%" | "HP%" | "ATK%" |
-    "PEN" | "CRIT Rate" | "CRIT DMG" | "Anomaly Proficiency" | "";
+export type SubstatKey = "hp" | "atk" | "def" | "def_" | "hp_" | "atk_" |
+    "pen" | "crit_rate" | "crit_dmg" | "anomaly_pro" | "";
 
 export interface ISubstat
 {
@@ -38,7 +38,6 @@ export interface IDisk
     id: number;
 }
 
-
 export default class Disk implements IDisk
 {
     // new Disk("Swing Jazz", 15, 4, "ATK%", [], 1);
@@ -55,7 +54,7 @@ export default class Disk implements IDisk
         slotKey: number = 0,
         mainStatKey: MainStat = "",
         substats: ISubstat[] = [],
-        id: number = 0,
+        id: number = 0
     )
     {
         this._setKey = setKey;

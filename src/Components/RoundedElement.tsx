@@ -4,27 +4,38 @@ interface RoundedElementProps
 {
     backgroundColor: CSSProperties["color"];
     borderRadius: number;
-    width?: CSSProperties["width"];
-    height?: CSSProperties["height"];
+    padding?: CSSProperties["padding"];
     flex?: CSSProperties["flex"];
+    circle?: boolean
     children: React.ReactNode;
 }
 
-export default function RoundedElement(RoundedElementProps: RoundedElementProps)
+export default function RoundedElement(
+    {
+        backgroundColor,
+        borderRadius = 0,
+        padding = "10px 20px",
+        flex,
+        circle = false,
+        children
+    }: RoundedElementProps)
 {
     const style: CSSProperties = {
         display: "inline-block",
-        padding: "10px 20px",
-        backgroundColor: RoundedElementProps.backgroundColor,
-        borderRadius: RoundedElementProps.borderRadius,
+        backgroundColor: backgroundColor,
+        borderRadius: borderRadius,
         textAlign: "center",
+        alignContent: "center",
         cursor: "default",
-        userSelect: "none",
+        userSelect: "text",
         transition: "background-color 0.3s",
-        flex: RoundedElementProps.flex
+        width: circle ? borderRadius : "fit-content",
+        height: circle ? borderRadius : "fit-content",
+        padding: circle ? "8px" : padding,
+        flex: flex
     }
     return (
-        <span style={style}>{RoundedElementProps.children}</span>
+        <span style={style}>{children}</span>
     )
 }
 

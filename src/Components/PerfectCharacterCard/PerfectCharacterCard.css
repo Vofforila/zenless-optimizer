@@ -1,0 +1,64 @@
+.perfectCharacterCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 16px 8px 16px 8px;
+}
+
+.perfectCharacterCard-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+}
+
+.perfectCharacterCard-disks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: space-evenly;
+    background-color: var(--ui-background-color);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.disk-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex: 1;
+}
+
+.perfectCharacterCard-mainStat-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    align-items: normal;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+}
+
+.perfectCharacterCard-substats {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: normal;
+    gap: 8px;
+}
+

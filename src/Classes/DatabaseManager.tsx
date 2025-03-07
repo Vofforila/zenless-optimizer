@@ -1,5 +1,4 @@
 import {LocalDatabase} from "./LocalDatabase.tsx";
-import Disk, {IDisk} from "./Disk.tsx";
 
 interface IDatabaseManager
 {
@@ -26,25 +25,43 @@ export default class DatabaseManager implements IDatabaseManager
             const localData: string | null = localStorage.getItem("database" + localCurrentDatabase);
             if (localData != null)
             {
-                const parsedData = localData ? JSON.parse(localData) : {}
-                console.log("Init Data:" , parsedData);
+                const jsonObject = localData ? JSON.parse(localData) : {}
+                console.log("Init Data:", jsonObject);
                 this._currentDatabase = +localCurrentDatabase;
-                switch (this._currentDatabase) {
+                switch (this._currentDatabase)
+                {
                     case 1:
-                        this._database1.disks = parsedData._disks.map((d: IDisk) => new Disk(d.setKey, d.level, d.slotKey, d.mainStatKey, d.substats, d.id));
+                    {
+                        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+                        this._database1.disks = newLocalDatabase.disks;
+                        this._database1.characters = newLocalDatabase.characters;
                         break;
+                    }
                     case 2:
-                        this._database2.disks = parsedData._disks.map((d: IDisk) => new Disk(d.setKey, d.level, d.slotKey, d.mainStatKey, d.substats, d.id));
+                    {
+                        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+                        this._database2.disks = newLocalDatabase.disks;
+                        this._database2.characters = newLocalDatabase.characters;
                         break;
+                    }
                     case 3:
-                        this._database3.disks = parsedData._disks.map((d: IDisk) => new Disk(d.setKey, d.level, d.slotKey, d.mainStatKey, d.substats, d.id));
+                    {
+                        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+                        this._database3.disks = newLocalDatabase.disks;
+                        this._database3.characters = newLocalDatabase.characters;
                         break;
+                    }
                     case 4:
-                        this._database4.disks = parsedData._disks.map((d: IDisk) => new Disk(d.setKey, d.level, d.slotKey, d.mainStatKey, d.substats, d.id));
+                    {
+                        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+                        this._database4.disks = newLocalDatabase.disks;
+                        this._database4.characters = newLocalDatabase.characters;
                         break;
+                    }
                 }
             }
-            else{
+            else
+            {
                 localStorage.setItem("database1", JSON.stringify(this._database1));
                 localStorage.setItem("database2", JSON.stringify(this._database2));
                 localStorage.setItem("database3", JSON.stringify(this._database3));
@@ -55,7 +72,7 @@ export default class DatabaseManager implements IDatabaseManager
         else
         {
             console.log("New user created");
-            localStorage.setItem("currentDatabase","1");
+            localStorage.setItem("currentDatabase", "1");
             this.InitLocalDb();
         }
     }

@@ -4,12 +4,16 @@ import {DiskNameConverter} from "./index.tsx";
 import {dbManager} from "../Classes/DatabaseManager.tsx";
 import {archive} from "../Classes/Database.tsx";
 
+export interface IPerfectMatch
+{
+    matches: number;
+    perfectCharacter: PerfectCharacter;
+}
+
 export interface IMatch
 {
     disk: Disk;
-    matches:number;
-    critMatch:number;
-    perfectCharacters: PerfectCharacter[];
+    matches: IPerfectMatch[]
 }
 
 /**
@@ -24,31 +28,26 @@ export interface IMatch
  * B - Check if 2 of them are crit if critUser
  * @constructor
  */
-export default function GetPerfectMatches():IMatch[]
+export default function GetPerfectMatches(): IMatch[]
 {
     const testdisks: Disk[] = dbManager.GetCurrentDb().disks
-    console.log("User Disks:", testdisks)
     const perfectCharacters: PerfectCharacter[] = archive.perfectCharacters;
     const matches: IMatch[] = [];
-
-
     for (const testdisk of testdisks as Disk[])
     {
-        let match:IMatch = {
-            disk : new Disk(),
-            matches : 0,
-            critMatch:0,
-            perfectCharacters : []
+        let match: IMatch = {
+            disk: new Disk(),
+            matches: []
         }
         for (const perfectCharacter of perfectCharacters as PerfectCharacter[])
         {
             if (CheckSetKey(testdisk, perfectCharacter) &&
                 CheckMainStat(testdisk, perfectCharacter))
             {
-                match =  CheckSubstat(testdisk, perfectCharacter,match)
+                match = CheckSubstat(testdisk, perfectCharacter, match)
             }
         }
-        if(match.perfectCharacters.length > 0)
+        if (match.matches.length > 0)
         {
             match.disk = testdisk;
             matches.push(match);
@@ -62,42 +61,51 @@ function CheckSetKey(
     perfectCharacter: PerfectCharacter
 ): boolean
 {
-    return testdisk.setKey === perfectCharacter.piece_2  || testdisk.setKey === perfectCharacter.piece_4 ;
+    return testdisk.setKey === perfectCharacter.piece_2 || testdisk.setKey === perfectCharacter.piece_4;
 }
 
-function CheckMainStat(testdisk: Disk, perfectCharacter: PerfectCharacter):boolean{
+function CheckMainStat(
+    testdisk: Disk,
+    perfectCharacter: PerfectCharacter
+): boolean
+{
     const slot = testdisk.slotKey
-
-    if(slot !== 1 && slot !==   2 && slot !==3){
-        let bestMainStatsString:string = "";
-        switch(slot){
+    if (slot !== 1 && slot !== 2 && slot !== 3)
+    {
+        let bestMainStatsString: string = "";
+        switch (slot)
+        {
             case 4:
-                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_4) ;
+                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_4);
                 break;
             case 5:
-                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_5) ;
+                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_5);
                 break;
             case 6:
-                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_6) ;
+                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_6);
                 break;
         }
-        const bestMainStats:MainStat[] = MainStatParser(bestMainStatsString)
-        for (const bestMainStat of bestMainStats as MainStat[] ){
-            if(bestMainStat === testdisk.mainStatKey)return true;
+        const bestMainStats: MainStat[] = MainStatsParser(bestMainStatsString)
+        for (const bestMainStat of bestMainStats as MainStat[])
+        {
+            if (bestMainStat === testdisk.mainStatKey) return true;
         }
         return false;
     }
     else return true;
 }
 
-function MainStatParser(mainStatString: string): MainStat[] {
-    const parts = mainStatString.split('/').map(part => part.trim());
-    return parts.filter((part): part is MainStat => {
+function MainStatsParser(mainStatString: string): MainStat[]
+{
+    const parts: string[] = mainStatString.split('/').map(part => part.trim());
+    return parts.filter((part: string): part is MainStat =>
+    {
         return isMainStat(part);
     });
 }
 
-function isMainStat(value: string): value is MainStat {
+function isMainStat(value: string): value is MainStat
+{
     const validMainStats: MainStat[] = [
         "hp_",
         "atk_",
@@ -118,39 +126,43 @@ function isMainStat(value: string): value is MainStat {
     return validMainStats.includes(value as MainStat);
 }
 
-function CheckSubstat(testdisk: Disk, perfectCharacter: PerfectCharacter,match:IMatch):IMatch{
+function CheckSubstat(
+    testdisk: Disk,
+    perfectCharacter: PerfectCharacter,
+    match: IMatch
+): IMatch
+{
     const substats: ISubstat[] = testdisk.substats;
-    let maches:number = 0;
-
-
-    const perfectSubstats: SubstatKey[] = SecondaryStatParser(perfectCharacter.substats)
-
-    perfectSubstats
-
-
+    let maches: number = 0;
+    let critMatch: number = 0;
+    const perfectSubstats: SubstatKey[] = SubstatsParser(perfectCharacter.substats)
     for (const substat of substats as ISubstat[])
     {
-        console.log(substat);
-            for(const perfectSubstat of perfectSubstats as SubstatKey[])
+        for (const perfectSubstat of perfectSubstats as SubstatKey[])
+        {
+            // console.log(perfectSubstat + " == " + substat.key);
+            if (substat.key == perfectSubstat)
             {
-                console.log(perfectSubstat + " == " +    substat.key);
-                if(substat.key == perfectSubstat)
+                if (substat.key == "Crit DMG" as SubstatKey || substat.key == "Crit Rate" as SubstatKey)
                 {
-                    if(substat.key == "Crit DMG" as SubstatKey || substat.key == "Crit Rate" as SubstatKey)
-                    {
-                        match.critMatch++;
-                    }
-                    maches++;
-                    break;
+                    critMatch++;
                 }
+                maches++;
+                break;
             }
+        }
     }
-    if(
-        (perfectCharacter.critUser && match.critMatch == 2 )||
-        (substats.length <= 3 && match.critMatch == 1) ||
+    if (
+        (perfectCharacter.critUser && critMatch == 2) ||
+        (substats.length <= 3 && critMatch == 1) ||
         (!perfectCharacter.critUser && maches >= 3)
-    ) {
-        match.perfectCharacters.push(perfectCharacter);
+    )
+    {
+        const PerfectMatch: IPerfectMatch = {
+            matches: maches,
+            perfectCharacter: perfectCharacter
+        }
+        match.matches.push(PerfectMatch)
         return match;
     }
     else
@@ -159,24 +171,28 @@ function CheckSubstat(testdisk: Disk, perfectCharacter: PerfectCharacter,match:I
     }
 }
 
-function SecondaryStatParser(secondaryStatString:string):SubstatKey[]{
-    const mapping: { [key: string]: SubstatKey } = {
-        "hp":"HP",
-        "atk":"ATK",
-        "def":"DEF",
-        "hp_": "HP%",
-        "atk_": "ATK%",
-        "def_": "DEF%",
-        "crit_dmg": "CRIT DMG",
-        "crit_rate": "CRIT Rate",
-        "anomaly_pro": "Anomaly Proficiency",
-        "pen": "PEN",
-    };
-
-    const parts:string[] = secondaryStatString.split('/');
-    return parts.map(part =>
+function SubstatsParser(secondaryStats: string): SubstatKey[]
+{
+    const parts: string[] = secondaryStats.split('+').map(part => part.trim());
+    return parts.filter((part: string): part is SubstatKey =>
     {
-        const trimmedPart:string = part.trim();
-        return mapping[trimmedPart] || trimmedPart as SubstatKey;
-    }).filter((value:SubstatKey): value is SubstatKey => value in mapping);
+        return IsSubstat(part);
+    });
+}
+
+function IsSubstat(value: string): value is SubstatKey
+{
+    const validSubstat: SubstatKey[] = [
+        "hp",
+        "atk",
+        "def",
+        "hp_",
+        "atk_",
+        "def_",
+        "crit_dmg",
+        "crit_rate",
+        "anomaly_pro",
+        "pen"
+    ];
+    return validSubstat.includes(value as SubstatKey);
 }

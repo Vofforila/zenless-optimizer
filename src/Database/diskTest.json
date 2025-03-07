@@ -1,11 +1,11 @@
 {
-  "characters" : [
+  "characters": [
     {
-      "name" :"Jane",
+      "name": "Jane",
       "faction": "Criminal Investigation Special Response Team"
     },
     {
-      "name" :"Soldier 11",
+      "name": "Soldier 11",
       "faction": "Obol Squad"
     }
   ],
@@ -51,7 +51,27 @@
           "value": 40.0
         }
       ]
+    },
+    {
+      "setKey": "Freedom Blues",
+      "slotKey": 4,
+      "level": 15,
+      "mainStatKey": "anomaly_pro",
+      "id": 2,
+      "substats": [
+        {
+          "key": "anomaly_pro",
+          "value": 234.0
+        },
+        {
+          "key": "atk_",
+          "value": 23.0
+        },
+        {
+          "key": "atk",
+          "value": 40.0
+        }
+      ]
     }
   ]
 }
-
