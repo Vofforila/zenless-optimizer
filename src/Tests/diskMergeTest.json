@@ -57,7 +57,28 @@
       "slotKey": 4,
       "level": 15,
       "mainStatKey": "anomaly_pro",
-      "id": 2,
+      "id": 3,
+      "substats": [
+        {
+          "key": "anomaly_pro",
+          "value": 234.0
+        },
+        {
+          "key": "atk_",
+          "value": 23.0
+        },
+        {
+          "key": "atk",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "setKey": "Chaotic Metal",
+      "slotKey": 4,
+      "level": 15,
+      "mainStatKey": "anomaly_pro",
+      "id": 4,
       "substats": [
         {
           "key": "anomaly_pro",

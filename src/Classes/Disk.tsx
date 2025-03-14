@@ -35,7 +35,6 @@ export interface IDisk
     level: number;
     mainStatKey: MainStat;
     substats: ISubstat[];
-    id: number;
 }
 
 export default class Disk implements IDisk
@@ -46,15 +45,13 @@ export default class Disk implements IDisk
     private _slotKey: number;
     private _mainStatKey: MainStat;
     private _substats: ISubstat[];
-    private _id: number;
 
     constructor(
         setKey: SetKey = "",
         level: number = 0,
         slotKey: number = 0,
         mainStatKey: MainStat = "",
-        substats: ISubstat[] = [],
-        id: number = 0
+        substats: ISubstat[] = []
     )
     {
         this._setKey = setKey;
@@ -62,17 +59,6 @@ export default class Disk implements IDisk
         this._slotKey = slotKey;
         this._mainStatKey = mainStatKey;
         this._substats = substats;
-        this._id = id;
-    }
-
-    get id(): number
-    {
-        return this._id;
-    }
-
-    set id(value: number)
-    {
-        this._id = value;
     }
 
     get substats(): ISubstat[]

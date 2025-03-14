@@ -1,14 +1,22 @@
 import {Disk} from "./index.tsx";
 import Character from "./Characters.tsx";
 
+export interface DisksMap
+{
+    id: string
+    disk: Disk;
+}
+
 export interface ILocalDatabase
 {
+    disksMap: DisksMap[]
     disks: Disk[]
     characters: Character[]
 }
 
 export class LocalDatabase implements ILocalDatabase
 {
+    private _disksMap: DisksMap[] = [];
     private _disks: Disk[] = [];
     private _characters: Character[] = [];
 
@@ -23,13 +31,15 @@ export class LocalDatabase implements ILocalDatabase
         }
     }
 
-    static isLocalDatabase(object: unknown): object is LocalDatabase {
+    static isLocalDatabase(object: unknown): object is LocalDatabase
+    {
         return (object as LocalDatabase)?.disks !== undefined
             && (object as LocalDatabase)?.characters !== undefined
     }
 
-    static fromJSON(object: unknown): LocalDatabase {
-        if(this.isLocalDatabase(object)) return object;
+    static fromJSON(object: unknown): LocalDatabase
+    {
+        if (this.isLocalDatabase(object)) return object;
         return new LocalDatabase();
     }
 
@@ -46,8 +56,13 @@ export class LocalDatabase implements ILocalDatabase
         localStorage.setItem((database.toString()), JSON.stringify(toUpdate));
     }
 
-    constructor(disks:Disk[] = [],characters:Character[] = [])
+    constructor(
+        disksMap: DisksMap[] = [],
+        disks: Disk[] = [],
+        characters: Character[] = []
+    )
     {
+        this._disksMap = disksMap;
         this._disks = disks;
         this._characters = characters;
     }
@@ -70,6 +85,16 @@ export class LocalDatabase implements ILocalDatabase
     set characters(value: Character[])
     {
         this._characters = value;
+    }
+
+    get disksMap(): DisksMap[]
+    {
+        return this._disksMap;
+    }
+
+    set disksMap(value: DisksMap[])
+    {
+        this._disksMap = value;
     }
 }
 
