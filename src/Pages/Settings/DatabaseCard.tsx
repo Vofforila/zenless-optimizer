@@ -2,7 +2,7 @@ import {Button, RoundedElement, TextTag} from "../../Components";
 import {Theme} from "../../Theme/Theme.tsx";
 import "./Databasecard.css"
 import UploadPanel from "./UploadPanel.tsx";
-import {useState} from "react";
+import React, {useState} from "react";
 
 interface IDatabaseCardProps
 {
@@ -15,9 +15,12 @@ interface IDatabaseCardProps
 
 export const DatabaseCard: React.FC<IDatabaseCardProps> = (database: IDatabaseCardProps) =>
 {
-    const [isUploadPanelOpen, setUploadPanelState] = useState<boolean>(false);
-    const openPanel = () => setUploadPanelState(true);
-    const closePanel = () => setUploadPanelState(false);
+    const [isUploadPanelOpen, setUploadPanelState] = useState<{isOpen:boolean,databaseId: number}>({
+        isOpen: false,
+        databaseId: 1
+    });
+    const openPanel = () => setUploadPanelState({isOpen: true,databaseId: database.id});
+    const closePanel = () => setUploadPanelState({isOpen:false,databaseId:database.id});
     return (
         <div className={"database-card"}>
             <div className={"database-card-header"}>
@@ -59,7 +62,7 @@ export const DatabaseCard: React.FC<IDatabaseCardProps> = (database: IDatabaseCa
                     <div className={"database-buttons-wrapper"}>
                         <Button scalable={false}>Clipboard</Button>
                         <Button onPress={openPanel} scalable={false}>Upload</Button>
-                        <UploadPanel isOpen={isUploadPanelOpen} onClose={closePanel}>
+                        <UploadPanel UploadPanelState={isUploadPanelOpen} onClose={closePanel}>
                             <h2>Modal Title</h2>
                             <p>This is a simple modal example.</p>
                         </UploadPanel>

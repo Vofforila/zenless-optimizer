@@ -25,6 +25,7 @@ export default class DatabaseManager implements IDatabaseManager
             const localData: string | null = localStorage.getItem("database" + localCurrentDatabase);
             if (localData != null)
             {
+
                 const jsonObject = localData ? JSON.parse(localData) : {}
                 console.log("Init Data:", jsonObject);
                 this._currentDatabase = +localCurrentDatabase;
@@ -32,9 +33,7 @@ export default class DatabaseManager implements IDatabaseManager
                 {
                     case 1:
                     {
-                        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
-                        this._database1.disks = newLocalDatabase.disks;
-                        this._database1.characters = newLocalDatabase.characters;
+                        this._database1 = LocalDatabase.fromJSON(jsonObject);
                         break;
                     }
                     case 2:
@@ -85,19 +84,37 @@ export default class DatabaseManager implements IDatabaseManager
             case 1:
                 return this._database1;
             case 2:
-                return this._database1;
+                return this._database2;
             case 3:
-                return this._database1;
+                return this._database3;
             case 4:
-                return this._database1;
+                return this._database4;
             default:
                 return this._database1;
         }
     }
 
+    public GetDatabaseById(value:number): LocalDatabase
+    {
+        switch (value)
+        {
+            case 1:
+                return this._database1;
+            case 2:
+                return this._database2;
+            case 3:
+                return this._database3;
+            case 4:
+                return this._database4;
+            default:
+                return this._database1;
+        }
+    }
+
+
     public UpdateLocalDb(): void
     {
-        console.log("UpdateLocalDb - " + this._currentDatabase.toString());
+        console.log("UpdateLocalDb" , this._database1);
         localStorage.setItem("database1", JSON.stringify(this._database1));
         localStorage.setItem("database2", JSON.stringify(this._database2));
         localStorage.setItem("database3", JSON.stringify(this._database3));

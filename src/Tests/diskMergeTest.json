@@ -53,11 +53,11 @@
       ]
     },
     {
-      "setKey": "Freedom Blues",
+      "setKey": "Chaotic Metal",
       "slotKey": 4,
       "level": 15,
       "mainStatKey": "anomaly_pro",
-      "id": 3,
+      "id": 4,
       "substats": [
         {
           "key": "anomaly_pro",
@@ -74,11 +74,11 @@
       ]
     },
     {
-      "setKey": "Chaotic Metal",
+      "setKey": "Freedom Blues",
       "slotKey": 4,
       "level": 15,
       "mainStatKey": "anomaly_pro",
-      "id": 4,
+      "id": 3,
       "substats": [
         {
           "key": "anomaly_pro",

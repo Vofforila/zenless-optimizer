@@ -6,7 +6,7 @@ import {UploadDatabase} from "../../Utilities";
 
 interface IUploadPanel
 {
-    isOpen: boolean;
+    UploadPanelState: {isOpen: boolean;databaseId: number;};
     onClose: () => void;
     children: React.ReactNode;
 }
@@ -28,7 +28,7 @@ export default function UploadPanel(props: IUploadPanel)
                     try
                     {
                         const jsonObject:unknown = JSON.parse(fileContent);
-                        UploadDatabase(jsonObject);
+                        UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
                     } catch (error)
                     {
                         alert('Error parsing JSON: ' + error);
@@ -43,18 +43,16 @@ export default function UploadPanel(props: IUploadPanel)
     };
     const handleJsonString = (): void =>
     {
-        // try
-        // {
-
+        try
+        {
             const jsonObject = JSON.parse(inputValue);
-            UploadDatabase(jsonObject);
-        // } catch (error)
-        // {
-        //     console.log('Error parsing JSON: ' + error);
-        //     // alert('Error! Please enter a valid JSON: ' + error);
-        // }
+            UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
+        } catch (error)
+        {
+            alert('Error! Please enter a valid JSON: ' + error);
+        }
     }
-    if (!props.isOpen) return null;
+    if (!props.UploadPanelState.isOpen) return null;
     return (
         <div className="pop-up">
             <div className="upload-panel">

@@ -9,7 +9,9 @@ export default function Test()
 
 function Archive()
 {
-    UploadDatabase(testDisks);
+    UploadDatabase(testDisks,1);
+
+
 }
 
 function Disks()

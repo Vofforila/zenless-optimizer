@@ -1,12 +1,30 @@
 import {LocalDatabase} from "../Classes/LocalDatabase.tsx";
 import {dbManager} from "../Classes/DatabaseManager.tsx";
 
-export default function UploadDatabase(jsonObject: unknown): void
+export default function UploadDatabase(jsonObject: unknown,databaseId:number): void
 {
     const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
-    const localDatabase: LocalDatabase = dbManager.GetCurrentDb();
-    localDatabase.disksMap.map(disk => [disk.id, disk.disk])
-    localDatabase.disks = newLocalDatabase.disks;
-    localDatabase.characters = newLocalDatabase.characters;
-    dbManager.UpdateLocalDb();
+    const localDatabase: LocalDatabase = dbManager.GetDatabaseById(databaseId);
+
+    if(localDatabase.disks.length > 0 || localDatabase.characters.length > 0)
+    {
+        console.log("Merge Database");
+
+        dbManager.UpdateLocalDb();
+    }
+    else
+    {
+        console.log("First Upload Database");
+        for (let index:number = 0;index <= newLocalDatabase.disks.length - 1;index++)
+        {
+            newLocalDatabase.disks[index].id = index;
+            localDatabase.disks.push(newLocalDatabase.disks[index]);
+        }
+        localDatabase.characters = newLocalDatabase.characters;
+        dbManager.UpdateLocalDb();
+        console.log( dbManager.GetDatabaseById(1).disks[0].setKey);
+    }
+
+
 }
+

@@ -30,6 +30,7 @@ export interface ISubstat
 
 export interface IDisk
 {
+    id:number;
     setKey: SetKey;
     slotKey: number;
     level: number;
@@ -40,13 +41,15 @@ export interface IDisk
 export default class Disk implements IDisk
 {
     // new Disk("Swing Jazz", 15, 4, "ATK%", [], 1);
-    public _setKey: SetKey;
+    private _id:number;
+    private _setKey: SetKey;
     private _level: number;
     private _slotKey: number;
     private _mainStatKey: MainStat;
     private _substats: ISubstat[];
 
     constructor(
+        id:number = 0,
         setKey: SetKey = "",
         level: number = 0,
         slotKey: number = 0,
@@ -54,11 +57,22 @@ export default class Disk implements IDisk
         substats: ISubstat[] = []
     )
     {
+        this._id = id;
         this._setKey = setKey;
         this._level = level;
         this._slotKey = slotKey;
         this._mainStatKey = mainStatKey;
         this._substats = substats;
+    }
+
+    get id(): number
+    {
+        return this._id;
+    }
+
+    set id(value: number)
+    {
+        this._id = value;
     }
 
     get substats(): ISubstat[]

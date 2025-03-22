@@ -1,23 +1,16 @@
 import {Disk} from "./index.tsx";
 import Character from "./Characters.tsx";
 
-export interface DisksMap
-{
-    id: string
-    disk: Disk;
-}
 
 export interface ILocalDatabase
 {
-    disksMap: DisksMap[]
     disks: Disk[]
     characters: Character[]
 }
 
 export class LocalDatabase implements ILocalDatabase
 {
-    private _disksMap: DisksMap[] = [];
-    private _disks: Disk[] = [];
+    private _disks: Disk[] = [] ;
     private _characters: Character[] = [];
 
     public GetLocalDb()
@@ -57,12 +50,11 @@ export class LocalDatabase implements ILocalDatabase
     }
 
     constructor(
-        disksMap: DisksMap[] = [],
+        disksMap: Map<number,Disk> = new Map(),
         disks: Disk[] = [],
         characters: Character[] = []
     )
     {
-        this._disksMap = disksMap;
         this._disks = disks;
         this._characters = characters;
     }
@@ -87,15 +79,6 @@ export class LocalDatabase implements ILocalDatabase
         this._characters = value;
     }
 
-    get disksMap(): DisksMap[]
-    {
-        return this._disksMap;
-    }
-
-    set disksMap(value: DisksMap[])
-    {
-        this._disksMap = value;
-    }
 }
 
 
