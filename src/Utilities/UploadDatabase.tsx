@@ -6,7 +6,8 @@ export default function UploadDatabase(jsonObject: unknown,databaseId:number): v
     const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
     const localDatabase: LocalDatabase = dbManager.GetDatabaseById(databaseId);
 
-    if(localDatabase.disks.length > 0 || localDatabase.characters.length > 0)
+    console.log(localDatabase.disks.length)
+    if(localDatabase.disks.length < 0 || localDatabase.characters.length < 0)
     {
         console.log("Merge Database");
 
@@ -22,7 +23,7 @@ export default function UploadDatabase(jsonObject: unknown,databaseId:number): v
         }
         localDatabase.characters = newLocalDatabase.characters;
         dbManager.UpdateLocalDb();
-        console.log( dbManager.GetDatabaseById(1).disks[0].setKey);
+
     }
 
 

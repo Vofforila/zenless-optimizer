@@ -33,7 +33,10 @@ export default class DatabaseManager implements IDatabaseManager
                 {
                     case 1:
                     {
-                        this._database1 = LocalDatabase.fromJSON(jsonObject);
+                        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+                        this._database1.disks = newLocalDatabase.disks;
+                        this._database1.characters = newLocalDatabase.characters;
+
                         break;
                     }
                     case 2:

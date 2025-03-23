@@ -50,7 +50,6 @@ export class LocalDatabase implements ILocalDatabase
     }
 
     constructor(
-        disksMap: Map<number,Disk> = new Map(),
         disks: Disk[] = [],
         characters: Character[] = []
     )
