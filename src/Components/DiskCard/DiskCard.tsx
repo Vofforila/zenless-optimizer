@@ -3,7 +3,8 @@ import './DiskCard.css'
 import {RoundedElement, TextTag} from "../index.tsx";
 import {Theme} from "../../Theme/Theme.tsx";
 import Img from "../Img.tsx";
-import {DiskNameConverter, StatUIConverter} from "../../Utilities";
+import {DiskNameConverter} from "../../Utilities";
+import {Disk} from "../../Classes";
 
 export default function DiskCard(disk: IDisk)
 {
@@ -23,30 +24,30 @@ export default function DiskCard(disk: IDisk)
                             <TextTag whiteSpace={"nowrap"}>+ {disk.level}</TextTag>
                         </RoundedElement>
                         <RoundedElement backgroundColor={Theme.selected_color} borderRadius={40}>
-                            <TextTag>{disk.setKey}</TextTag>
+                            <TextTag>{Disk.getUISetKey(disk.setKey)}</TextTag>
                         </RoundedElement>
                     </div>
                     <TextTag size={"big"}>Disk Slot - [{disk.slotKey}]</TextTag>
-                    <TextTag size={"medium"}>{StatUIConverter(disk.mainStatKey)}</TextTag>
+                    <TextTag size={"medium"}>{Disk.getUIMainStat(disk.mainStatKey)}</TextTag>
                 </div>
-                <Img className={"disk-image"} width={80} height={80} imgName={DiskNameConverter(disk.setKey)}></Img>
+                <Img className={"disk-image"} width={80} height={80} imgName={DiskNameConverter(Disk.getUISetKey(disk.setKey))}></Img>
             </div>
             <div className={"disk-bottom"}>
                 <div className={"substat-wrapper"}>
-                    <TextTag>{StatUIConverter(disk.substats[0].key)}</TextTag>
+                    <TextTag>{Disk.getUISubstat(disk.substats[0].key)}</TextTag>
                     <TextTag>{disk.substats[0].value}</TextTag>
                 </div>
                 <div className={"substat-wrapper"}>
-                    <TextTag>{StatUIConverter(disk.substats[1].key)}</TextTag>
+                    <TextTag>{Disk.getUISubstat(disk.substats[1].key)}</TextTag>
                     <TextTag>{disk.substats[1].value}</TextTag>
                 </div>
                 <div className={"substat-wrapper"}>
-                    <TextTag>{StatUIConverter(disk.substats[2].key)}</TextTag>
+                    <TextTag>{Disk.getUISubstat(disk.substats[2].key)}</TextTag>
                     <TextTag>{disk.substats[2].value}</TextTag>
                 </div>
                 {disk.substats.length - 1 >= 3 && (
                     <div className={"substat-wrapper"}>
-                        <TextTag>{StatUIConverter(disk.substats[3].key)}</TextTag>
+                        <TextTag>{Disk.getUISubstat(disk.substats[3].key)}</TextTag>
                         <TextTag>{disk.substats[3].value}</TextTag>
                     </div>
                 )}

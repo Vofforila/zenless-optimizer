@@ -1,6 +1,5 @@
 import {Disk, PerfectCharacter} from "../Classes";
 import {ISubstat, MainStat, SubstatKey} from "../Classes/Disk.tsx";
-import {DiskNameConverter} from "./index.tsx";
 import {dbManager} from "../Classes/DatabaseManager.tsx";
 import {archive} from "../Classes/Database.tsx";
 
@@ -67,26 +66,26 @@ function CheckSetKey(
 function CheckMainStat(
     testdisk: Disk,
     perfectCharacter: PerfectCharacter
-): boolean
-{
-    const slot = testdisk.slotKey
-    if (slot !== 1 && slot !== 2 && slot !== 3)
-    {
-        let bestMainStatsString: string = "";
-        switch (slot)
+    ): boolean
         {
-            case 4:
-                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_4);
-                break;
-            case 5:
-                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_5);
-                break;
-            case 6:
-                bestMainStatsString = DiskNameConverter(perfectCharacter.slot_6);
-                break;
-        }
-        const bestMainStats: MainStat[] = MainStatsParser(bestMainStatsString)
-        for (const bestMainStat of bestMainStats as MainStat[])
+            const slot = testdisk.slotKey
+            if (slot !== 1 && slot !== 2 && slot !== 3)
+            {
+                let MainStatFromSlot: string = "";
+                switch (slot)
+                {
+                    case 4:
+                        MainStatFromSlot = perfectCharacter.slot_4;
+                        break;
+                    case 5:
+                        MainStatFromSlot = perfectCharacter.slot_5;
+                        break
+                    case 6:
+                        MainStatFromSlot = perfectCharacter.slot_6;
+                        break;
+                }
+                const bestMainStats: MainStat[] = MainStatsParser(MainStatFromSlot)
+                for (const bestMainStat of bestMainStats as MainStat[])
         {
             if (bestMainStat === testdisk.mainStatKey) return true;
         }
@@ -107,20 +106,20 @@ function MainStatsParser(mainStatString: string): MainStat[]
 function isMainStat(value: string): value is MainStat
 {
     const validMainStats: MainStat[] = [
-        "hp_",
-        "atk_",
-        "def_",
-        "crit_rate",
-        "crit_dmg",
-        "anomaly_mastery",
-        "anomaly_pro",
-        "pen",
-        "electric_dmg",
-        "ether_dmg",
-        "fire_dmg",
-        "ice_dmg",
-        "physical_dmg",
-        "er",
+        "hp",
+        "atk",
+        "def",
+        "critrate",
+        "critdmg",
+        "anomalymastery",
+        "anomalyproficiency",
+        "penratio",
+        "energyregen",
+        "electricdmgbonus",
+        "etherdmgbonus",
+        "firedmgbonus",
+        "icedmgbonus",
+        "physicaldmgbonus",
         ""
     ];
     return validMainStats.includes(value as MainStat);
@@ -143,7 +142,7 @@ function CheckSubstat(
             // console.log(perfectSubstat + " == " + substat.key);
             if (substat.key == perfectSubstat)
             {
-                if (substat.key == "Crit DMG" as SubstatKey || substat.key == "Crit Rate" as SubstatKey)
+                if (substat.key == "critdmg" as SubstatKey || substat.key == "critrate" as SubstatKey)
                 {
                     critMatch++;
                 }
@@ -186,12 +185,12 @@ function IsSubstat(value: string): value is SubstatKey
         "hp",
         "atk",
         "def",
-        "hp_",
-        "atk_",
-        "def_",
-        "crit_dmg",
-        "crit_rate",
-        "anomaly_pro",
+        "hppercent",
+        "atkpercent",
+        "defpercent",
+        "critdmg",
+        "critrate",
+        "anomalyproficiency",
         "pen"
     ];
     return validSubstat.includes(value as SubstatKey);

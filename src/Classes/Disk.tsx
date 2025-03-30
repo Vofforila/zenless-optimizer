@@ -1,5 +1,25 @@
 export type SetKey =
-    "Astral Voice"
+    "astralvoice"
+    | "branch&bladesong"
+    | "chaosjazz"
+    | "chaoticmetal"
+    | "fangedmetal"
+    | "freedomblues"
+    | "hormonepunk"
+    | "infernometal"
+    | "polarmetal"
+    | "protopunk"
+    | "pufferelectro"
+    | "shockstardisco"
+    | "soulrock"
+    | "swingjazz"
+    | "thundermetal"
+    | "woodpeckerelectro"
+    | ""
+
+
+export type UISetKey =
+    | "Astral Voice"
     | "Branch & Blade Song"
     | "Chaos Jazz"
     | "Chaotic Metal"
@@ -15,12 +35,75 @@ export type SetKey =
     | "Swing Jazz"
     | "Thunder Metal"
     | "Woodpecker Electro"
+    | "";
+
+const UISetKeyMap: Record<string, string> = {
+    "astralvoice": "Astral Voice",
+    "branch&bladesong": "Branch & Blade Song",
+    "chaosjazz": "Chaos Jazz",
+    "chaoticmetal": "Chaotic Metal",
+    "fangedmetal": "Fanged Metal",
+    "freedomblues": "Freedom Blues",
+    "hormonepunk": "Hormone Punk",
+    "infernometal": "Inferno Metal",
+    "polarmetal": "Polar Metal",
+    "protopunk": "Proto Punk",
+    "pufferelectro": "Puffer Electro",
+    "shockstardisco": "Shockstar Disco",
+    "soulrock": "Soul Rock",
+    "swingjazz": "Swing Jazz",
+    "thundermetal": "Thunder Metal",
+    "woodpeckerelectro": "Woodpecker Electro",
+    "": ""
+};
+
+export type MainStat = "hp" | "atk" | "def" | "critrate" | "critdmg" | "anomalyproficiency"
+    | "anomalymastery"
+    | "impact"
+    | "energyregen"
+    | "penratio"
+    | "electricdmgbonus"
+    | "firedmgbonus"
+    | "icedmgbonus"
+    | "etherdmgbonus"
+    | "physicaldmgbonus"
     | ""
-export type MainStat = "hp_" | "atk_" | "def_" | "crit_rate" | "crit_dmg" |
-    "anomaly_mastery" | "anomaly_pro" | "pen" | "electric_dmg" | "ether_dmg" |
-    "fire_dmg" | "ice_dmg" | "physical_dmg" | "er" | "";
-export type SubstatKey = "hp" | "atk" | "def" | "def_" | "hp_" | "atk_" |
-    "pen" | "crit_rate" | "crit_dmg" | "anomaly_pro" | "";
+
+export const UIMainStatMap: Record<string, string> = {
+    "hp": "HP%",
+    "atk":"ATK%",
+    "def":"DEF%",
+    "critrate":"CRIT Rate",
+    "critdmg":"CRIT DMG",
+    "anomalyproficiency":"Anomaly Proficiency",
+    "anomalymastery" :"Anomaly Mastery",
+    "impact":"Impact",
+    "energyregen":"Energy Regen%",
+    "penratio":"PEN Ratio",
+    "electricdmgbonus":"Electric DMG Bonus",
+    "firedmgbonus":"Fire DMG Bonus",
+    "icedmgbonus":"Ice DMG Bonus",
+    "etherdmgbonus":"Ether DMG Bonus",
+    "physicaldmgbonus":"Physical DMG Bonus",
+    "": ""
+};
+export type SubstatKey = "hp" | "atk" | "def" | "defpercent" | "hppercent" | "atkpercent" |
+    "pen" | "critrate" | "critdmg" | "anomalyproficiency" | "";
+
+export const UISubstatMap:Record<string,string> = {
+    'anomalyproficiency': 'Anomaly Proficiency',
+    'critdmg': 'CRIT DMG',
+    'critrate': 'CRIT Rate',
+    'hppercent': 'HP%',
+    'atkpercent': 'ATK%',
+    'defpercent': 'DEF%',
+    'pen': 'PEN',
+    'hp': 'HP',
+    'atk': 'ATK',
+    'def': 'DEF',
+    "":""
+}
+
 
 export interface ISubstat
 {
@@ -64,6 +147,18 @@ export default class Disk implements IDisk
         this._mainStatKey = mainStatKey;
         this._substats = substats;
     }
+
+    public static getUISetKey(setKey: string): string {
+        return UISetKeyMap[setKey] || "";
+    }
+
+    public static getUIMainStat(mainStat: string): string {
+        return UIMainStatMap[mainStat] || "";
+    }
+    public static getUISubstat(substat: string): string {
+        return UISubstatMap[substat] || "";
+    }
+
 
     get id(): number
     {

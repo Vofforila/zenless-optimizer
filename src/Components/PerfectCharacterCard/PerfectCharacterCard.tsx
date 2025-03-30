@@ -3,8 +3,10 @@ import {useState} from "react";
 import {IMatch, IPerfectMatch} from "../../Utilities/GetPerfectMatches.tsx";
 import {Theme} from "../../Theme/Theme.tsx";
 import {DiskNameConverter} from "../../Utilities";
-import StatUIConverter from "../../Utilities/StatUIConverter.tsx";
 import "./PerfectCharacterCard.css"
+import PerfectSubstatUIConverter from "../../Utilities/PerfectSubstatUIConverter.tsx";
+import {Disk} from "../../Classes";
+import PerfectMainStatUIConverter from "../../Utilities/PerfectMainStatUIConverter.tsx";
 
 export default function PerfectCharacterCard(match: IMatch)
 {
@@ -34,16 +36,16 @@ export default function PerfectCharacterCard(match: IMatch)
             </div>
             <div className={"perfectCharacterCard-disks"}>
                 <div className={"disk-wrapper"}>
-                    <TextTag weight="bigWeight">{perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4} ×
-                        2</TextTag>
+                    <TextTag weight="bigWeight">{Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4)} ×
+                        4</TextTag>
                     <Img className="disk-icon"
-                         imgName={DiskNameConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4)}/>
+                         imgName={DiskNameConverter(Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4))}/>
                 </div>
                 <div className={"disk-wrapper"}>
-                    <TextTag weight="bigWeight">{perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2} ×
+                    <TextTag weight="bigWeight">{Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2)} ×
                         2</TextTag>
                     <Img className="disk-icon"
-                         imgName={DiskNameConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2)}/>
+                         imgName={DiskNameConverter(Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2))}/>
                 </div>
             </div>
             <div className={"perfectCharacterCard-stats"}>
@@ -51,17 +53,17 @@ export default function PerfectCharacterCard(match: IMatch)
                     <div className={"perfectCharacterCard-mainStat-wrapper"}>
                         <TextTag weight="bigWeight">[4] - </TextTag>
                         <TextTag whiteSpace="nowrap"
-                                 weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_4)}</TextTag>
+                                 weight="bigWeight">{PerfectMainStatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_4)}</TextTag>
                     </div>
                     <div className={"perfectCharacterCard-mainStat-wrapper"}>
                         <TextTag weight="bigWeight">[5] - </TextTag>
                         <TextTag whiteSpace="nowrap"
-                                 weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_5)}</TextTag>
+                                 weight="bigWeight">{PerfectMainStatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_5)}</TextTag>
                     </div>
                     <div className={"perfectCharacterCard-mainStat-wrapper"}>
                         <TextTag weight="bigWeight">[6] - </TextTag>
                         <TextTag whiteSpace="nowrap"
-                                 weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_6)}</TextTag>
+                                 weight="bigWeight">{PerfectMainStatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.slot_6)}</TextTag>
                     </div>
                 </div>
                 <div className={"perfectCharacterCard-substats"}>
@@ -69,7 +71,7 @@ export default function PerfectCharacterCard(match: IMatch)
                              weight="bigWeight">Recommended Substats</TextTag>
                     <RoundedElement backgroundColor={Theme.primary_color} borderRadius={3}>
                         <TextTag
-                            weight="bigWeight">{StatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.substats)}</TextTag>
+                            weight="bigWeight">{PerfectSubstatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.substats)}</TextTag>
                     </RoundedElement>
                 </div>
 

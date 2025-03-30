@@ -1,8 +1,8 @@
 import {Img, TextTag} from "../index.tsx";
 import {IPerfectCharacterProps} from "../../Classes/PerfectCharacter.tsx";
-import {DiskNameConverter} from "../../Utilities";
+import {DiskNameConverter, PerfectSubstatUIConverter} from "../../Utilities";
 import "./DetailedPerfectCharacterCard.css"
-import StatUIConverter from "../../Utilities/StatUIConverter.tsx";
+import {Disk} from "../../Classes";
 
 export default function DetailedPerfectCharacterCard(perfectCharacter: IPerfectCharacterProps)
 {
@@ -37,17 +37,17 @@ export default function DetailedPerfectCharacterCard(perfectCharacter: IPerfectC
                             <div className="stat-item">
                                 <TextTag weight="bigWeight">[4]</TextTag>
                                 <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{StatUIConverter(perfectCharacter.slot_4)}</TextTag>
+                                         weight="bigWeight">{Disk.getUIMainStat(perfectCharacter.slot_4)}</TextTag>
                             </div>
                             <div className="stat-item">
                                 <TextTag weight="bigWeight">[5]</TextTag>
                                 <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{StatUIConverter(perfectCharacter.slot_5)}</TextTag>
+                                         weight="bigWeight">{Disk.getUIMainStat(perfectCharacter.slot_5)}</TextTag>
                             </div>
                             <div className="stat-item">
                                 <TextTag weight="bigWeight">[6]</TextTag>
                                 <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{StatUIConverter(perfectCharacter.slot_6)}</TextTag>
+                                         weight="bigWeight">{Disk.getUIMainStat(perfectCharacter.slot_6)}</TextTag>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,8 @@ export default function DetailedPerfectCharacterCard(perfectCharacter: IPerfectC
                         <TextTag className="stats-title" weight="bigWeight">Recommended Substats</TextTag>
                         <div className="substats-content">
                             <TextTag weight="bigWeight"
-                                     className="substats-text">{StatUIConverter(perfectCharacter.substats)}</TextTag>
+
+                                     className="substats-text">{PerfectSubstatUIConverter(perfectCharacter.substats)}</TextTag>
                         </div>
                     </div>
                 </div>

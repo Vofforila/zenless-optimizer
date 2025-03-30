@@ -11,64 +11,67 @@
   ],
   "disks": [
     {
-      "setKey": "Swing Jazz",
+      "setKey": "swingjazz",
       "slotKey": 4,
       "level": 15,
-      "mainStatKey": "atk_",
+      "mainStatKey": "atk",
       "id": 1,
       "substats": [
         {
-          "key": "atk_",
+          "key": "atkpercent",
           "value": 234.0
         },
         {
-          "key": "atk_",
+          "key": "atk",
           "value": 23.0
         },
         {
-          "key": "anomaly_pro",
+          "key": "anomalyproficiency",
           "value": 40.0
         }
       ]
     },
     {
-      "setKey": "Astral Voice",
+      "setKey": "astralvoice",
       "slotKey": 4,
       "level": 15,
       "mainStatKey": "hp_",
       "id": 2,
       "substats": [
         {
-          "key": "atk_",
+          "key": "atkpercent",
           "value": 234.0
         },
         {
-          "key": "atk_",
+          "key": "atk",
           "value": 23.0
         },
         {
-          "key": "anomaly_pro",
+          "key": "anomalyproficiency",
           "value": 40.0
         }
       ]
     },
     {
-      "setKey": "Freedom Blues",
+      "setKey": "freedomblues",
       "slotKey": 4,
       "level": 15,
-      "mainStatKey": "anomaly_pro",
+      "mainStatKey": "anomalyproficiency",
       "id": 3,
       "substats": [
         {
-          "key": "anomaly_pro",
+          "key": "anomalyproficiency",
+          "level": 1,
           "value": 234.0
         },
         {
-          "key": "atk_",
+          "key": "atkpercent",
+          "level": 1,
           "value": 23.0
         },
         {
           "key": "atk",
+          "level": 1,
           "value": 40.0
         }
       ]

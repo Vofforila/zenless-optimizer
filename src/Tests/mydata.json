@@ -1,0 +1,7974 @@
+{
+  "characters": [
+    {
+      "name": "Jane",
+      "faction": "Criminal Investigation Special Response Team"
+    },
+    {
+      "name": "Soldier 11",
+      "faction": "Obol Squad"
+    }
+  ],
+
+  "disks": [
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 15,
+      "mainStatKey": "energyregen",
+      "id": 1,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 3,
+          "value": 12.0
+        },
+        {
+          "key": "atk",
+          "level": 1,
+          "value": 38.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 1,
+          "value": 6.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 15,
+      "mainStatKey": "hp",
+      "id": 2,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 2,
+          "value": 57.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 1,
+          "value": 6.0
+        },
+        {
+          "key": "pen",
+          "level": 1,
+          "value": 18.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 15,
+      "mainStatKey": "hp",
+      "id": 3,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 2,
+          "value": 14.4
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 2,
+          "value": 57.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 15,
+      "mainStatKey": "atk",
+      "id": 4,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 1,
+          "value": 18.0
+        },
+        {
+          "key": "critrate",
+          "level": 1,
+          "value": 4.8
+        },
+        {
+          "key": "critdmg",
+          "level": 2,
+          "value": 14.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 15,
+      "mainStatKey": "atk",
+      "id": 5,
+      "substats": [
+        {
+          "key": "def",
+          "level": 2,
+          "value": 45.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 1,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 1,
+          "value": 18.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 3,
+      "level": 15,
+      "mainStatKey": "def",
+      "id": 6,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 2,
+          "value": 14.4
+        },
+        {
+          "key": "defpercent",
+          "level": 1,
+          "value": 9.6
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 1,
+          "value": 18.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 4,
+      "level": 15,
+      "mainStatKey": "critrate",
+      "id": 7,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 3,
+          "value": 448.0
+        },
+        {
+          "key": "pen",
+          "level": 1,
+          "value": 18.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 1,
+          "value": 18.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 1,
+      "level": 15,
+      "mainStatKey": "hp",
+      "id": 8,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 1,
+          "value": 6.0
+        },
+        {
+          "key": "critdmg",
+          "level": 1,
+          "value": 9.6
+        },
+        {
+          "key": "atk",
+          "level": 2,
+          "value": 57.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 2,
+      "level": 15,
+      "mainStatKey": "atk",
+      "id": 9,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 1,
+          "value": 9.6
+        },
+        {
+          "key": "hppercent",
+          "level": 2,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 1,
+          "value": 18.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 15,
+      "mainStatKey": "electricdmgbonus",
+      "id": 10,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 1,
+          "value": 38.0
+        },
+        {
+          "key": "critrate",
+          "level": 1,
+          "value": 4.8
+        },
+        {
+          "key": "critdmg",
+          "level": 1,
+          "value": 9.6
+        },
+        {
+          "key": "defpercent",
+          "level": 1,
+          "value": 9.6
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 6,
+      "level": 15,
+      "mainStatKey": "impact",
+      "id": 11,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 3,
+          "value": 36.0
+        },
+        {
+          "key": "hp",
+          "level": 1,
+          "value": 224.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critdmg",
+          "level": 1,
+          "value": 9.6
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 3,
+      "mainStatKey": "hp",
+      "id": 12,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 3,
+      "mainStatKey": "hp",
+      "id": 13,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 3,
+      "mainStatKey": "hp",
+      "id": 14,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 3,
+      "mainStatKey": "hp",
+      "id": 15,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 3,
+      "mainStatKey": "hp",
+      "id": 16,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 3,
+      "mainStatKey": "atk",
+      "id": 17,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 3,
+      "mainStatKey": "atk",
+      "id": 18,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 3,
+      "mainStatKey": "atk",
+      "id": 19,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 3,
+      "level": 3,
+      "mainStatKey": "def",
+      "id": 20,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 3,
+      "level": 3,
+      "mainStatKey": "def",
+      "id": 21,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 3,
+      "level": 3,
+      "mainStatKey": "def",
+      "id": 22,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 3,
+      "mainStatKey": "atk",
+      "id": 23,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 1,
+      "level": 3,
+      "mainStatKey": "hp",
+      "id": 24,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 25,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 26,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 27,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 28,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 29,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 30,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 31,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 32,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 33,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 34,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 35,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 36,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 37,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 38,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 39,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 40,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 41,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 42,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 43,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 44,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 45,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 46,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 47,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 48,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 49,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 50,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 51,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 52,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 53,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 54,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 55,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 56,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 57,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 58,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 59,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 60,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 61,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 62,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 63,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "physicaldmgbonus",
+      "id": 64,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 65,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 66,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "icedmgbonus",
+      "id": 67,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 68,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "firedmgbonus",
+      "id": 69,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 70,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 71,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 72,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 73,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 74,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 75,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 76,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 77,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 78,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 79,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 80,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "branch&bladesong",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 81,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 82,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 83,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 84,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 85,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 86,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 87,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 88,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 89,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 90,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 91,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 92,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 93,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 94,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 95,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 96,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 97,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 98,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 99,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 100,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 101,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 102,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 103,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 104,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 105,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 106,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 107,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critdmg",
+      "id": 108,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 109,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 110,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 111,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 112,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 113,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 114,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 115,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 116,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 117,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 118,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "icedmgbonus",
+      "id": 119,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 120,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "physicaldmgbonus",
+      "id": 121,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "penratio",
+      "id": 122,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 123,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 124,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 125,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "etherdmgbonus",
+      "id": 126,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 127,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 128,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 129,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 130,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 131,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 132,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 133,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "anomalymastery",
+      "id": 134,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 135,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 136,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 137,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "astralvoice",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 138,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 139,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 140,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 141,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 142,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 143,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 144,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 145,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 146,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 147,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 148,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 149,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 150,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 151,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 152,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 153,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 154,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 155,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 156,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 157,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 158,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 159,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "physicaldmgbonus",
+      "id": 160,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "penratio",
+      "id": 161,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "etherdmgbonus",
+      "id": 162,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "penratio",
+      "id": 163,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "anomalymastery",
+      "id": 164,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "anomalymastery",
+      "id": 165,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 166,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 167,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "woodpeckerelectro",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 168,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 169,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 170,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 171,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 172,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 173,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 174,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 175,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 176,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 177,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 178,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "shockstardisco",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 179,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 180,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 181,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 182,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 183,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 184,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 185,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 186,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 187,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 188,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 189,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 190,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 191,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 192,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 193,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 194,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 195,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 196,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 197,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 198,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 199,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 200,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 201,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 202,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 203,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 204,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 205,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 206,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 207,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 208,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 209,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 210,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 211,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 212,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 213,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 214,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 215,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 216,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 217,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 218,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 219,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 220,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 221,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 222,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 223,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 224,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 225,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 226,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 227,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 228,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 229,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 230,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 231,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 232,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 233,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 234,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 235,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 236,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 237,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 238,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 239,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 240,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 241,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 242,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 243,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 244,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 245,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "physicaldmgbonus",
+      "id": 246,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 247,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 248,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "etherdmgbonus",
+      "id": 249,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "etherdmgbonus",
+      "id": 250,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 251,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 252,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 253,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 254,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 255,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 256,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 257,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 258,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 259,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 260,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "anomalymastery",
+      "id": 261,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "anomalymastery",
+      "id": 262,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "impact",
+      "id": 263,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 264,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 265,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 266,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "soulrock",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 267,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 268,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 269,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 270,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 271,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 272,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 273,
+      "substats": [
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 274,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 275,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critdmg",
+      "id": 276,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 277,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 278,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "icedmgbonus",
+      "id": 279,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 280,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "firedmgbonus",
+      "id": 281,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "physicaldmgbonus",
+      "id": 282,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 283,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "energyregen",
+      "id": 284,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 285,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "swingjazz",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 286,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 287,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 288,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 289,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 290,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 291,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critdmg",
+      "id": 292,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "icedmgbonus",
+      "id": 293,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 294,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 295,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "chaoticmetal",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "electricdmgbonus",
+      "id": 296,
+      "substats": [
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 297,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 298,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 299,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 1,
+      "level": 0,
+      "mainStatKey": "hp",
+      "id": 300,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 301,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 302,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 303,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 2,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 304,
+      "substats": [
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 305,
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 306,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 3,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 307,
+      "substats": [
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 308,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "critrate",
+      "id": 309,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "anomalyproficiency",
+      "id": 310,
+      "substats": [
+        {
+          "key": "critdmg",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "defpercent",
+          "level": 0,
+          "value": 4.8
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 4,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 311,
+      "substats": [
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 5,
+      "level": 0,
+      "mainStatKey": "penratio",
+      "id": 312,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 313,
+      "substats": [
+        {
+          "key": "atkpercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "atk",
+      "id": 314,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "def",
+      "id": 315,
+      "substats": [
+        {
+          "key": "atk",
+          "level": 0,
+          "value": 19.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        },
+        {
+          "key": "def",
+          "level": 0,
+          "value": 15.0
+        }
+      ]
+    },
+    {
+      "setKey": "thundermetal",
+      "slotKey": 6,
+      "level": 0,
+      "mainStatKey": "anomalymastery",
+      "id": 316,
+      "substats": [
+        {
+          "key": "hp",
+          "level": 0,
+          "value": 112.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "level": 0,
+          "value": 9.0
+        },
+        {
+          "key": "hppercent",
+          "level": 0,
+          "value": 3.0
+        }
+      ]
+    }
+  ]
+}

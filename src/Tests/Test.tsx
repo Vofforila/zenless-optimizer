@@ -1,3 +1,4 @@
+import mydata from "./mydata.json"
 import testDisks from "./diskTest.json"
 import {UploadDatabase} from "../Utilities";
 
@@ -9,7 +10,7 @@ export default function Test()
 
 function Archive()
 {
-    UploadDatabase(testDisks,1);
+    UploadDatabase(mydata,1);
 
 
 }
