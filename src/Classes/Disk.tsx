@@ -159,6 +159,17 @@ export default class Disk implements IDisk
         return UISubstatMap[substat] || "";
     }
 
+    isEqual(other: Disk): boolean {
+        return (
+            this.id === other.id &&
+            this.setKey === other.setKey &&
+            this.level === other.level &&
+            this.slotKey === other.slotKey &&
+            this.mainStatKey === other.mainStatKey &&
+            JSON.stringify(this.substats) === JSON.stringify(other.substats)
+        );
+
+    }
 
     get id(): number
     {

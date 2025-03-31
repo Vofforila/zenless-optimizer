@@ -11,86 +11,118 @@
   ],
   "disks": [
     {
-      "setKey": "Swing Jazz",
+      "setKey": "astralvoice",
       "slotKey": 4,
       "level": 15,
-      "mainStatKey": "atk_",
-      "id": 1,
+      "mainStatKey": "hp",
+      "id": 0,
       "substats": [
         {
-          "key": "atk_",
+          "key": "atkpercent",
           "value": 234.0
         },
         {
-          "key": "atk_",
+          "key": "atk",
           "value": 23.0
         },
         {
-          "key": "anomaly_pro",
+          "key": "anomalyproficiency",
           "value": 40.0
         }
       ]
     },
     {
-      "setKey": "Astral Voice",
+      "setKey": "swingjazz",
       "slotKey": 4,
       "level": 15,
-      "mainStatKey": "hp_",
-      "id": 2,
+      "id": 0,
+      "mainStatKey": "atk",
       "substats": [
         {
-          "key": "atk_",
+          "key": "atkpercent",
           "value": 234.0
         },
         {
-          "key": "atk_",
+          "key": "atk",
           "value": 23.0
         },
         {
-          "key": "anomaly_pro",
+          "key": "anomalyproficiency",
           "value": 40.0
         }
       ]
     },
     {
-      "setKey": "Chaotic Metal",
+      "setKey": "astralvoice",
       "slotKey": 4,
       "level": 15,
-      "mainStatKey": "anomaly_pro",
-      "id": 4,
+      "id": 0,
+      "mainStatKey": "hp",
       "substats": [
         {
-          "key": "anomaly_pro",
+          "key": "atkpercent",
           "value": 234.0
         },
         {
-          "key": "atk_",
+          "key": "atk",
+          "value": 23.0
+        },
+        {
+          "key": "anomalyproficiency",
+          "value": 40.0
+        }
+      ]
+    },
+    {
+      "setKey": "freedomblues",
+      "slotKey": 4,
+      "level": 15,
+      "id": 0,
+      "mainStatKey": "anomalyproficiency",
+      "substats": [
+        {
+          "key": "anomalyproficiency",
+          "level": 1,
+          "value": 234.0
+        },
+        {
+          "key": "atkpercent",
+          "level": 1,
           "value": 23.0
         },
         {
           "key": "atk",
+          "level": 1,
           "value": 40.0
         }
       ]
     },
     {
-      "setKey": "Freedom Blues",
-      "slotKey": 4,
+      "setKey": "woodpeckerelectro",
+      "slotKey": 1,
       "level": 15,
-      "mainStatKey": "anomaly_pro",
-      "id": 3,
+      "id": 0,
+      "mainStatKey": "hp",
       "substats": [
         {
-          "key": "anomaly_pro",
-          "value": 234.0
+          "key": "critdmg",
+          "level": 2,
+          "value": 14.4
         },
         {
-          "key": "atk_",
-          "value": 23.0
+          "key": "pen",
+          "level": 0,
+          "value": 9.0
         },
         {
           "key": "atk",
-          "value": 40.0
+          "level": 2,
+          "value": 57.0
+        },
+        {
+          "key": "critrate",
+          "level": 0,
+          "value": 2.4
         }
       ]
     }

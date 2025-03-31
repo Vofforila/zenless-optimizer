@@ -1,6 +1,6 @@
 import {Img, TextTag} from "../index.tsx";
 import {IPerfectCharacterProps} from "../../Classes/PerfectCharacter.tsx";
-import {DiskNameConverter, PerfectSubstatUIConverter} from "../../Utilities";
+import {DiskNameConverter, PerfectMainStatUIConverter, PerfectSubstatUIConverter} from "../../Utilities";
 import "./DetailedPerfectCharacterCard.css"
 import {Disk} from "../../Classes";
 
@@ -22,12 +22,12 @@ export default function DetailedPerfectCharacterCard(perfectCharacter: IPerfectC
             <div className="detailedPerfectCharacterCard-content">
                 <div className="disk-section">
                     <div className="disk-item">
-                        <TextTag weight="bigWeight">{perfectCharacter.piece_4} × 4</TextTag>
-                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacter.piece_4)}/>
+                        <TextTag weight="bigWeight">{Disk.getUISetKey(perfectCharacter.piece_4)} × 4</TextTag>
+                        <Img className="disk-icon" imgName={DiskNameConverter(Disk.getUISetKey(perfectCharacter.piece_4))}/>
                     </div>
                     <div className="disk-item">
-                        <TextTag weight="bigWeight">{perfectCharacter.piece_2} × 2</TextTag>
-                        <Img className="disk-icon" imgName={DiskNameConverter(perfectCharacter.piece_2)}/>
+                        <TextTag weight="bigWeight">{Disk.getUISetKey(perfectCharacter.piece_2)} × 2</TextTag>
+                        <Img className="disk-icon" imgName={DiskNameConverter(Disk.getUISetKey(perfectCharacter.piece_2))}/>
                     </div>
                 </div>
                 <div className="stats-section">
@@ -37,17 +37,17 @@ export default function DetailedPerfectCharacterCard(perfectCharacter: IPerfectC
                             <div className="stat-item">
                                 <TextTag weight="bigWeight">[4]</TextTag>
                                 <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{Disk.getUIMainStat(perfectCharacter.slot_4)}</TextTag>
+                                         weight="bigWeight">{PerfectMainStatUIConverter(perfectCharacter.slot_4)}</TextTag>
                             </div>
                             <div className="stat-item">
                                 <TextTag weight="bigWeight">[5]</TextTag>
                                 <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{Disk.getUIMainStat(perfectCharacter.slot_5)}</TextTag>
+                                         weight="bigWeight">{PerfectMainStatUIConverter(perfectCharacter.slot_5)}</TextTag>
                             </div>
                             <div className="stat-item">
                                 <TextTag weight="bigWeight">[6]</TextTag>
                                 <TextTag whiteSpace="nowrap"
-                                         weight="bigWeight">{Disk.getUIMainStat(perfectCharacter.slot_6)}</TextTag>
+                                         weight="bigWeight">{PerfectMainStatUIConverter(perfectCharacter.slot_6)}</TextTag>
                             </div>
                         </div>
                     </div>

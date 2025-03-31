@@ -7,7 +7,6 @@ import {archive} from "../../Classes/Database.tsx";
 export default function Archive()
 {
     return (
-
         <div id={"Archive"} className={"archive"}>
             <div className={"archive-wrapper"}>
                 <TextTag size={"header"}>Character Filter</TextTag>

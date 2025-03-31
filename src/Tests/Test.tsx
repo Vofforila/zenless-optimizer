@@ -1,6 +1,5 @@
-import mydata from "./mydata.json"
-import testDisks from "./diskTest.json"
-import {UploadDatabase} from "../Utilities";
+import diskTest from "./mydata.json"
+import {dbManager} from "../Classes/DatabaseManager.tsx";
 
 export default function Test()
 {
@@ -10,7 +9,7 @@ export default function Test()
 
 function Archive()
 {
-    UploadDatabase(mydata,1);
+    dbManager.UploadDatabase(diskTest,1);
 
 
 }

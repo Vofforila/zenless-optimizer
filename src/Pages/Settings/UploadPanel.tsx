@@ -2,7 +2,7 @@ import {Button, InputFile, RoundedElement, TextArea, TextTag} from "../../Compon
 import "./UploadPanel.css"
 import {Theme} from "../../Theme/Theme.tsx";
 import React, {useState} from "react";
-import {UploadDatabase} from "../../Utilities";
+import {dbManager} from "../../Classes/DatabaseManager.tsx";
 
 interface IUploadPanel
 {
@@ -28,7 +28,7 @@ export default function UploadPanel(props: IUploadPanel)
                     try
                     {
                         const jsonObject:unknown = JSON.parse(fileContent);
-                        UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
+                        dbManager.UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
                     } catch (error)
                     {
                         alert('Error parsing JSON: ' + error);
@@ -46,7 +46,7 @@ export default function UploadPanel(props: IUploadPanel)
         try
         {
             const jsonObject = JSON.parse(inputValue);
-            UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
+            dbManager.UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
         } catch (error)
         {
             alert('Error! Please enter a valid JSON: ' + error);

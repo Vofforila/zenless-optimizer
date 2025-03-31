@@ -79,6 +79,69 @@ export default class DatabaseManager implements IDatabaseManager
         }
     }
 
+
+   public UploadDatabase(jsonObject: unknown,databaseId:number): void
+{
+    const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+    const localDatabase: LocalDatabase = dbManager.GetDatabaseById(databaseId);
+
+
+    console.log(localDatabase.disks.length)
+    if(localDatabase.disks.length > 0 || localDatabase.characters.length > 0)
+    {
+        console.log("Merge Database");
+        this.MergeData(newLocalDatabase,localDatabase)
+    }
+    else
+    {
+        console.log("First Upload Database");
+        for (let index:number = 0;index <= newLocalDatabase.disks.length - 1;index++)
+        {
+            newLocalDatabase.disks[index].id = index;
+            localDatabase.disks.push(newLocalDatabase.disks[index]);
+        }
+        localDatabase.characters = newLocalDatabase.characters;
+        dbManager.UpdateLocalDb();
+
+    }
+
+}
+    MergeData(newDataset: LocalDatabase,localDatabase:LocalDatabase):void
+    {
+    const newLocalDatabase:LocalDatabase = new LocalDatabase();
+    const auxLocalDatabase: LocalDatabase = localDatabase.clone()
+
+        for(let i:number = 0;i < localDatabase.disks.length; i++)
+        {
+            auxLocalDatabase.disks[i].id = 0;
+        }
+
+
+    for(let i:number = 0;i < auxLocalDatabase.disks.length; i++)
+    {
+        for(let x:number = 0;x < newDataset.disks.length; x++)
+        {
+            newDataset.disks[x].id = 0;
+            if(auxLocalDatabase.disks[i].isEqual(newDataset.disks[x]))
+            {
+                newLocalDatabase.disks.push(localDatabase.disks[i]);
+                newDataset.disks.splice(x, 1);
+                break;
+            }
+        }
+    }
+
+        for(let i:number = 0;i < newDataset.disks.length; i++)
+        {
+            newDataset.disks[i].id = newLocalDatabase.disks.length + 1;
+            newLocalDatabase.disks.push(newDataset.disks[i]);
+        }
+
+        localDatabase.disks = newLocalDatabase.disks;
+        dbManager.UpdateLocalDb();
+}
+
+
     public GetCurrentDb(): LocalDatabase
     {
         console.log("GetCurrentDb - " + this._currentDatabase.toString());

@@ -1,4 +1,4 @@
-import {Disk} from "./index.tsx";
+import { Disk} from "./index.tsx";
 import Character from "./Characters.tsx";
 
 
@@ -10,7 +10,7 @@ export interface ILocalDatabase
 
 export class LocalDatabase implements ILocalDatabase
 {
-    private _disks: Disk[] = [] ;
+    private _disks: Disk[] = [];
     private _characters: Character[] = [];
 
     public GetLocalDb()
@@ -56,6 +56,13 @@ export class LocalDatabase implements ILocalDatabase
     {
         this._disks = disks;
         this._characters = characters;
+    }
+
+
+    clone(): LocalDatabase {
+        const clonedDisks:Disk[] = this._disks.map(disk => new Disk(disk.id,disk.setKey,disk.level,disk.slotKey,disk.mainStatKey,disk.substats));
+        return new LocalDatabase(clonedDisks, this._characters);
+
     }
 
     get disks(): Disk[]

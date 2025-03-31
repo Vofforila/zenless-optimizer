@@ -153,6 +153,8 @@ function CheckSubstat(
     }
     if (
         (perfectCharacter.critUser && critMatch == 2) ||
+        (perfectCharacter.critUser && critMatch == 1 && (testdisk.mainStatKey == "critdmg" as SubstatKey )) ||
+        (perfectCharacter.critUser && maches <= 3 && (testdisk.mainStatKey == "critdmg" as SubstatKey )) ||
         (substats.length <= 3 && critMatch == 1) ||
         (!perfectCharacter.critUser && maches >= 3)
     )
