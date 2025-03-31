@@ -1,12 +1,12 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import {Navbar} from './Components';
 import {Archive, Disks, Docs, Home, Settings} from "./Pages";
-import {Server} from "./Server";
 import './Theme/Global.css';
+import Processor from "./Processor/Processor.tsx";
 
 export default function App()
 {
-    Server();
+    Processor();
     return (
         <div className="main">
             <BrowserRouter basename={"/zenless-optimizer/"}>

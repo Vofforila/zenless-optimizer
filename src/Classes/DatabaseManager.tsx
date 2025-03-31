@@ -25,7 +25,6 @@ export default class DatabaseManager implements IDatabaseManager
             const localData: string | null = localStorage.getItem("database" + localCurrentDatabase);
             if (localData != null)
             {
-
                 const jsonObject = localData ? JSON.parse(localData) : {}
                 console.log("Init Data:", jsonObject);
                 this._currentDatabase = +localCurrentDatabase;
@@ -36,7 +35,6 @@ export default class DatabaseManager implements IDatabaseManager
                         const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
                         this._database1.disks = newLocalDatabase.disks;
                         this._database1.characters = newLocalDatabase.characters;
-
                         break;
                     }
                     case 2:
@@ -79,68 +77,115 @@ export default class DatabaseManager implements IDatabaseManager
         }
     }
 
-
-   public UploadDatabase(jsonObject: unknown,databaseId:number): void
-{
-    const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
-    const localDatabase: LocalDatabase = dbManager.GetDatabaseById(databaseId);
-
-
-    console.log(localDatabase.disks.length)
-    if(localDatabase.disks.length > 0 || localDatabase.characters.length > 0)
+    public UploadDatabase(jsonObject: unknown, databaseId: number): void
     {
-        console.log("Merge Database");
-        this.MergeData(newLocalDatabase,localDatabase)
-    }
-    else
-    {
-        console.log("First Upload Database");
-        for (let index:number = 0;index <= newLocalDatabase.disks.length - 1;index++)
+        const newLocalDatabase: LocalDatabase = LocalDatabase.fromJSON(jsonObject);
+        const localDatabase: LocalDatabase = dbManager.GetDatabaseById(databaseId);
+        if (localDatabase.disks.length > 0 || localDatabase.characters.length > 0)
         {
-            newLocalDatabase.disks[index].id = index;
-            localDatabase.disks.push(newLocalDatabase.disks[index]);
+            console.log("Merge Database");
+            this.MergeData(newLocalDatabase, localDatabase)
         }
-        localDatabase.characters = newLocalDatabase.characters;
-        dbManager.UpdateLocalDb();
-
+        else
+        {
+            console.log("First Upload Database");
+            for (let index: number = 0; index <= newLocalDatabase.disks.length - 1; index++)
+            {
+                newLocalDatabase.disks[index].id = index;
+                localDatabase.disks.push(newLocalDatabase.disks[index]);
+            }
+            localDatabase.characters = newLocalDatabase.characters;
+            dbManager.UpdateLocalDb();
+        }
     }
 
-}
-    MergeData(newDataset: LocalDatabase,localDatabase:LocalDatabase):void
+    MergeData(newDataset: LocalDatabase, localDatabase: LocalDatabase): void
     {
-    const newLocalDatabase:LocalDatabase = new LocalDatabase();
-    const auxLocalDatabase: LocalDatabase = localDatabase.clone()
-
-        for(let i:number = 0;i < localDatabase.disks.length; i++)
+        const newLocalDatabase: LocalDatabase = new LocalDatabase();
+        const auxLocalDatabase: LocalDatabase = localDatabase.clone()
+        for (let i: number = 0; i < localDatabase.disks.length; i++)
         {
             auxLocalDatabase.disks[i].id = 0;
         }
-
-
-    for(let i:number = 0;i < auxLocalDatabase.disks.length; i++)
-    {
-        for(let x:number = 0;x < newDataset.disks.length; x++)
+        for (let i: number = 0; i < auxLocalDatabase.disks.length; i++)
         {
-            newDataset.disks[x].id = 0;
-            if(auxLocalDatabase.disks[i].isEqual(newDataset.disks[x]))
+            for (let x: number = 0; x < newDataset.disks.length; x++)
             {
-                newLocalDatabase.disks.push(localDatabase.disks[i]);
-                newDataset.disks.splice(x, 1);
-                break;
+                newDataset.disks[x].id = 0;
+                if (auxLocalDatabase.disks[i].isEqual(newDataset.disks[x]))
+                {
+                    newLocalDatabase.disks.push(localDatabase.disks[i]);
+                    newDataset.disks.splice(x, 1);
+                    break;
+                }
             }
         }
-    }
-
-        for(let i:number = 0;i < newDataset.disks.length; i++)
+        for (let i: number = 0; i < newDataset.disks.length; i++)
         {
             newDataset.disks[i].id = newLocalDatabase.disks.length + 1;
             newLocalDatabase.disks.push(newDataset.disks[i]);
         }
-
         localDatabase.disks = newLocalDatabase.disks;
         dbManager.UpdateLocalDb();
-}
+    }
 
+    public DatabaseToClipboard(databaseId: number): void
+    {
+        const localData: string | null = localStorage.getItem("database" + databaseId);
+        if (localData != null)
+        {
+            try
+            {
+                navigator.clipboard.writeText(localData);
+            } catch (err)
+            {
+                alert("Create/Upload a Database First" + err);
+            }
+        }
+        else alert("Create/Upload a Database First");
+    }
+
+    public downloadDatabaseJSON(databaseId: number): void
+    {
+        const localData: string | null = localStorage.getItem("database" + databaseId);
+        if (localData != null)
+        {
+            const blob = new Blob([localData], {type: 'application/json'});
+            const url: string = URL.createObjectURL(blob);
+            const a: HTMLAnchorElement = document.createElement('a');
+            a.href = url;
+            a.download = "database" + databaseId + ".json";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    }
+
+    public deleteDatabaseAtId(databaseId: number): void
+    {
+        switch (databaseId)
+        {
+            case 1:
+                this._database1 = new LocalDatabase();
+                break;
+            case 2:
+                this._database1 = new LocalDatabase();
+                break;
+            case 3:
+                this._database1 = new LocalDatabase();
+                break;
+            case 4:
+                this._database1 = new LocalDatabase();
+                break;
+        }
+        this.UpdateLocalDb()
+    }
+
+    public SwapCurrentDatabase(databaseId: number): void
+    {
+        this._currentDatabase = databaseId;
+    }
 
     public GetCurrentDb(): LocalDatabase
     {
@@ -160,7 +205,7 @@ export default class DatabaseManager implements IDatabaseManager
         }
     }
 
-    public GetDatabaseById(value:number): LocalDatabase
+    public GetDatabaseById(value: number): LocalDatabase
     {
         switch (value)
         {
@@ -177,10 +222,9 @@ export default class DatabaseManager implements IDatabaseManager
         }
     }
 
-
     public UpdateLocalDb(): void
     {
-        console.log("UpdateLocalDb" , this._database1);
+        console.log("UpdateLocalDb", this._database1);
         localStorage.setItem("database1", JSON.stringify(this._database1));
         localStorage.setItem("database2", JSON.stringify(this._database2));
         localStorage.setItem("database3", JSON.stringify(this._database3));

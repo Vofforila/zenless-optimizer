@@ -1,4 +1,4 @@
-import diskTest from "./mydata.json"
+import diskTest from "./diskTest.json"
 import {dbManager} from "../Classes/DatabaseManager.tsx";
 
 export default function Test()
@@ -9,9 +9,7 @@ export default function Test()
 
 function Archive()
 {
-    dbManager.UploadDatabase(diskTest,1);
-
-
+    dbManager.UploadDatabase(diskTest, 1);
 }
 
 function Disks()

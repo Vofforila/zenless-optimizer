@@ -3,6 +3,7 @@ import {Theme} from "../../Theme/Theme.tsx";
 import "./Databasecard.css"
 import UploadPanel from "./UploadPanel.tsx";
 import React, {useState} from "react";
+import {dbManager} from "../../Classes/DatabaseManager.tsx";
 
 interface IDatabaseCardProps
 {
@@ -11,16 +12,22 @@ interface IDatabaseCardProps
     characters: number,
     disks: number,
     engines: number,
+    onSwap: (id: number) => void,
+    onUpload: () => void,
 }
 
 export const DatabaseCard: React.FC<IDatabaseCardProps> = (database: IDatabaseCardProps) =>
 {
-    const [isUploadPanelOpen, setUploadPanelState] = useState<{isOpen:boolean,databaseId: number}>({
+    const [OpenUploadPanelOpen, setUploadPanelState] = useState<{
+        isOpen: boolean,
+        databaseId: number,
+    }>({
         isOpen: false,
         databaseId: 1
     });
-    const openPanel = () => setUploadPanelState({isOpen: true,databaseId: database.id});
-    const closePanel = () => setUploadPanelState({isOpen:false,databaseId:database.id});
+    const openPanel = () => setUploadPanelState({isOpen: true, databaseId: database.id});
+    const closePanel = () => setUploadPanelState({isOpen: false, databaseId: database.id});
+    const onUpload = () => database.onUpload();
     return (
         <div className={"database-card"}>
             <div className={"database-card-header"}>
@@ -35,7 +42,12 @@ export const DatabaseCard: React.FC<IDatabaseCardProps> = (database: IDatabaseCa
                         ) :
                         (
                             <div className={"database-card-swap-wrapper"}>
-                                <Button>Swap</Button>
+                                <Button onPress={() =>
+                                {
+                                    dbManager.SwapCurrentDatabase(database.id)
+                                    database.onSwap(database.id)
+                                }
+                                }>Swap</Button>
                                 <RoundedElement backgroundColor={Theme.deselected_color} borderRadius={3}>
                                     <TextTag>Database - {database.id}</TextTag>
                                 </RoundedElement>
@@ -60,21 +72,23 @@ export const DatabaseCard: React.FC<IDatabaseCardProps> = (database: IDatabaseCa
                 </div>
                 <div className={"database-card-buttons"}>
                     <div className={"database-buttons-wrapper"}>
-                        <Button scalable={false}>Clipboard</Button>
+                        <Button onPress={() => dbManager.DatabaseToClipboard(database.id)}
+                                scalable={false}>Clipboard</Button>
                         <Button onPress={openPanel} scalable={false}>Upload</Button>
-                        <UploadPanel UploadPanelState={isUploadPanelOpen} onClose={closePanel}>
+                        <UploadPanel UploadPanelState={OpenUploadPanelOpen} onClose={closePanel} onUpload={onUpload}>
                             <h2>Modal Title</h2>
                             <p>This is a simple modal example.</p>
                         </UploadPanel>
                     </div>
                     <div className={"database-buttons-wrapper"}>
-                        <Button scalable={false}>Download</Button>
-                        <Button color={Theme.text_color} backgroundColor={Theme.error_color}
+                        <Button onPress={() => dbManager.downloadDatabaseJSON(database.id)}
+                                scalable={false}>Download</Button>
+                        <Button onPress={() => dbManager.deleteDatabaseAtId(database.id)} color={Theme.text_color}
+                                backgroundColor={Theme.error_color}
                                 scalable={false}>Delete</Button>
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

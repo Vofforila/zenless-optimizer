@@ -23,14 +23,16 @@ export default function DiskCard(disk: IDisk)
                                                                 Theme.selected_color}>
                             <TextTag whiteSpace={"nowrap"}>+ {disk.level}</TextTag>
                         </RoundedElement>
-                        <RoundedElement backgroundColor={Theme.selected_color} borderRadius={40}>
+                        <RoundedElement width={150} height={20} circle={false} backgroundColor={Theme.selected_color}
+                                        borderRadius={40}>
                             <TextTag>{Disk.getUISetKey(disk.setKey)}</TextTag>
                         </RoundedElement>
                     </div>
                     <TextTag size={"big"}>Disk Slot - [{disk.slotKey}]</TextTag>
                     <TextTag size={"medium"}>{Disk.getUIMainStat(disk.mainStatKey)}</TextTag>
                 </div>
-                <Img className={"disk-image"} width={80} height={80} imgName={DiskNameConverter(Disk.getUISetKey(disk.setKey))}></Img>
+                <Img className={"disk-image"} width={80} height={80}
+                     imgName={DiskNameConverter(Disk.getUISetKey(disk.setKey))}></Img>
             </div>
             <div className={"disk-bottom"}>
                 <div className={"substat-wrapper"}>

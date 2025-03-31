@@ -4,7 +4,7 @@ import {dbManager} from "../Classes/DatabaseManager.tsx";
 import {archive} from "../Classes/Database.tsx";
 import Test from "../Tests/Test.tsx";
 
-export default async function Server()
+export default async function Processor()
 {
     dbManager.InitLocalDb()
     if (import.meta.env.DEV) Test()

@@ -1,5 +1,49 @@
 [
   {
+    "characterName": "Rina",
+    "description": "SUPPORT Build",
+    "piece_4": "swingjazz",
+    "piece_2": "pufferelectro",
+    "critUser": false,
+    "slot_4": "anomalymastery/atk",
+    "slot_5": "penratio",
+    "slot_6": "energyregen",
+    "substats": "anomalymastery + atk + atkpercent"
+  },
+  {
+    "characterName": "Anby Soldier 0",
+    "description": "None",
+    "piece_4": "shadowharmony",
+    "piece_2": "woodpeckerelectro",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "electricdmgbonus/penratio",
+    "slot_6": "atk",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Pulchra",
+    "description": "GENERAL IF ASTRAL Voice",
+    "piece_4": "shadowharmony",
+    "piece_2": "woodpeckerelectro",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "physicaldmgbonus/atk",
+    "slot_6": "impact",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Pulchra",
+    "description": "SUPPORT IF NO Astral Voice",
+    "piece_4": "astralvoice",
+    "piece_2": "shockstardisco",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "physicaldmgbonus/atk",
+    "slot_6": "impact",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
     "characterName": "Astra Yao",
     "description": "If you have 3430 ATK opt for a slot_6 with Energy Regen%",
     "piece_4": "astralvoice",
@@ -9,6 +53,17 @@
     "slot_5": "atk",
     "slot_6": "atk/energyregen",
     "substats": "atkpercent + atk"
+  },
+  {
+    "characterName": "Burnice",
+    "description": "None",
+    "piece_4": "chaosjazz",
+    "piece_2": "freedomblues",
+    "critUser": false,
+    "slot_4": "anomalyproficiency",
+    "slot_5": "firedmgbonus",
+    "slot_6": "anomalymastery/atk",
+    "substats": "anomalyproficiency + atkpercent + atk"
   },
   {
     "characterName": "Caesar",
@@ -22,15 +77,81 @@
     "substats": "anomalyproficiency + atkpercent + atk"
   },
   {
-    "characterName": "Miyabi",
-    "description": "None",
-    "piece_4": "branch&bladesong",
+    "characterName": "Ellen",
+    "diskDescription": "None",
+    "piece_4": "polarmetal",
     "piece_2": "woodpeckerelectro",
     "critUser": true,
     "slot_4": "critdmg/critrate",
     "slot_5": "icedmgbonus/atk",
     "slot_6": "atk",
-    "substats": "critdmg + critrate + atkpercent + atk + anomalyproficiency"
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Evelyn",
+    "description": "None",
+    "piece_4": "woodpeckerelectro",
+    "piece_2": "branch&bladesong",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "firedmgbonus/penratio",
+    "slot_6": "atk",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Grace",
+    "description": "Build for Disorder Teams",
+    "piece_4": "freedomblues",
+    "piece_2": "chaosjazz",
+    "critUser": false,
+    "slot_4": "anomalyproficiency",
+    "slot_5": "etherdmgbonus/penratio",
+    "slot_6": "anomalymastery/atk",
+    "substats": "atkpercent + atk + anomalyproficiency"
+  },
+  {
+    "characterName": "Grace",
+    "description": "Build for Mono-Electric Teams",
+    "piece_4": "thundermetal",
+    "piece_2": "freedomblues",
+    "critUser": false,
+    "slot_4": "anomalyproficiency",
+    "slot_5": "etherdmgbonus/penratio",
+    "slot_6": "anomalymastery/atk",
+    "substats": "atkpercent + atk + anomalyproficiency"
+  },
+  {
+    "characterName": "Harumasa",
+    "description": "None",
+    "piece_4": "woodpeckerelectro",
+    "piece_2": "branch&bladesong",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "electricdmgbonus/penratio",
+    "slot_6": "atk",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Jane Doe",
+    "description": "None",
+    "piece_4": "freedomblues",
+    "piece_2": "fangedmetal",
+    "critUser": false,
+    "slot_4": "anomalyproficiency",
+    "slot_5": "physicaldmgbonus/penratio",
+    "slot_6": "anomalymastery/atk",
+    "substats": "anomalyproficiency + atkpercent + atk"
+  },
+  {
+    "characterName": "Koleda",
+    "description": "None",
+    "piece_4": "shockstardisco",
+    "piece_2": "swingjazz",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "firedmgbonus/penratio",
+    "slot_6": "impact",
+    "substats": "critdmg + critrate + pen + atkpercent + atk"
   },
   {
     "characterName": "Lighter",
@@ -55,6 +176,50 @@
     "substats": "critdmg + critrate + atkpercent + atk"
   },
   {
+    "characterName": "Lycaon",
+    "description": "None",
+    "piece_4": "shockstardisco",
+    "piece_2": "swingjazz",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "icedmgbonus",
+    "slot_6": "impact",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Miyabi",
+    "description": "None",
+    "piece_4": "branch&bladesong",
+    "piece_2": "woodpeckerelectro",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "icedmgbonus/atk",
+    "slot_6": "atk",
+    "substats": "critdmg + critrate + atkpercent + atk + anomalyproficiency"
+  },
+  {
+    "characterName": "Nekomata",
+    "description": "Anomaly Based Team",
+    "piece_4": "fangedmetal",
+    "piece_2": "woodpeckerelectro",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "physicaldmgbonus",
+    "slot_6": "atk",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
+    "characterName": "Nekomata",
+    "description": "Full DPS Build",
+    "piece_4": "woodpeckerelectro",
+    "piece_2": "fangedmetal",
+    "critUser": true,
+    "slot_4": "critdmg/critrate",
+    "slot_5": "physicaldmgbonus",
+    "slot_6": "atk",
+    "substats": "critdmg + critrate + atkpercent + atk"
+  },
+  {
     "characterName": "Yanagi",
     "description": "The four sets of Chaos benefit greatly from the electric attribute damage buff, and the special reinforcement skills used for the opening are greatly enhanced.",
     "piece_4": "chaosjazz",
@@ -63,28 +228,6 @@
     "slot_4": "anomalyproficiency",
     "slot_5": "electricdmgbonus/penratio",
     "slot_6": "atk/energyregen",
-    "substats": "anomalyproficiency + atkpercent + atk"
-  },
-  {
-    "characterName": "Burnice",
-    "description": "None",
-    "piece_4": "chaosjazz",
-    "piece_2": "freedomblues",
-    "critUser": false,
-    "slot_4": "anomalyproficiency",
-    "slot_5": "firedmgbonus",
-    "slot_6": "anomalymastery/atk",
-    "substats": "anomalyproficiency + atkpercent + atk"
-  },
-  {
-    "characterName": "Jane Doe",
-    "description": "None",
-    "piece_4": "freedomblues",
-    "piece_2": "fangedmetal",
-    "critUser": false,
-    "slot_4": "anomalyproficiency",
-    "slot_5": "physicaldmgbonus/penratio",
-    "slot_6": "anomalymastery/atk",
     "substats": "anomalyproficiency + atkpercent + atk"
   },
   {
@@ -99,17 +242,6 @@
     "substats": "critdmg + critrate + atkpercent + atk + anomalyproficiency"
   },
   {
-    "characterName": "Harumasa",
-    "description": "None",
-    "piece_4": "woodpeckerelectro",
-    "piece_2": "branch&bladesong",
-    "critUser": true,
-    "slot_4": "critdmg/critrate",
-    "slot_5": "electricdmgbonus/penratio",
-    "slot_6": "atk",
-    "substats": "critdmg + critrate + atkpercent + atk"
-  },
-  {
     "characterName": "Zhu Yuan",
     "description": "None",
     "piece_4": "chaoticmetal",
@@ -118,28 +250,6 @@
     "slot_4": "critdmg/critrate",
     "slot_5": "etherdmgbonus/penratio",
     "slot_6": "atk",
-    "substats": "critdmg + critrate + atkpercent + atk"
-  },
-  {
-    "characterName": "Ellen",
-    "diskDescription": "None",
-    "piece_4": "polarmetal",
-    "piece_2": "woodpeckerelectro",
-    "critUser": true,
-    "slot_4": "critdmg/critrate",
-    "slot_5": "icedmgbonus/atk",
-    "slot_6": "atk",
-    "substats": "critdmg + critrate + atkpercent + atk"
-  },
-  {
-    "characterName": "Lycaon",
-    "description": "None",
-    "piece_4": "shockstardisco",
-    "piece_2": "swingjazz",
-    "critUser": true,
-    "slot_4": "critdmg/critrate",
-    "slot_5": "icedmgbonus",
-    "slot_6": "impact",
     "substats": "critdmg + critrate + atkpercent + atk"
   },
   {
@@ -196,61 +306,6 @@
     "slot_5": "etherdmgbonus",
     "slot_6": "energyregen",
     "substats": "atkpercent + atk + anomalyproficiency"
-  },
-  {
-    "characterName": "Grace",
-    "description": "Build for Disorder Teams",
-    "piece_4": "freedomblues",
-    "piece_2": "chaosjazz",
-    "critUser": false,
-    "slot_4": "anomalyproficiency",
-    "slot_5": "etherdmgbonus/penratio",
-    "slot_6": "anomalymastery/atk",
-    "substats": "atkpercent + atk + anomalyproficiency"
-  },
-  {
-    "characterName": "Grace",
-    "description": "Build for Mono-Electric Teams",
-    "piece_4": "thundermetal",
-    "piece_2": "freedomblues",
-    "critUser": false,
-    "slot_4": "anomalyproficiency",
-    "slot_5": "etherdmgbonus/penratio",
-    "slot_6": "anomalymastery/atk",
-    "substats": "atkpercent + atk + anomalyproficiency"
-  },
-  {
-    "characterName": "Koleda",
-    "description": "None",
-    "piece_4": "shockstardisco",
-    "piece_2": "swingjazz",
-    "critUser": true,
-    "slot_4": "critdmg/critrate",
-    "slot_5": "firedmgbonus/penratio",
-    "slot_6": "impact",
-    "substats": "critdmg + critrate + pen + atkpercent + atk"
-  },
-  {
-    "characterName": "Nekomata",
-    "description": "Anomaly Based Team",
-    "piece_4": "fangedmetal",
-    "piece_2": "woodpeckerelectro",
-    "critUser": true,
-    "slot_4": "critdmg/critrate",
-    "slot_5": "physicaldmgbonus",
-    "slot_6": "atk",
-    "substats": "critdmg + critrate + atkpercent + atk"
-  },
-  {
-    "characterName": "Nekomata",
-    "description": "Full DPS Build",
-    "piece_4": "woodpeckerelectro",
-    "piece_2": "fangedmetal",
-    "critUser": true,
-    "slot_4": "critdmg/critrate",
-    "slot_5": "physicaldmgbonus",
-    "slot_6": "atk",
-    "substats": "critdmg + critrate + atkpercent + atk"
   },
   {
     "characterName": "Piper",

@@ -6,6 +6,8 @@ interface RoundedElementProps
     borderRadius: number;
     padding?: CSSProperties["padding"];
     flex?: CSSProperties["flex"];
+    width?: CSSProperties["width"];
+    height?: CSSProperties["height"];
     circle?: boolean
     children: React.ReactNode;
 }
@@ -16,6 +18,8 @@ export default function RoundedElement(
         borderRadius = 0,
         padding = "10px 20px",
         flex,
+        width,
+        height,
         circle = false,
         children
     }: RoundedElementProps)
@@ -29,8 +33,8 @@ export default function RoundedElement(
         cursor: "default",
         userSelect: "text",
         transition: "background-color 0.3s",
-        width: circle ? borderRadius : "fit-content",
-        height: circle ? borderRadius : "fit-content",
+        width: circle ? borderRadius : width,
+        height: circle ? borderRadius : height,
         padding: circle ? "8px" : padding,
         flex: flex
     }

@@ -15,6 +15,7 @@ export type SetKey =
     | "swingjazz"
     | "thundermetal"
     | "woodpeckerelectro"
+    | "shadowharmony"
     | ""
 
 
@@ -54,6 +55,7 @@ const UISetKeyMap: Record<string, string> = {
     "swingjazz": "Swing Jazz",
     "thundermetal": "Thunder Metal",
     "woodpeckerelectro": "Woodpecker Electro",
+    "shadowharmony": "Shadow Harmony",
     "": ""
 };
 

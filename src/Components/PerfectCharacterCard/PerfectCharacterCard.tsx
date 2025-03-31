@@ -36,13 +36,15 @@ export default function PerfectCharacterCard(match: IMatch)
             </div>
             <div className={"perfectCharacterCard-disks"}>
                 <div className={"disk-wrapper"}>
-                    <TextTag weight="bigWeight">{Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4)} ×
+                    <TextTag
+                        weight="bigWeight">{Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4)} ×
                         4</TextTag>
                     <Img className="disk-icon"
                          imgName={DiskNameConverter(Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_4))}/>
                 </div>
                 <div className={"disk-wrapper"}>
-                    <TextTag weight="bigWeight">{Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2)} ×
+                    <TextTag
+                        weight="bigWeight">{Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2)} ×
                         2</TextTag>
                     <Img className="disk-icon"
                          imgName={DiskNameConverter(Disk.getUISetKey(perfectMatches[currentPerfectCharacter].perfectCharacter.piece_2))}/>
@@ -69,7 +71,8 @@ export default function PerfectCharacterCard(match: IMatch)
                 <div className={"perfectCharacterCard-substats"}>
                     <TextTag className="stats-title"
                              weight="bigWeight">Recommended Substats</TextTag>
-                    <RoundedElement backgroundColor={Theme.primary_color} borderRadius={3}>
+                    <RoundedElement width={500} height={30} circle={false} backgroundColor={Theme.primary_color}
+                                    borderRadius={3}>
                         <TextTag
                             weight="bigWeight">{PerfectSubstatUIConverter(perfectMatches[currentPerfectCharacter].perfectCharacter.substats)}</TextTag>
                     </RoundedElement>

@@ -1,7 +1,8 @@
 import "./Disks.css"
 import {DiskCard, TextTag} from "../../Components";
-import GetPerfectMatches, {IMatch} from "../../Utilities/GetPerfectMatches.tsx";
 import PerfectCharacterCard from "../../Components/PerfectCharacterCard/PerfectCharacterCard.tsx";
+import {GetPerfectMatches} from "../../Utilities";
+import {IMatch} from "../../Utilities/GetPerfectMatches.tsx";
 
 export default function Disks()
 {

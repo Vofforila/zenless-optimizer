@@ -32,18 +32,18 @@
       ]
     },
     {
-      "setKey": "astralvoice",
+      "setKey": "branch&bladesong",
       "slotKey": 4,
       "level": 15,
       "id": 0,
-      "mainStatKey": "hp",
+      "mainStatKey": "critdmg",
       "substats": [
         {
-          "key": "atkpercent",
+          "key": "critdmg",
           "value": 234.0
         },
         {
-          "key": "atk",
+          "key": "critrate",
           "value": 23.0
         },
         {

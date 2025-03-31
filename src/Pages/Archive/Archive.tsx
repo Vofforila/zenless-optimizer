@@ -6,6 +6,8 @@ import {archive} from "../../Classes/Database.tsx";
 
 export default function Archive()
 {
+
+    // TODO: Update Images from Disks to https://zenless-zone-zero.fandom.com/wiki/Soldier_0_-_Anby
     return (
         <div id={"Archive"} className={"archive"}>
             <div className={"archive-wrapper"}>

@@ -6,8 +6,9 @@ import {dbManager} from "../../Classes/DatabaseManager.tsx";
 
 interface IUploadPanel
 {
-    UploadPanelState: {isOpen: boolean;databaseId: number;};
+    UploadPanelState: { isOpen: boolean; databaseId: number; };
     onClose: () => void;
+    onUpload: () => void;
     children: React.ReactNode;
 }
 
@@ -27,8 +28,9 @@ export default function UploadPanel(props: IUploadPanel)
                 {
                     try
                     {
-                        const jsonObject:unknown = JSON.parse(fileContent);
-                        dbManager.UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
+                        const jsonObject: unknown = JSON.parse(fileContent);
+                        dbManager.UploadDatabase(jsonObject, props.UploadPanelState.databaseId);
+                        props.onUpload();
                     } catch (error)
                     {
                         alert('Error parsing JSON: ' + error);
@@ -46,7 +48,8 @@ export default function UploadPanel(props: IUploadPanel)
         try
         {
             const jsonObject = JSON.parse(inputValue);
-            dbManager.UploadDatabase(jsonObject,props.UploadPanelState.databaseId);
+            dbManager.UploadDatabase(jsonObject, props.UploadPanelState.databaseId);
+            props.onUpload();
         } catch (error)
         {
             alert('Error! Please enter a valid JSON: ' + error);
